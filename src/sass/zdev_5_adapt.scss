@@ -81,6 +81,29 @@
 
 	/* /about-top */
 
+  	/* about-info */
+
+  		.about-info-wrap{
+
+		  .text-block{
+			p{
+			  b{ font-size: 22px;}
+			}
+			ul{
+			  li{ padding-left: 35px;
+			  	&:before{ left:15px;}
+			  }
+			}
+		  }
+
+		  .about-info-bottom{
+			h3{ font-size: 28px;}
+		  }
+
+		}
+
+  	/* /about-info */
+
   /* /about */
 
 }
@@ -99,6 +122,26 @@
 		}
 
   	/* /about-top */
+
+  /* about-info */
+
+	.about-info-wrap{
+
+	  .about-info-img{ margin-bottom: 40px;}
+
+	  .text-block{ font-size: 16px;
+		p{
+		  b{ font-size: 20px;}
+		}
+	  }
+
+	  .about-info-bottom{
+		h3{ font-size: 24px;}
+	  }
+
+	}
+
+  /* /about-info */
 
   /* /about */
 
