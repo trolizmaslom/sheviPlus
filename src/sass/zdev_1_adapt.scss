@@ -1,11 +1,27 @@
 @media screen and (max-width: 1920px){
 
 }
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 1500px){
 
+    .header-bot{
+
+        .search-button {max-width: 365px; margin-left: 10px;}
+        .tel-box{ margin-left: 15px;}
+        .tel{ font-size: 27px; }
+
+    }
 }
 @media screen and (max-width: 1366px){
+    .header-bot{
+        .row{flex-wrap: wrap;}
+        .nav{ margin-bottom: 20px;}
+        .search-button {
+            &:before{ top: 13px;}
+            input{ height: 45px; line-height: 45px;}
+        }
 
+
+    }
 }
 @media screen and (max-width: 1280px){
 

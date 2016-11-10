@@ -10,6 +10,16 @@
 @media screen and (max-width: 1280px){
 
 }
+@media screen and (max-width: 1170px){
+  //catalog-tech page
+  .catalog-tech{
+	.row-body{ justify-content:space-around;
+	  .item{ width:40%; margin:0 20px 30px;
+		&:nth-child(4n){ margin:0 20px 30px; }
+	  }
+	}
+  }
+}
 @media screen and (max-width: 1024px){
 
 }
@@ -17,13 +27,36 @@
 
 }
 @media screen and (max-width: 767px){
-
+  //catalog-tech page
+  .catalog-tech{
+	.row-body{
+	  .item{ width:90%; margin:0 20px 30px;
+		&:nth-child(4n){ margin:0 20px 30px; }
+	  }
+	}
+  }
 }
 @media screen and (max-width: 666px){
 
 }
 @media screen and (max-width: 479px){
-
+  //catalog-tech page
+  .catalog-tech{
+	.row{ margin-bottom:0px; padding-top:15px;}
+	.row-head{margin-bottom: 25px;
+	  .row-plashka{width:20px; margin-left:-10px;}
+	  .row-head-title{font-size:16px; margin-left:7px;}
+	}
+	.row-body{
+	  .item{ width:100%;margin: 0px 5px 30px;
+		&:nth-child(4n){margin: 0px 5px 30px;}
+		.item-wrap{ padding:30px 30px 7px;
+		  .item-title{ margin-bottom:20px;}
+		  .item-row{ margin-bottom:16px;}
+		}
+	  }
+	}
+  }
 }
 @media screen and (max-width: 320px){
 
