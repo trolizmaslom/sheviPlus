@@ -1,19 +1,4 @@
-/*flex -style----------------------------------------------------------------------------------*/
-    .flex-line-container{ display: flex;justify-content: center; align-items: center;}
-    .flex-box-container{ display: flex; justify-content: space-around; flex-wrap: wrap;}
-/*END flex -style----------------------------------------------------------------------------------*/
-/*buttons----------------------------------------------------------------------------------------*/
-    .filled-button{ display: block; font-weight:400; font-size: 18px; color: #fff; width:200px; height: 41px; background-color: #cc0033; border-radius:20px; border:2px solid #cc0033; line-height: 37px; text-align: center; text-decoration: none; cursor: pointer;}
-    .filled-button:hover{ background-color: transparent; color: #c03;}
 
-    .submit-button{ width: 100%; height: 60px; line-height: 56px; text-align: center; background-color: #2579bf; border:2px solid #2579bf; color: #fff; font-size: 18px; font-weight: 700;
-        .search{ background-image: url(../images/search-w.png); width: 17px; height: 17px; background-repeat: no-repeat; background-position: 50%; display: inline-block; vertical-align: top; margin-top: 17px; margin-right: 15px;}
-    }
-    .submit-button:hover{  background-color: #fff; color: #2579bf;
-        .search{ background-image: url(../images/search-b.png);}
-    }
-
-/*END buttons----------------------------------------------------------------------------------------*/
 /*header-----------------------------------------------------------------------------------------*/
     .header-top{ background-color: #321149; padding: 23px 0;
         .logo{color: #fff; font-size:48px; font-weight: 900; text-transform: uppercase; width:400px;
@@ -58,12 +43,7 @@
         span{color: #f2535a;}
     }
 /*END breadcrumbs-------------------------------------------------------------------------------------*/
-/*titles------------------------------------------------------------------------------------------*/
-    .title{padding: 49px 0 42px;
-        h2{ margin: 0; font-weight: 700; font-size: 24px; text-transform: uppercase; color:#595959;letter-spacing: -0.5px;}
-    }
 
-/*END titles------------------------------------------------------------------------------------------*/
 /*main page------------------------------------------------------------------------------------------*/
     /*top-block---------------------------------------------------------------------------------------*/
         .top-block{ height: 440px; background-image: url(../images/topbg.jpg); background-size:cover; background-position: 50%; width: 100%;
