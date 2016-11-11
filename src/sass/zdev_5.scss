@@ -124,7 +124,7 @@
 
 .item-map-advantages {
 
-  .item-map-info-wrap { position: relative; padding: 150px 0 175px 0;
+  .item-map-info-wrap { position: relative; padding: 150px 0 195px 0;
 
 	.item-map-advantages-img { position: absolute; top: 50px; left: 1200px; z-index: 0;
 	  img { max-width: none; }
@@ -187,5 +187,28 @@
 
 }
 /* /item-map-advantages */
+
+/* item-map-uses */
+
+	.item-map-uses{ background-image: url(../images/uses-background.jpg); background-position: center top;padding:0px 0 85px 0;
+		.item-map-uses-wrap{ max-width:1190px; width: 100%;margin:0 auto;position:relative;padding: 80px 0 0 0;
+			&:before{content:'';display: block;position:absolute; height:calc(100% + 290px); width: 6px; background-color: #eb7073;bottom:0;left:-30px;}
+
+			.item-map-section-title{ text-align: center;overflow: hidden; margin-bottom:40px;
+			  span{ font-size: 48px;color:#eb7073; text-transform: uppercase;position:relative;
+			  	&:after{content:''; display: block;position: absolute;top:calc(50% - 3px);left:calc(100% + 100px); height:6px; width:500px; background-color: #7b5999;}
+			  }
+			}
+
+		  	.item-map-section-content{position: relative; padding-bottom: 40px;
+				&:before, &:after{content:'';display: block;position:absolute;}
+			  &:before{ width:6px; height:calc(100% + 67px);top:-67px;right:0; background-color: #7b5999;}
+			  &:after{ width:calc(100% + 30px); height: 6px;right:0;bottom:0;background: #eb7073; background: -moz-linear-gradient(left, #eb7073 0%, #7b5999 100%); background: -webkit-linear-gradient(left, #eb7073 0%,#7b5999 100%); background: linear-gradient(to right, #eb7073 0%,#7b5999 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb7073', endColorstr='#7b5999',GradientType=1 );}
+			}
+
+		}
+	}
+
+/* /item-map-uses */
 
 /* /item-map-info-main -------------------------------------------------------------- */
