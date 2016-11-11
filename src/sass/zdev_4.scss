@@ -32,6 +32,7 @@ $r:#f2535a;
   
   //contacts page
   &.contacts{ background:#f1f0f0 url("../images/contacts-big-img.jpg") bottom center no-repeat; background-size:cover;
+	.contacts-wrap{ padding-bottom:120px;}
 	.catalog-tech-img.mobile{ display:none; }
 	
 	.row-head{ position:relative; margin-bottom:68px;
