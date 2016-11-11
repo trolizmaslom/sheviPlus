@@ -18,6 +18,7 @@
   }
 
 }
+
 /* /about-top */
 
 /* about-info */
@@ -47,6 +48,7 @@
   }
 
 }
+
 /* /about-info */
 
 /* about-circles */
@@ -74,6 +76,7 @@
   }
 
 }
+
 /* /about-circles */
 
 /* about-lists */
@@ -93,6 +96,7 @@
   }
 
 }
+
 /* /about-lists */
 
 /* about-autor */
@@ -114,6 +118,7 @@
 	}
   }
 }
+
 /* /about-autor */
 
 /* /about -------------------------------------------------------------- */
@@ -188,6 +193,7 @@
   }
 
 }
+
 /* /item-map-advantages */
 
 /* item-map-uses */
@@ -232,5 +238,29 @@
 	}
 
 /* /item-map-uses */
+
+/* item-map-garanty */
+
+	.item-map-garanty{overflow: hidden;
+
+	  .item-map-garanty-top{position:relative; padding-top:70px; margin-bottom: 90px;
+
+		.item-map-section-title{ padding-left:260px;
+
+		  	span{position:relative; font-size:48px; text-transform: uppercase;color:#e36e76;
+			  &:before, &:after{content:''; display: block;position:absolute;}
+			  &:after{ width:155px; height:6px;right:calc(100% + 45px);top:calc(50% - 3px);background: #7b5998; background: -moz-linear-gradient(left, #7b5998 0%, #ea7074 100%); background: -webkit-linear-gradient(left, #7b5998 0%,#ea7074 100%); background: linear-gradient(to right, #7b5998 0%,#ea7074 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7b5998', endColorstr='#ea7074',GradientType=1 );}
+			  &:before{ height:200px; width: 6px;bottom:calc(50% - 3px);right:calc(100% + 200px); background-color: #7b5998;}
+			}
+
+		}
+
+		.garanty-car-text{ position: absolute;left:655px;top:calc(100% - 65px); font-size:150px; text-transform: uppercase;color:rgba(227, 110, 118, .1); line-height: 150px;white-space: nowrap;}
+
+	  }
+
+	}
+
+/* /item-map-garanty */
 
 /* /item-map-info-main -------------------------------------------------------------- */
