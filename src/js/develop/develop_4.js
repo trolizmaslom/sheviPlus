@@ -34,17 +34,17 @@ function mapInit() {
 }
 
 function productSlider() {
-    $('.slider-big-wrap').slick({
+    $('.product-item .slider-big-wrap').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.slider-mini-wrap'
+        asNavFor: '.product-item .slider-mini-wrap'
     });
-    $('.slider-mini-wrap').slick({
+    $('.product-item .slider-mini-wrap').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
-        asNavFor: '.slider-big-wrap',
+        asNavFor: '.product-item .slider-big-wrap',
         dots: false,
         verticalSwiping: true,
         vertical: true,
@@ -66,10 +66,56 @@ function showProductText() {
     });
 }
 
+function popApShow(){
+
+
+
+    function goFancy(item) {
+        $.fancybox.open(item,{
+            width: "100%",
+            autoSize: true,
+            autoResize:true,
+            wrapCSS:'fancybox-product',
+            'closeBtn' : false,
+            beforeShow:function(){
+                goSlider()
+            },
+            afterClose: function(){
+                $('.popup-hidden').removeAttr('style');
+            }
+        });
+    }
+    $(document).on('click', '.item-catalogius', function (event) {
+        event.preventDefault();
+        var popap = $(this).find('.popup-hidden');
+        goFancy(popap);
+    });
+
+    function goSlider() {
+        $('.fancy-product-wrap .slider-big-wrap').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.fancy-product-wrap .slider-mini-wrap'
+        });
+        $('.fancy-product-wrap .slider-mini-wrap').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            asNavFor: '.fancy-product-wrap .slider-big-wrap',
+            dots: false,
+            verticalSwiping: true,
+            vertical: true,
+            focusOnSelect: true
+        });
+    }
+}
+
 $(document).ready(function () {
     productSlider();
     showProductText();
-    showProductText()
+    showProductText();
+    popApShow()
 });
 
 $(window).load(function () {
