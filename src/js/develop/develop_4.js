@@ -59,7 +59,7 @@ function showProductText() {
         $('.desc-text').addClass('no-hidden');
     }
 
-    $('.desc-text-button').click(function(){
+    $('.desc-text-button span').click(function(){
         var height = $('.desc-text-hidden').height();
         $('.desc-text-show').height(height);
         $(this).slideUp().remove();
