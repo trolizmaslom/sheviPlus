@@ -68,10 +68,11 @@ function showProductText() {
 
 function popApShow(){
 
+    var popap;
 
-
-    function goFancy(item) {
-        $.fancybox.open(item,{
+    function goFancy() {
+        $.fancybox.open({
+            content:popap,
             width: "100%",
             autoSize: true,
             autoResize:true,
@@ -82,13 +83,19 @@ function popApShow(){
             },
             afterClose: function(){
                 $('.popup-hidden').removeAttr('style');
+            },
+            afterClose: function() {
+                if ($('.fancy-product-wrap .slider-big-wrap').hasClass('slick-initialized')) {
+                    $('.fancy-product-wrap .slider-big-wrap').slick("unslick");
+                    $('.fancy-product-wrap .slider-mini-wrap').slick("unslick");
+                }
             }
         });
     }
     $(document).on('click', '.item-catalogius', function (event) {
         event.preventDefault();
-        var popap = $(this).find('.popup-hidden');
-        goFancy(popap);
+        popap = $(this).find('.popup-hidden').clone();
+        goFancy();
     });
 
     function goSlider() {
@@ -109,6 +116,11 @@ function popApShow(){
             focusOnSelect: true
         });
     }
+
+    $(document).on('click','.product-close-popup',function(event){
+        event.preventDefault();
+        $.fancybox.close();
+    })
 }
 
 $(document).ready(function () {
