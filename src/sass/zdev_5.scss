@@ -126,7 +126,7 @@
 
   .item-map-info-wrap { position: relative; padding: 150px 0 175px 0;
 
-	.info-map-advantages-img { position: absolute; top: 50px; left: 1200px; z-index: 0;
+	.item-map-advantages-img { position: absolute; top: 50px; left: 1200px; z-index: 0;
 	  img { max-width: none; }
 	}
 
@@ -134,7 +134,7 @@
 
   .item-map-advantages-main { max-width: 1275px; width: 100%; z-index: 1; position: relative;
 
-	.item-map-advantages-title { overflow: hidden; padding: 0 0 0 145px; margin-bottom: 150px;
+	.item-map-section-title { overflow: hidden; padding: 0 0 0 145px; margin-bottom: 150px;
 	  span { position: relative; font-size: 48px; text-transform: uppercase; color: #da6c79;
 		&:after { content: ''; display: block; position: absolute; left: calc(100% + 100px); top: calc(50% - 2px); width: 645px; height: 5px; background: #da6c79; background: -moz-linear-gradient(left, #da6c79 0%, #7b5999 100%); background: -webkit-linear-gradient(left, #da6c79 0%, #7b5999 100%); background: linear-gradient(to right, #da6c79 0%, #7b5999 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#da6c79', endColorstr='#7b5999', GradientType=1); }
 	  }
