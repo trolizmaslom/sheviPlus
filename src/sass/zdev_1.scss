@@ -172,10 +172,10 @@
                 }
                 p{ margin: 0;}
             }
-            .titl{ border-bottom:2px solid #e8e8e8; justify-content:space-between; padding-bottom: 6px;
+            .titl{ border-bottom:2px solid #e8e8e8; justify-content:space-between; padding-bottom: 6px; position: relative;
                 p{ margin: 0;}
-                .name{font-weight: 600; font-size: 24px;}
-                .sort{ }
+                .name{font-weight: 600; font-size: 24px; position: absolute; left: 0; bottom: 7px; width:calc(100% - 200px);}
+                .sort{ float: right;}
                 .jq-selectbox__select{ background: transparent; border: none; box-shadow: none; text-shadow: none;font-size: 18px; font-weight: 400;font-family: 'ProximaNova';padding: 0 27px 0 10px;}
                 .jq-selectbox__trigger{ border:none; width: 26px;}
             }
@@ -234,3 +234,8 @@
     }
 
 /*END search-zapchasti------------------------------------------------------------------------------------------*/
+.catalog3{
+    .row{ height: 580px; overflow: hidden;
+
+    }
+}
