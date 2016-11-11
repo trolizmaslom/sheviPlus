@@ -197,7 +197,7 @@
                     .ttl{ min-height: 54px; width: 100%;border-bottom:1px solid #f2f2f2; padding: 14px 60px 17px 31px; cursor: pointer; position: relative;
                         &.active{
                             a{color:#000;}
-                            .arr{transform:rotate(-45deg);}
+                            .arr{transform:rotate(-135deg);}
                         }
                         &:hover{  background-color: #eb7073; }
                         a{ text-decoration: none; font-size: 18px; color: #595959;}

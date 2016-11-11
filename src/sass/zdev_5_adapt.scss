@@ -42,6 +42,27 @@
 
   /* /about -------------------------------------------------------------- */
 
+  /* item-map-info-main -------------------------------------------------------------- */
+
+  /* item-map-uses */
+
+	.item-map-uses{
+
+	  	.item-map-uses-wrap{
+		  &:before{left:0;}
+
+		  .item-map-section-content{
+			&:after{ width:100%;}
+		  }
+
+		}
+
+	}
+
+  /* /item-map-uses */
+
+  /* /item-map-info-main -------------------------------------------------------------- */
+
 }
 @media screen and (max-width: 1280px) {
 }
@@ -205,6 +226,27 @@
 
   /* /about -------------------------------------------------------------- */
 
+  /* item-map-info-main -------------------------------------------------------------- */
+
+  /* item-map-uses */
+
+  .item-map-uses{
+	.item-map-uses-wrap {
+	  &:before { content:''; display: block; min-height:0; height:calc(100% - 110px);}
+
+	  .item-map-section-title{
+		span{
+		  &:before{content:''; display: block;position: absolute;top:calc(50% - 3px);right:calc(100% + 100px); height:6px; width:500px; background-color: #eb7073;}
+		}
+	  }
+
+	}
+  }
+
+  /* /item-map-uses */
+
+  /* /item-map-info-main -------------------------------------------------------------- */
+
 }
 @media screen and (max-width: 767px) {
 
@@ -307,6 +349,30 @@
   }
 
   /* /item-map-advantages */
+
+  /* item-map-uses */
+
+  .item-map-uses {
+	.item-map-uses-wrap {
+
+	  .item-map-section-title {
+		span {
+
+		  &:after{left:calc(100% + 10px);}
+		  &:before{right:calc(100% + 10px);}
+
+		}
+
+	  }
+
+	  .item-map-section-text{
+		img{ display: none;}
+	  }
+
+	}
+  }
+
+  /* /item-map-uses */
 
   /* /item-map-info-main -------------------------------------------------------------- */
 
