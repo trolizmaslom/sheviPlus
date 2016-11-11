@@ -229,6 +229,15 @@ $(document).ready(function() {
 
     //oneHeightItems();
 
+    $('.fancybox-img').fancybox({
+        openEffect  : 'fade',
+        closeEffect : 'fade',
+        autoResize:true,
+        wrapCSS:'fancybox-img',
+        'closeBtn' : false,
+        fitToView:true,
+        padding:'0'
+    });
     $('.footer_placeholder').height($('.footer').outerHeight());
 
     //goTo();
