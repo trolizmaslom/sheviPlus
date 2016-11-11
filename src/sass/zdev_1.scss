@@ -239,6 +239,16 @@
 
     }
 }
+.onmain{ font-weight:700; text-decoration: none; font-size: 18px; color: #e36e76; text-transform: uppercase; width: 306px; height: 70px; border:3px solid #e36e76; text-align: center; line-height: 64px; display: inline-block; margin-top: 100px;
+    &:hover{ background-color: #e36e76; color: #fff;}
+}
 .item-map-perspective{
-    
+    .mbox{max-width: 1380px;}
+    .titlius{ text-align: center;padding-top: 71px; display: flex; align-items:center; justify-content: space-around;
+        .txt{ font-size: 48px; font-weight: 700; color: #e36e76; display: inline-block; position: relative; text-transform: uppercase;
+            &:before{ content: ''; position: absolute; background-image: url(../images/angle01.png); width: 155px; height: 225px; bottom: 31px; left: -202px;}
+        }
+        .img{ display: inline-block;}
+    }
+    .content{ text-align: center; margin-bottom: 99px; padding-top: 38px;}
 }
