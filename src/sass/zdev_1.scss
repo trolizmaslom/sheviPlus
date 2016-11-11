@@ -248,4 +248,9 @@
     }
     .content{ text-align: center; margin-bottom: 99px; padding-top: 38px;}
 }
-
+.item-map-breath{ text-align: center; position: relative;
+    .content{ text-align: center; position: relative; max-width: 1920px; display: block; margin: 0 auto;}
+    .txt{ font-size: 48px; font-weight: 700; color: #e36e76; display: inline-block; position: absolute; text-transform: uppercase; left:50%;       top: 151px; z-index: 100;
+        &:before{ content: ''; position: absolute; background-image: url(../images/angle02.png); width: 340px; height: 5px; bottom: 31px; left: calc(100% + 56px);}
+    }
+}
