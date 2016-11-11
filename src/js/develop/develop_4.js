@@ -1,50 +1,81 @@
-function mapInit(){
-
-    var maps = $('.contacts .item-map-wrap');
-    var grayStyles = [
-        {
-            featureType: "all",
-            stylers: [
-                { saturation: -90 },
-                { lightness: 0 }
-            ]
-        }
-    ];
-
-    maps.each(function(i, Element) {
-        var myLatlng = new google.maps.LatLng(mapObj[i].cordX,mapObj[i].cordY);
-        var myOptions = {
-            zoom: 13,
-            styles: grayStyles,
-            center: myLatlng,
-            disableDefaultUI: true,
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            zoomControlOptions: {
-                position: google.maps.ControlPosition.LEFT_BOTTOM
+function mapInit() {
+    if ($('.contacts .item-map-wrap').length > 0) {
+        var maps = $('.contacts .item-map-wrap');
+        var grayStyles = [
+            {
+                featureType: "all",
+                stylers: [
+                    {saturation: -90},
+                    {lightness: 0}
+                ]
             }
-        };
-        var map = new google.maps.Map(Element, myOptions);
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            map: map,
-            icon: mapMarker
-        });
+        ];
+        maps.each(function (i, Element) {
+            var myLatlng = new google.maps.LatLng(mapObj[i].cordX, mapObj[i].cordY);
+            var myOptions = {
+                zoom: 13,
+                styles: grayStyles,
+                center: myLatlng,
+                disableDefaultUI: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                zoomControlOptions: {
+                    position: google.maps.ControlPosition.LEFT_BOTTOM
+                }
+            };
+            var map = new google.maps.Map(Element, myOptions);
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                icon: mapMarker
+            });
 
+        });
+    }
+}
+
+function productSlider() {
+    $('.slider-big-wrap').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-mini-wrap'
+    });
+    $('.slider-mini-wrap').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.slider-big-wrap',
+        dots: false,
+        verticalSwiping: true,
+        vertical: true,
+        focusOnSelect: true
     });
 }
 
+function showProductText() {
 
+    if($('.desc-text-hidden').height() < 120){
+        $('.desc-text-button').remove();
+        $('.desc-text').addClass('no-hidden');
+    }
 
+    $('.desc-text-button').click(function(){
+        var height = $('.desc-text-hidden').height();
+        $('.desc-text-show').height(height);
+        $(this).slideUp().remove();
+    });
+}
 
-
-$(document).ready(function(){
-
+$(document).ready(function () {
+    productSlider();
+    showProductText();
+    showProductText()
 });
 
-$(window).load(function(){
+$(window).load(function () {
     mapInit();
 });
 
-$(window).resize(function(){
+$(window).resize(function () {
 
 });
