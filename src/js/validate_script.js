@@ -292,10 +292,12 @@ function clarifyPopInfo() {
 
         $.fancybox.open('#pop-clarify', {
             padding: 0,
-            width: "100%",
-            autoSize: true,
-            autoResize:true,
             margin:[20,0,20,0],
+            width:'100%',
+            // scrolling: 'visible',
+            autoSize: false,
+            fitToView:true,
+            //autoResize:true,
             wrapCSS:'fancybox-clarify',
             'closeBtn' : false,
             afterClose: function () {
