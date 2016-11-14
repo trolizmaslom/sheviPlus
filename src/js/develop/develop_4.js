@@ -93,6 +93,9 @@ function popApShow(){
         });
     }
     $(document).on('click', '.item-catalogius', function (event) {
+        if($(event.target).hasClass("button")){
+            return false;
+        }
         event.preventDefault();
         popap = $(this).find('.popup-hidden').clone();
         goFancy();
