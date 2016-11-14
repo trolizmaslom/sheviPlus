@@ -806,7 +806,10 @@
   .item-map-video{
 
 	.item-map-section-title {
-	  h3 { font-size: 16px; }
+	  h3 { font-size: 16px; padding-left: 65px;
+	  	&:before{ width: 40px;}
+		&:after{ height:40px;}
+	  }
 	}
 
 	.video-block {
