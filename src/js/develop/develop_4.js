@@ -84,6 +84,7 @@ function popApShow(){
             width: "100%",
             autoSize: true,
             autoResize:true,
+            margin:[20,0,20,0],
             wrapCSS:'fancybox-product',
             'closeBtn' : false,
             beforeShow:function(){
