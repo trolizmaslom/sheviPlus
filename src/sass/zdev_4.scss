@@ -103,7 +103,7 @@ $r:#f2535a;
 		.price-row{ margin-bottom:30px;
 		  .price-title{ font-size:20px; color:#4f4f4f; margin-left:5px; font-weight:600; margin-bottom:5px;}
 		  .price-items{ display:flex;border:3px solid #fdf0f1;border-radius:10px;}
-		  .item{ width:50%; display:flex; align-items:center; justify-content:center; height:54px; font-size:18px; color:#8f8f8f;
+		  .item{ width:50%; display:flex; align-items:center; justify-content:center; height:54px; font-size:18px; color:#8f8f8f; text-align:center;
 			&:first-child{ border-right:3px solid #fdf0f1;}
 		  	strong{ font-size:30px; font-weight:bold;}
 		  }
