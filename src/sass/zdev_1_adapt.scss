@@ -3,22 +3,19 @@
 }
 @media screen and (max-width: 1500px){
 
-    .header-bot{
+    header .header-bot{
 
-        .search-button {max-width: 365px; margin-left: 10px;}
+        .search-button { margin-left: 10px;}
         .tel-box{ margin-left: 15px;}
         .tel{ font-size: 27px; }
 
     }
 }
 @media screen and (max-width: 1366px){
-    .header-bot{
+    header .header-bot{
         .row{flex-wrap: wrap;}
         .nav{ margin-bottom: 20px;}
-        .search-button {
-            &:before{ top: 13px;}
-            input{ height: 45px; line-height: 45px;}
-        }
+
 
 
     }
@@ -30,16 +27,36 @@
 
 }
 @media screen and (max-width: 992px){
-
+    header{
+        .desctop{ display: none;}
+        .mobile{ display: block;}
+    }
+    .top-block-mobile{ display: block;}
+    .top-block{ display: none;}
+    .footer {
+        .mbox{ padding: 0 30px;}
+        .top { display: none;}
+        .mid{ justify-content: center; padding-bottom: 30px; padding-top: 30px;
+            .right{ display: none;}
+            .titl{ display: none;}
+            .socials-wrap{flex-wrap: wrap; width: 220px;
+                .blog{ display: block; width: 100%; margin-right: 0; margin-bottom: 20px;}
+                .soc{ margin-right: 20px;}
+            }
+        }
+        .mobile{ display: block;}
+    }
 }
 @media screen and (max-width: 767px){
-
+    .search-block .row{ justify-content: space-around;}
+    .search-block .item{ margin-right: 0; margin-bottom: 20px;}
+    .search-block .search-button{ margin-left: 0;}
 }
 @media screen and (max-width: 666px){
 
 }
 @media screen and (max-width: 479px){
-
+    .catalog .item{ margin-right: 0;}
 }
 @media screen and (max-width: 320px){
 
