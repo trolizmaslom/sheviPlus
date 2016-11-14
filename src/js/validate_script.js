@@ -263,7 +263,50 @@ function showMoreFunc() {
     }
 }
 
+function clarifyPopInfo() {
+    var holder, title, mainImg, markImg, id;
+
+    $(document).on('click', '.clarify-pop-show', function (e) {
+        e.preventDefault();
+        holder = $(this).parents('.clarify-info-all');
+        id = holder.attr('data-id');
+        title = holder.find('.clarify-info-title').text();
+        mainImg = holder.find('.clarify-info-img img').first().attr('src');
+        markImg = holder.find('.clarify-info-mark-img img').attr('src');
+
+        $('#pop-clarify .clarify-product-title').text(title);
+
+        if (typeof id != 'undefined'){
+            $('#pop-clarify .clarify-product-id').val(id);
+        }
+        if (typeof mainImg != 'undefined'){
+            $('#pop-clarify .clarify-img img').attr('src',mainImg);
+        }else{
+            $('#pop-clarify .clarify-img img').remove();
+        }
+        if (typeof markImg != 'undefined'){
+            $('#pop-clarify .clarify-product-logo').attr('src',markImg);
+        }else{
+            $('#pop-clarify .clarify-product-logo').remove();
+        }
+
+        $.fancybox.open('#pop-clarify', {
+            padding: 0,
+            width: "100%",
+            autoSize: true,
+            autoResize:true,
+            margin:[20,0,20,0],
+            wrapCSS:'fancybox-clarify',
+            'closeBtn' : false,
+            afterClose: function () {
+                $('form').trigger("reset");
+            }
+        });
+    });
+}
+
 $(document).ready(function () {
+    clarifyPopInfo();
     validate('#call-popup .contact-form', {submitFunction: validationCall});
     Maskedinput();
     fancyboxForm();
