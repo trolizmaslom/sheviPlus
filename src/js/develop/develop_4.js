@@ -48,7 +48,15 @@ function productSlider() {
         dots: false,
         verticalSwiping: true,
         vertical: true,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 4
+                }
+            }
+        ]
     });
 }
 
@@ -76,10 +84,14 @@ function popApShow(){
             width: "100%",
             autoSize: true,
             autoResize:true,
+            margin:[20,0,20,0],
             wrapCSS:'fancybox-product',
             'closeBtn' : false,
             beforeShow:function(){
-                goSlider()
+                console.log($('.slider-big-wrap .item').width());
+                setTimeout(function(){goSlider()},50)
+
+                console.log($('.slider-big-wrap .item').width());
             },
             afterClose: function(){
                 $('.popup-hidden').removeAttr('style');
@@ -116,7 +128,15 @@ function popApShow(){
             dots: false,
             verticalSwiping: true,
             vertical: true,
-            focusOnSelect: true
+            focusOnSelect: true,
+            responsive: [
+                {
+                    breakpoint: 641,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }
+            ]
         });
     }
 
