@@ -99,6 +99,11 @@ input, textarea{
     &:hover{background: #f04950; color: #fff;}
     &:before{ display: block; background-image: url(../images/showmore.png); width: 25px; height: 19px; background-position: cover; content: ''; position: absolute;top: 16px; left: 44px;}
 }
+
+.transparent-button{ display: flex; justify-content: center; align-items: center;border:4px solid #eb7073;color:#eb7073; text-decoration: none;transition:all 300ms ease;
+    &:hover{color:#fff; background-color: #eb7073;}
+}
+
 /*END buttons----------------------------------------------------------------------------------------*/
 /*titles------------------------------------------------------------------------------------------*/
 .title{padding: 49px 0 42px;

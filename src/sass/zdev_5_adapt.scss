@@ -445,6 +445,43 @@
 
   /* /item-map-info-main -------------------------------------------------------------- */
 
+  /* fancyboxes -------------------------------------------------------------- */
+
+  /* uses-list-fancybox */
+
+  .fancy-list{
+	.where-uses {
+	  .where-uses-wrap {
+		&:after{ height:calc(100% - 20px);}
+
+		.where-uses-title{
+		  span{ font-size: 28px; }
+		}
+
+		.where-uses-subtitle{ margin-bottom: 30px; font-size: 20px;
+			span{ font-size:20px;}
+		}
+
+		.where-uses-content {flex-direction:column; align-items: center;
+		  .where-uses-col{ max-width:480px;width:100%;
+
+			ul{
+			  li{ margin-bottom: 10px;
+			  	p{ font-size: 16px;}
+			  }
+			}
+
+		  	.where-used-button{padding:20px 10px 0 10px;}
+		  }
+		}
+	  }
+	}
+  }
+
+  /* /uses-list-fancybox */
+
+  /* /fancyboxes -------------------------------------------------------------- */
+
 }
 @media screen and (max-width: 666px) {
 
@@ -588,6 +625,27 @@
 
   /* /item-map-info-main -------------------------------------------------------------- */
 
+  /* fancyboxes -------------------------------------------------------------- */
+
+  /* uses-list-fancybox */
+
+  .fancy-list {
+	.where-uses {
+	  .where-uses-wrap {
+		.where-uses-title, .where-uses-subtitle{ text-align: left;padding:0 20px;}
+		.where-uses-title{
+		  span{
+			&:after{ display: none;}
+		  }
+		}
+	  }
+	}
+  }
+
+  /* /uses-list-fancybox */
+
+  /* /fancyboxes -------------------------------------------------------------- */
+
 }
 @media screen and (max-width: 479px) {
 
@@ -694,6 +752,27 @@
   /* /item-map-garanty */
 
   /* /item-map-info-main -------------------------------------------------------------- */
+
+  /* fancyboxes -------------------------------------------------------------- */
+
+  /* uses-list-fancybox */
+
+	.fancy-list{
+	  .where-uses{padding:35px 0 35px 0;
+
+		.mbox{
+		  &:after{content: ''; display: block; position: absolute; bottom: 0; left: 10px; width: calc(100% - 20px); height: 6px;}
+		}
+
+		.where-uses-wrap{ padding-top: 30px;
+		  &:before, &:after{ height:100%;}
+		}
+	  }
+	}
+
+  /* /uses-list-fancybox */
+
+  /* /fancyboxes -------------------------------------------------------------- */
 
 }
 @media screen and (max-width: 320px) {
