@@ -193,7 +193,7 @@
 /* item-map-uses */
 
 .item-map-uses { background-image: url(../images/uses-background.jpg); background-position: center top; padding: 0px 0 85px 0;
-  .item-map-uses-wrap { max-width: 1190px; width: 100%; margin: 0 auto; position: relative; padding: 80px 0 0 0;
+  .item-map-uses-wrap { max-width: 1190px; width: 100%; margin: 0 auto; position: relative; padding: 80px 0 0 0;background-image:url(../images/uses-car.png); background-repeat: no-repeat; background-position: 85% 95%;
 	&:before { content: ''; display: block; position: absolute; min-height: 200%; width: 6px; background-color: #eb7073; bottom: 0; left: -30px; }
 
 	.item-map-section-title { text-align: center; overflow: hidden; margin-bottom: 40px;
@@ -209,7 +209,9 @@
 	}
 
 	.item-map-section-text { max-width: 920px; margin: 0 auto; color: #fff;
-	  p { font-size: 28px; margin: 0; }
+	  p { font-size: 28px; margin: 0;
+	  	span{ font-size: 24px;}
+	  }
 	  ul { list-style: none; margin: 15px 0; padding: 0 0 0 20px; list-style: none;
 		li { position: relative; padding-left: 20px; margin-bottom: 5px;
 		  &:before { content: ''; display: block; position: absolute; width: 8px; height: 8px; background-color: #e36e76; left: 0; top: 7px; }
