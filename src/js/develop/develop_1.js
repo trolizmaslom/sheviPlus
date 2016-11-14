@@ -20,11 +20,63 @@ function acordeon(){
         }
     });
 }
-
-
+function focusPokus() {
+    $('.search-button input').focus(function (e) {
+        $(this).closest('.search-button').addClass('focus');
+        e.preventDefault();
+    })
+}
+function mobileHeader(){
+    $('.header .catlog').click(function () {
+        $(this).toggleClass('active');
+        if($(this).hasClass('active')){
+            $('.srch-block').stop().slideUp();
+            $('.menu-block').stop().slideUp();
+            $('.header .menu').removeClass('active');
+            $('.header .search').removeClass('active');
+            $('.catlog-block').stop().slideDown();
+        }else{
+            $('.catlog-block').stop().slideUp();
+        }
+    });
+    $('.header .search').click(function () {
+        $(this).toggleClass('active');
+        if($(this).hasClass('active')){
+            $('.menu-block').stop().slideUp();
+            $('.catlog-block').stop().slideUp();
+            $('.header .menu').removeClass('active');
+            $('.header .catlog').removeClass('active');
+            $('.srch-block').stop().slideDown();
+        }else{
+            $('.srch-block').stop().slideUp();
+        }
+    });
+    $('.srch-block .close-this').click(function () {
+        $('.srch-block').stop().slideUp();
+        $('.header .search').removeClass('active');
+    });
+    $('.header .menu').click(function () {
+        $(this).toggleClass('active');
+        if($(this).hasClass('active')){
+            $('.srch-block').stop().slideUp();
+            $('.catlog-block').stop().slideUp();
+            $('.header .catlog').removeClass('active');
+            $('.header .search').removeClass('active');
+            $('.menu-block').stop().slideDown();
+        }else{
+            $('.menu-block').stop().slideUp();
+        }
+    });
+    $('.menu-block .close-this').click(function () {
+        $('.menu-block').stop().slideUp();
+        $('.header .menu').removeClass('active');
+    });
+}
 $(document).ready(function(){
     shovDropdown();
     acordeon();
+    focusPokus();
+    mobileHeader();
     if($('.search-block select').length>0)$('.search-block select').styler();
     if($('.search-zapchasti .titl select').length>0)$('.search-zapchasti .titl select').styler();
 });
