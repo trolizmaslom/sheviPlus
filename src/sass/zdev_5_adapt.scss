@@ -111,7 +111,31 @@
 	  }
 	}
 
-  /* /item-wrap-video */
+  /* /item-map-video */
+
+  /* item-map-service */
+
+  .item-map-service{
+
+	.black-part{ padding-left: 10px;
+	  .black-part-content{
+		.parts-title{ padding-top: 10px;
+		  span{ font-size: 36px;}
+		}
+	  }
+	}
+
+	.white-part{ padding-right: 10px;
+	  .white-part-content{
+		.white-part-wrap{
+		  .parts-title{ font-size: 36px;}
+		}
+	  }
+	}
+
+  }
+
+  /* /item-map-service */
 
   /* /item-map-info-main -------------------------------------------------------------- */
 
@@ -335,7 +359,37 @@
 	}
   }
 
-  /* /item-wrap-video */
+  /* /item-map-video */
+
+  /* item-map-service */
+
+	.item-map-service{
+
+	  .black-part, .white-part{ width: 100%;}
+
+	  .black-part{padding-right: 10px; min-height:620px;
+	  	.black-part-content{ max-width:none;padding:40px 10px 50px 10px;
+			&:before{ content:''; display: block; width:6px; height:calc(100% - 67px); background-color: #e36e76;position:absolute;top:67px;right:0;}
+
+		  .parts-title{ margin-bottom: 60px;}
+
+		}
+	  }
+
+	  .white-part{ padding-right: 0;
+		.white-part-content{ max-width:none;
+		  &:after{ display: none;}
+
+		  .white-part-wrap{padding:60px 20px 50px 20px;
+			&:before, &:after{ display: none;}
+		  }
+
+		}
+	  }
+
+	}
+
+  /* /item-map-service */
 
   /* /item-map-info-main -------------------------------------------------------------- */
 
@@ -465,6 +519,30 @@
   }
 
   /* /item-map-uses */
+
+  /* item-map-service */
+
+	.item-map-service{
+
+	  .black-part{ min-height:550px;
+		.black-part-content{
+		  .parts-title{ padding-top: 14px;
+			span{ font-size:26px;}
+		  }
+		}
+	  }
+
+	  .white-part{
+		.white-part-content{
+		  .white-part-wrap{
+			.parts-title{ font-size: 26px;}
+		  }
+		}
+	  }
+
+	}
+
+  /* /item-map-service */
 
   /* /item-map-info-main -------------------------------------------------------------- */
 
@@ -818,7 +896,66 @@
 
   }
 
-  /* /item-wrap-video */
+  /* /item-map-video */
+
+  /* item-map-service */
+
+  	.item-map-service{
+
+	  .black-part{ min-height:450px;
+	  	.black-part-content{padding:20px 20px 50px 20px;
+		  	&:after{ height:3px;}
+		  	&:before{ width: 3px; height:calc(100% - 46px);top:43px;}
+
+			.parts-title{ margin-bottom: 40px;
+			  &:before{ width: 3px;bottom:calc(100% - 26px);}
+			  &:after{ height: 3px;top:23px;left:-6px; width:calc(100% + 24px);}
+
+			  span{ font-size: 18px;}
+			}
+
+		  	.black-part-form{
+			  &:after{ width:3px;}
+
+			  .form_row{
+
+				.form_input{
+				  input{padding:16px 10px; font-size: 12px;
+					&::-webkit-input-placeholder {font-size: 12px; }
+					&:-moz-placeholder { font-size: 12px; }
+					&::-moz-placeholder { font-size: 12px; }
+					&:-ms-input-placeholder { font-size: 12px; }
+				  }
+				}
+
+				&.submit{
+				  .transparent-button {
+					&.reverse-button { height: 50px; font-size:16px;}
+				  }
+				}
+
+			  }
+
+			}
+
+		}
+	  }
+
+	  .white-part{
+		.white-part-content{
+		  .white-part-wrap{padding:30px 20px 40px 20px;
+			.parts-title{ font-size: 18px;}
+			.white-part-img{ margin-bottom: 40px;}
+			.white-part-button{
+			  .transparent-button{ height: 65px;}
+			}
+		  }
+		}
+	  }
+
+	}
+
+  /* /item-map-service */
 
   /* /item-map-info-main -------------------------------------------------------------- */
 

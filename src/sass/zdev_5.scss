@@ -339,7 +339,7 @@
 		span { margin: 0; font-size: 48px; font-weight: 700; color: #e36e76; text-transform: uppercase; position: relative;z-index:1;padding:0 20px; background-color: #000; display: inline-block;}
 	  }
 
-	  .black-part-form { max-width: 405px; width: 100%; margin: 0 auto; position: relative;
+	  .black-part-form { max-width: 405px; width: 100%; margin: 0 auto 50px auto; position: relative;
 		&:after { content: ''; display: block; position: absolute; top: calc(100% + 50px); left: calc(50% - 3px); width: 6px; height: 500px; background-color: #e36e76; }
 
 		.form_row { margin-bottom: 30px;
