@@ -282,8 +282,8 @@
 	.item-map-garanty-img { width: 40%; margin-left: -30%; margin-top: -70px; position: relative;
 	  &:before, &:after { content: ''; display: block; position: absolute; z-index: 1; }
 
-	  &:before { top: 69px; left: 0; height: 6px; width: 24%; background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%); background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%); background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#80ffffff', GradientType=1); }
-	  &:after { height: 462px; width: 6px; left: 24%; bottom: 0; background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(0, 0, 0, 0.5) 100%); background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(0, 0, 0, 0.5) 100%); background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(0, 0, 0, 0.5) 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#80000000', GradientType=0); }
+	  &:before { top: 69px; left: 0; height: 6px; width: 24.2%; background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%); background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%); background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#80ffffff', GradientType=1); }
+	  &:after { height: 462px; width: 6px; left: 24.2%; bottom: 0; background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(0, 0, 0, 0.5) 100%); background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(0, 0, 0, 0.5) 100%); background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(0, 0, 0, 0.5) 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#80000000', GradientType=0); }
 
 	  .item-map-garanty-img-wrap { box-shadow: 0 0 12px 0 rgba(0, 0, 0, .55); overflow: hidden;
 		.item-map-garanty-img-main { width: 800px; height: 531px; overflow: hidden; position: relative; left: calc(50% - 400px);
@@ -329,20 +329,59 @@
 
   .black-part { background-color: #000; position: relative; min-height: 780px; justify-content: flex-end;
 	.black-part-background { position: absolute; left: 0; bottom: 0; z-index: 0; }
-	.black-part-content { position: relative; z-index: 1; max-width: 865px; width: 100%; padding: 75px 10px 50px 10px;
+	.black-part-content { position: relative; z-index: 1; max-width: 865px; width: 100%; height: calc(100% - 50px); padding: 75px 10px 50px 10px; overflow: hidden;
+	  &:after { content: ''; display: block; position: absolute; width: 500px; height: 6px; background-color: #e36e76; left: 50%; bottom: 0; }
 
-		.parts-title{ text-align: center; margin-bottom: 120px;
-			h3{margin:0; font-size: 48px; font-weight: 700;color:#e36e76; text-transform: uppercase;}
+	  .parts-title { text-align: center; margin-bottom: 120px; position: relative;
+		&:before { content: ''; display: block; position: absolute; width: 6px; height: 500px; background-color: #7b5998; bottom: calc(50% - 3px); left: -9px; }
+
+		span { margin: 0; font-size: 48px; font-weight: 700; color: #e36e76; text-transform: uppercase; position: relative;
+		  &:before, &:after { content: ''; display: block; position: absolute; height: 6px; }
+
+		  &:before { left: calc(100% + 30px); top: calc(50% - 3px); background-color: #da6c79; width: 500px; }
+		  &:after { right: calc(100% + 30px); top: calc(50% - 3px); width: 162px; background: rgb(123, 89, 153); background: -moz-linear-gradient(left, rgba(123, 89, 153, 1) 0%, rgba(234, 112, 116, 1) 100%); background: -webkit-linear-gradient(left, rgba(123, 89, 153, 1) 0%, rgba(234, 112, 116, 1) 100%); background: linear-gradient(to right, rgba(123, 89, 153, 1) 0%, rgba(234, 112, 116, 1) 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7b5999', endColorstr='#ea7074', GradientType=1); }
+
+		}
+	  }
+
+	  .black-part-form { max-width: 405px; width: 100%; margin: 0 auto; position: relative;
+		&:after { content: ''; display: block; position: absolute; top: calc(100% + 50px); left: calc(50% - 3px); width: 6px; height: 500px; background-color: #e36e76; }
+
+		.form_row { margin-bottom: 30px;
+		  &:last-child { margin-bottom: 0; }
+
+		  .form_input { text-align: center;
+			input { max-width: 350px; width: 100%; padding: 23px 18px; border: 2px solid #e36e76; border-radius: 5px; background-color: transparent; color: #fff; text-align: center;
+			  &::-webkit-input-placeholder { color: #fff; font-size: 18px; font-weight: 300; }
+			  &:-moz-placeholder { color: #fff; font-size: 18px; font-weight: 300; }
+			  &::-moz-placeholder { color: #fff; font-size: 18px; font-weight: 300; }
+			  &:-ms-input-placeholder { color: #fff; font-size: 18px; font-weight: 300; }
+
+			  &.error{border-color:#f04950; background-color: rgba(240, 73, 89, .25); }
+
+			}
+		  }
+
+		  &.submit {
+			.transparent-button { font-size: 18px; text-transform: uppercase; font-weight: 700; margin: 0 auto;
+			  &.reverse-button { max-width: 350px; width: 100%; border-radius: 5px; height: 70px; }
+			}
+		  }
+
 		}
 
-	  	.black-part-form{ max-width:405px; width:100%;margin:0 auto;
-			.form_row{ margin-bottom: 20px;}
-		}
+	  }
 
 	}
   }
 
-  .white-part { justify-content: flex-start; max-width:865px; width:100%;padding:0 10px;}
+  .white-part { justify-content: flex-start;
+  	.white-part-content{ max-width: 865px; width: 100%; height: calc(100% - 50px); padding: 135px 20px 50px 20px; overflow: hidden; display: flex;flex-direction:column; align-items: center;
+
+		.parts-title{ font-weight: 700; font-size: 48px;color:#e36e76; text-align: center; max-width:550px; }
+
+	}
+  }
 
 }
 /* /item-map-service */
