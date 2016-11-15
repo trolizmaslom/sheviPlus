@@ -369,22 +369,4 @@
 
 /*END search-zapchasti------------------------------------------------------------------------------------------*/
 
-.onmain{ font-weight:700; text-decoration: none; font-size: 18px; color: #e36e76; text-transform: uppercase; width: 306px; height: 70px; border:3px solid #e36e76; text-align: center; line-height: 64px; display: inline-block; margin-top: 100px;
-    &:hover{ background-color: #e36e76; color: #fff;}
-}
-.item-map-perspective{
-    .mbox{max-width: 1380px;}
-    .titlius{ text-align: center;padding-top: 71px; display: flex; align-items:center; justify-content: space-around;
-        .txt{ font-size: 48px; font-weight: 700; color: #e36e76; display: inline-block; position: relative; text-transform: uppercase;
-            &:before{ content: ''; position: absolute; background-image: url(../images/angle01.png); width: 155px; height: 225px; bottom: 31px; left: -202px;}
-        }
-        .img{ display: inline-block;}
-    }
-    .content{ text-align: center; margin-bottom: 99px; padding-top: 38px;}
-}
-.item-map-breath{ text-align: center; position: relative;
-    .content{ text-align: center; position: relative; max-width: 1920px; display: block; margin: 0 auto;}
-    .txt{ font-size: 48px; font-weight: 700; color: #e36e76; display: inline-block; position: absolute; text-transform: uppercase; left:50%;       top: 151px; z-index: 100;
-        &:before{ content: ''; position: absolute; background-image: url(../images/angle02.png); width: 340px; height: 5px; bottom: 31px; left: calc(100% + 56px);}
-    }
-}
+

@@ -339,7 +339,7 @@
 		span { margin: 0; font-size: 48px; font-weight: 700; color: #e36e76; text-transform: uppercase; position: relative;z-index:1;padding:0 20px; background-color: #000; display: inline-block;}
 	  }
 
-	  .black-part-form { max-width: 405px; width: 100%; margin: 0 auto; position: relative;
+	  .black-part-form { max-width: 405px; width: 100%; margin: 0 auto 50px auto; position: relative;
 		&:after { content: ''; display: block; position: absolute; top: calc(100% + 50px); left: calc(50% - 3px); width: 6px; height: 500px; background-color: #e36e76; }
 
 		.form_row { margin-bottom: 30px;
@@ -353,8 +353,8 @@
 			  &:-ms-input-placeholder { color: #fff; font-size: 18px; font-weight: 300; }
 
 			  &.error{border-color:#f04950; background-color: rgba(240, 73, 89, .25); }
-
 			}
+			.errorText{ display: none!important;}
 		  }
 
 		  &.submit {
@@ -392,6 +392,37 @@
 }
 /* /item-map-service */
 
+/* item-map-breath */
+
+.item-map-breath{ text-align: center; position: relative;
+  .content{ text-align: center; position: relative; max-width: 1920px; display: block; margin: 0 auto;}
+  .txt{ font-size: 48px; font-weight: 700; color: #e36e76; display: inline-block; position: absolute; text-transform: uppercase; left:50%;       top: 151px; z-index: 100;
+	&:before{ content: ''; position: absolute; background-image: url(../images/angle02.png); width: 340px; height: 5px; bottom: 31px; left: calc(100% + 56px);}
+  }
+}
+
+/* /item-map-breath */
+
+/* item-map-perspective */
+
+.item-map-perspective{
+  .mbox{max-width: 1380px;}
+  .titlius{ text-align: center;padding-top: 71px; display: flex; align-items:center; justify-content: space-around;
+	.txt{ font-size: 48px; font-weight: 700; color: #e36e76; display: inline-block; position: relative; text-transform: uppercase;
+	  &:before{ content: ''; position: absolute; background-image: url(../images/angle01.png); width: 155px; height: 225px; bottom: 31px; left: -202px;}
+	}
+	.img{ display: inline-block;}
+  }
+  .content{ text-align: center; margin-bottom: 99px; padding-top: 38px;}
+
+  .button-wrap{ padding-top: 100px;
+	.transparent-button{ max-width:305px; height:70px; font-size: 18px; text-transform: uppercase;margin:0 auto;}
+  }
+
+}
+
+/* /item-map-perspecive */
+
 /* /item-map-info-main -------------------------------------------------------------- */
 
 /* fancyboxes -------------------------------------------------------------- */
@@ -404,7 +435,7 @@
 
   .where-uses { background-image: url(../images/uses-list-fancybox-background.jpg); background-position: center top; padding: 70px 0 50px 0; overflow: hidden;
 	.mbox {
-	  &:before { content: ''; display: block; position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 0); width: calc(100% - 20px); max-width: 1420px; height: 6px; background: rgb(235, 112, 115); background: -moz-linear-gradient(left, rgba(235, 112, 115, 1) 0%, rgba(123, 89, 153, 1) 100%); background: -webkit-linear-gradient(left, rgba(235, 112, 115, 1) 0%, rgba(123, 89, 153, 1) 100%); background: linear-gradient(to right, rgba(235, 112, 115, 1) 0%, rgba(123, 89, 153, 1) 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eb7073', endColorstr='#7b5999', GradientType=1); }
+	  &:before { content: ''; display: block; position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 0); width: calc(100% - 40px); max-width: 1420px; height: 6px; background: rgb(235, 112, 115); background: -moz-linear-gradient(left, rgba(235, 112, 115, 1) 0%, rgba(123, 89, 153, 1) 100%); background: -webkit-linear-gradient(left, rgba(235, 112, 115, 1) 0%, rgba(123, 89, 153, 1) 100%); background: linear-gradient(to right, rgba(235, 112, 115, 1) 0%, rgba(123, 89, 153, 1) 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eb7073', endColorstr='#7b5999', GradientType=1); }
 	}
 	.where-uses-wrap { color: #fff; max-width: 1420px; width: 100%; margin: 0 auto; position: relative; padding-bottom: 30px;
 	  &:before, &:after { content: ''; display: block; position: absolute; width: 6px; bottom: 0; }
@@ -446,5 +477,14 @@
 
 }
 /* /uses-list-fancybox */
+
+/* call-success */
+
+	.call-success{ text-align: center;padding:20px 10px;
+	  .call-title{ font-size:28px; font-weight: 700; margin-bottom: 10px;}
+	  .call-subtitle{ font-size: 20px;}
+	}
+
+/* /call-success */
 
 /* /fancyboxes -------------------------------------------------------------- */

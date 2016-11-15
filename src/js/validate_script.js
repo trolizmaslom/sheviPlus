@@ -122,7 +122,7 @@ function popNext(popupId, popupWrap) {
 
     $.fancybox.open(popupId, {
         padding: 0,
-        fitToView: false,
+        fitToView: true,
         wrapCSS: popupWrap,
         autoSize: true,
         afterClose: function () {
@@ -237,7 +237,10 @@ function clarifyPopInfo() {
 
 $(document).ready(function () {
     clarifyPopInfo();
+
     validate('.clarify-middle .clarify-form form', {submitFunction: validationCall});
+    validate('.service-form', {submitFunction: validationCall});
+
     Maskedinput();
     fancyboxForm();
     showMoreFunc();
