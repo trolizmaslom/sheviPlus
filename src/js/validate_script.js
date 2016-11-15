@@ -235,11 +235,21 @@ function clarifyPopInfo() {
     })
 }
 
+function productTubs() {
+    $('.item-map-tubs-top-wrap li').click(function(){
+        var i = $(this).index();
+        $('.item-map-tubs-top-wrap li').removeClass('active');
+        $('.item-map-tubs-top-wrap li').eq(i).addClass('active');
+
+        $('.item-map-tubs-middle-wrap>.item').removeClass('active').eq(i).addClass('active');
+    });
+}
+
 $(document).ready(function () {
     clarifyPopInfo();
     validate('.clarify-middle .clarify-form form', {submitFunction: validationCall});
     Maskedinput();
     fancyboxForm();
     showMoreFunc();
-
+    productTubs();
 });

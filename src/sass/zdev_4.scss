@@ -231,3 +231,23 @@ $r:#f2535a;
 	}
   }
 }
+
+
+
+//item-map-tubs
+.item-map-tubs{
+  .item-map-tubs-top{ width:100%;max-width:870px; padding-bottom:50px; padding-top:60px;
+	ul{ display:flex;margin:0;padding:0;list-style-type:none;
+		li{ width:20%; text-align:center; border-bottom:2px solid #e6e6e6;cursor:pointer; text-transform:uppercase; font-size:18px; color:#595959;padding: 8px 5px; font-weight:600;
+			&.active{border-color:$r;}
+		}
+	}
+	
+  }
+  .item-map-tubs-middle{ position:relative;
+	.item-map-tubs-middle-wrap{min-height:300px;}
+  	.item{ position:absolute; left:0; width:100%; right:0; top:0; z-index:-1; visibility:hidden; opacity:0;transition:all ease .2s;
+	  &.active{ z-index:2; opacity:1; visibility:visible; position:relative;}
+	}
+  }
+}
