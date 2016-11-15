@@ -88,10 +88,7 @@ function popApShow(){
             wrapCSS:'fancybox-product',
             'closeBtn' : false,
             beforeShow:function(){
-                console.log($('.slider-big-wrap .item').width());
                 setTimeout(function(){goSlider()},50)
-
-                console.log($('.slider-big-wrap .item').width());
             },
             afterClose: function(){
                 $('.popup-hidden').removeAttr('style');
