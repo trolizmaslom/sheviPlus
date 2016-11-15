@@ -122,7 +122,7 @@ function popNext(popupId, popupWrap) {
 
     $.fancybox.open(popupId, {
         padding: 0,
-        fitToView: false,
+        fitToView: true,
         wrapCSS: popupWrap,
         autoSize: true,
         afterClose: function () {
