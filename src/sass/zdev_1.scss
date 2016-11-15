@@ -325,11 +325,29 @@
         .first, .second{ display: none;
             &.active{ display: block;}
         }
-        .services{ background-image: url(../images/srvbg.png); background-size:cover; min-height: 780px; background-position: 50%;
-
+        .services{ background-image: url(../images/srvbg.png); background-size:cover; min-height: 780px; background-position: 50%; padding-top: 84px; margin-top: 49px; padding-bottom: 50px;
+            .img{ position: absolute; right: 0; top:calc(50% - 284px); z-index: 1; }
+            .txt{ position: relative; z-index: 100; padding-bottom: 72px;
+                .top{ position: absolute; background-color: #eb7073; height: 5px; width: calc(100% - 530px); right: 0; top: 32px;}
+                .bott{ position: absolute; background-color: #7b5999; height: 5px; width: 200%; right: 0; bottom: 0;}
+                .right{ background-image: url(../images/gradation.png); width: 5px; position: absolute; height: calc(100% - 32px); background-size: 100% 100%; bottom: 0; right: 0;}
+                .name{ font-weight: 900; font-size: 48px; color: #eb7073; padding-bottom: 42px;}
+                .subttl{ font-size: 20px; color: #fff; line-height: 35px; margin-bottom: 68px;}
+                .txt-container{width: 100%; max-width: 533px;}
+                .but{ width: 244px; height: 80px; border:5px solid #eb7073; display: block; text-align: center; line-height: 70px; font-weight: 700; font-size: 18px; color: #fff; text-decoration: none;
+                    &:hover{ background-color: #eb7073;}
+                }
+                .but-wrap{ justify-content: space-between; margin-bottom: 62px;}
+                .price{
+                    p{ margin: 0; font-size: 24px; color: #fff;
+                        b{ font-weight: 800; font-size: 30px;}
+                        .tel{ color: #eb7073; font-weight: 900; font-size: 48px;}
+                    }
+                }
+            }
         }
     }
-    .item-catalogius{border:1px solid #f3f3f3; border-radius: 5px; overflow: hidden; width: 405px; padding-top: 31px; margin-bottom: 31px;
+    .item-catalogius{border:1px solid #f3f3f3; border-radius: 5px; overflow: hidden; width: 405px; padding-top: 31px; margin-bottom: 31px; cursor: pointer;
         &:hover{box-shadow: 3.83px 3.214px 13.5px 1.5px rgba(0, 0, 0, 0.17);}
         .img{ text-align: center; border-bottom:1px solid #f3f3f3;  height: 169px;}
         .name{padding: 13px 29px 0; line-height: 30px;}
