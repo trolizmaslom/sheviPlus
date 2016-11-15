@@ -72,6 +72,21 @@ function mobileHeader(){
         $('.header .menu').removeClass('active');
     });
 }
+function serchHeader() {
+    $('.header-bot .search-button-s').click(function () {
+        if(!$(this).hasClass('active')){
+            $(this).addClass('active');
+            $('.search-hidden').stop().slideDown();
+        }
+    });
+    $('.search-hidden .close-this').click(function () {
+        $('.search-hidden').stop().slideUp();
+        $('.header-bot .search-button-s').removeClass('active');
+    });
+    $('.autocomplete input').autocomplete({
+        source: listArray
+    });
+}
 function tabusStart() {
     $('.search-zapchasti .tabson').click(function () {
         if(!$(this).hasClass('active')){
@@ -87,12 +102,14 @@ function tabusStart() {
 
     });
 }
+
 $(document).ready(function(){
     shovDropdown();
     acordeon();
     focusPokus();
     mobileHeader();
     tabusStart();
+    serchHeader();
     if($('.search-block select').length>0)$('.search-block select').styler();
     if($('.search-zapchasti .titl select').length>0)$('.search-zapchasti .titl select').styler();
 });
