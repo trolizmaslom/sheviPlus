@@ -117,55 +117,6 @@ function validationCall(form) {
     });
 }
 
-/* Отправка формы с файлом */
-/* не использовать input[type="file"] в форме и не забыть дописать форме enctype="multipart/form-data" */
-function validationCallDocument(form) {
-
-    var thisForm = $(form);
-    var formData = new FormData($(form)[0]);
-
-    formData.append('file', thisForm.find('input[type=file]')[0].files[0]);
-
-    $.ajax({
-        url: thisForm.attr('action'),
-        type: "POST",
-        data: formData,
-        contentType: false,
-        processData: false,
-        cache: false,
-        success: function (response) {
-            thisForm.trigger("reset");
-            popNext("#call_success", "call-popup");
-        }
-    });
-
-}
-
-/* Отправка формы с файлaми */
-/* не использовать input[type="file"] в форме и не забыть дописать форме enctype="multipart/form-data" */
-function validationCallDocuments(form) {
-
-    var thisForm = $(form);
-    var formData = new FormData($(form)[0]);
-
-    $.each(thisForm.find('input[type="file"]')[0].files, function (index, file) {
-        formData.append('file[' + index + ']', file);
-    });
-
-    $.ajax({
-        url: thisForm.attr('action'),
-        type: "POST",
-        data: formData,
-        contentType: false,
-        processData: false,
-        cache: false,
-        success: function (response) {
-            thisForm.trigger("reset");
-            popNext("#call_success", "call-popup");
-        }
-    });
-
-}
 
 function popNext(popupId, popupWrap) {
 
@@ -210,37 +161,6 @@ function fancyboxForm() {
     })
 }
 
-//ajax func for programmer
-
-function someAjax(item, someUrl, successFunc, someData) {
-
-    $(document).on('click', item, function (e) {
-
-        e.preventDefault();
-
-        var itemObject = $(this);
-        var ajaxData = null;
-
-        if (typeof someData == 'function') {
-            ajaxData = someData(itemObject);
-        } else {
-            ajaxData = someData;
-        }
-
-        console.log(ajaxData);
-
-        $.ajax({
-            url: someUrl,
-            data: ajaxData,
-            method: 'POST',
-            success: function (data) {
-                successFunc(data, itemObject);
-            }
-        });
-
-    });
-
-}
 
 function showMoreFunc() {
     if ($('.show-more-product').length > 0) {
@@ -264,20 +184,19 @@ function showMoreFunc() {
 }
 
 function clarifyPopInfo() {
-    var holder, title, mainImg, markImg, id;
+    var holder, title, mainImg, markImg;
 
     $(document).on('click', '.clarify-pop-show', function (e) {
         e.preventDefault();
         holder = $(this).parents('.clarify-info-all');
-        id = holder.attr('data-id');
         title = holder.find('.clarify-info-title').text();
         mainImg = holder.find('.clarify-info-img img').first().attr('src');
-        markImg = holder.find('.clarify-info-mark-img img').attr('src');
+        markImg = holder.find('.clarify-info-mark-img img').attr('src') || holder.attr('data-mark-img-path');
 
         $('#pop-clarify .clarify-product-title').text(title);
 
-        if (typeof id != 'undefined'){
-            $('#pop-clarify .clarify-product-id').val(id);
+        if (typeof title != 'undefined'){
+            $('#pop-clarify .clarify-product-title-name').val(title);
         }
         if (typeof mainImg != 'undefined'){
             $('#pop-clarify .clarify-img img').attr('src',mainImg);
@@ -294,10 +213,9 @@ function clarifyPopInfo() {
             padding: 0,
             margin:[20,0,20,0],
             width:'100%',
-            // scrolling: 'visible',
             autoSize: false,
             fitToView:true,
-            //autoResize:true,
+            minHeight:765,
             wrapCSS:'fancybox-clarify',
             'closeBtn' : false,
             afterClose: function () {
@@ -305,11 +223,16 @@ function clarifyPopInfo() {
             }
         });
     });
+
+    $(document).on('click','.clarify-button .transparent-button',function(event){
+        event.preventDefault();
+        $.fancybox.close();
+    })
 }
 
 $(document).ready(function () {
     clarifyPopInfo();
-    validate('#call-popup .contact-form', {submitFunction: validationCall});
+    validate('.clarify-middle .clarify-form form', {submitFunction: validationCall});
     Maskedinput();
     fancyboxForm();
     showMoreFunc();
