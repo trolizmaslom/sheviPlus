@@ -185,6 +185,11 @@ function showMoreFunc() {
 
 function clarifyPopInfo() {
     var holder, title, mainImg, markImg;
+    var autoSize = false;
+
+    if ($(window).width() < 992 ){
+        autoSize = true;
+    }
 
     $(document).on('click', '.clarify-pop-show', function (e) {
         e.preventDefault();
@@ -213,7 +218,7 @@ function clarifyPopInfo() {
             padding: 0,
             margin:[20,0,20,0],
             width:'100%',
-            autoSize: false,
+            autoSize: autoSize,
             fitToView:true,
             minHeight:765,
             wrapCSS:'fancybox-clarify',
