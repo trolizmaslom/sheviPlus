@@ -237,7 +237,10 @@ function clarifyPopInfo() {
 
 $(document).ready(function () {
     clarifyPopInfo();
+
     validate('.clarify-middle .clarify-form form', {submitFunction: validationCall});
+    validate('.service-form', {submitFunction: validationCall});
+
     Maskedinput();
     fancyboxForm();
     showMoreFunc();

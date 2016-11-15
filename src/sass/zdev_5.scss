@@ -353,8 +353,8 @@
 			  &:-ms-input-placeholder { color: #fff; font-size: 18px; font-weight: 300; }
 
 			  &.error{border-color:#f04950; background-color: rgba(240, 73, 89, .25); }
-
 			}
+			.errorText{ display: none!important;}
 		  }
 
 		  &.submit {
