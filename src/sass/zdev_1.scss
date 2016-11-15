@@ -2,8 +2,8 @@
 /*header-----------------------------------------------------------------------------------------*/
     header{
         .header-top{ background-color: #321149; padding: 23px 0;
-            .logo{color: #fff; font-size:48px; font-weight: 900; text-transform: uppercase; width:400px; white-space: nowrap;
-                p{ margin: 0;}
+            .logo{ width:400px; white-space: nowrap;
+                a{ color: #fff; font-size:48px; font-weight: 900; text-transform: uppercase; text-decoration: none;}
             }
             .socials-wrap{ width: 100%; padding-right: 53px;
                 .blog{ display: inline-block; margin-right: 19px;}
@@ -16,16 +16,24 @@
                 .vk{ background-image: url(../images/soc-vk.png);}
             }
         }
-        .header-bot{ padding: 19px 0;     box-shadow: 0px 0px 20px;
+        .header-bot{ padding: 19px 0;     box-shadow: 0px 0px 20px; position: relative;
             .nav{list-style-type: none; margin: 0; padding: 0; display: flex; justify-content:space-between; width: 100%;
                 li{ display: inline-block;}
                 a{  font-size: 14px; color:#595959; text-decoration: none; text-transform: uppercase;}
                 a:hover{ text-decoration: underline;}
             }
+            .search-button{ font-size: 14px; text-transform: uppercase; display: block; border: 2px solid #f04950; color: #f04950; text-align: center; height: 60px; border-radius:30px; line-height: 56px; width: 100%; padding-left: 18px; cursor: pointer;
+                &:before{ position: absolute; content: ''; background-image: url(../images/search.png); width: 20px; height: 20px; background-position: 50%; background-repeat: no-repeat; left: 19px; top: 20px; background-size: cover;}
 
+            }
             .tel-box{white-space: nowrap; margin-left: 56px;}
             .tel{ font-weight: 900; font-size: 30px; color:#f2535a;}
             .txt{ font-size: 12px; color:#595959; text-transform: uppercase;}
+            .search-hidden{ position: absolute; top: 0; left: 0; width: 100%; background-color: #fff; display: none;
+                .result{
+
+                }
+            }
         }
         .mobile{ display: none;}
         .header{ background-color: #321149; position: relative; padding: 13px 0 11px;
@@ -242,8 +250,8 @@
     }
 /*END dostavka page------------------------------------------------------------------------------------------*/
 /*search-zapchasti------------------------------------------------------------------------------------------*/
-    .search-zapchasti{
-        .content{ padding-top: 6px; padding-bottom: 150px;
+    .search-zapchasti{padding-bottom: 150px;
+        .content{ padding-top: 6px;
             .row{ padding-top: 40px;}
             .left{ width: 405px; margin-right: 30px; float: left;}
             .right{ width:calc(100% - 435px); float: left;}
@@ -292,7 +300,13 @@
                     a:hover{ text-decoration: underline;}
                 }
             }
-            .items{ }
+
+
+        }
+        .first, .second{ display: none;
+            &.active{ display: block;}
+        }
+        .services{ background-image: url(../images/srvbg.png); background-size:cover; min-height: 780px; background-position: 50%;
 
         }
     }

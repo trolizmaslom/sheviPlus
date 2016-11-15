@@ -8,10 +8,9 @@
             padding: 0,
             margin:[20,0,20,0],
             width:'100%',
-            scrolling: 'visible',
+            minHeight:760,
             autoSize: false,
-            fitToView:false,
-            autoResize:true,
+            fitToView:true,
             closeBtn:false
         });
 
