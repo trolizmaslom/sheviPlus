@@ -103,6 +103,16 @@
 
   /* /item-map-garanty */
 
+  /* item-map-video */
+
+  	.item-map-video{
+	  .item-map-section-title{
+		h3{ font-size: 32px; padding-right:240px;}
+	  }
+	}
+
+  /* /item-wrap-video */
+
   /* /item-map-info-main -------------------------------------------------------------- */
 
 }
@@ -313,6 +323,19 @@
   }
 
   /* /item-map-garanty */
+
+  /* item-map-video */
+
+  .item-map-video{
+	.item-map-section-title{
+	  h3{ font-size: 22px; padding-right: 180px;
+		&:before{ width: 140px;}
+		&:after{ height: 165px;}
+	  }
+	}
+  }
+
+  /* /item-wrap-video */
 
   /* /item-map-info-main -------------------------------------------------------------- */
 
@@ -623,6 +646,26 @@
 
   /* /item-map-garanty */
 
+  /* item-map-video */
+
+  .item-map-video{
+
+	.item-map-section-title{ text-align: left;
+	  h3{ font-size: 18px; padding-right: 0px; padding-left: 100px;
+		&:before, &:after{right:auto;top:auto;}
+		&:before{left:20px; width:60px;height:3px;bottom:10px;background: rgb(123,89,152); background: -moz-linear-gradient(left, rgba(123,89,152,1) 0%, rgba(123,89,152,1) 0%, rgba(235,112,115,1) 100%); background: -webkit-linear-gradient(left, rgba(123,89,152,1) 0%,rgba(123,89,152,1) 0%,rgba(235,112,115,1) 100%); background: linear-gradient(to right, rgba(123,89,152,1) 0%,rgba(123,89,152,1) 0%,rgba(235,112,115,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7b5998', endColorstr='#eb7073',GradientType=1 );}
+		&:after{left:20px; height: 70px; width:3px;top:calc(100% - 10px);}
+	  }
+	}
+
+	.video-block {
+	  iframe { height: 400px; }
+	}
+
+  }
+
+  /* /item-wrap-video */
+
   /* /item-map-info-main -------------------------------------------------------------- */
 
   /* fancyboxes -------------------------------------------------------------- */
@@ -757,6 +800,25 @@
   }
 
   /* /item-map-garanty */
+
+  /* item-map-video */
+
+  .item-map-video{
+
+	.item-map-section-title {
+	  h3 { font-size: 16px; padding-left: 65px;
+	  	&:before{ width: 40px;}
+		&:after{ height:40px;}
+	  }
+	}
+
+	.video-block {
+	  iframe { height: 300px; }
+	}
+
+  }
+
+  /* /item-wrap-video */
 
   /* /item-map-info-main -------------------------------------------------------------- */
 
