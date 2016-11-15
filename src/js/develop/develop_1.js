@@ -72,11 +72,27 @@ function mobileHeader(){
         $('.header .menu').removeClass('active');
     });
 }
+function tabusStart() {
+    $('.search-zapchasti .tabson').click(function () {
+        if(!$(this).hasClass('active')){
+
+            $('.search-zapchasti .tabson').removeClass('active');
+            $('.search-zapchasti .first').removeClass('active');
+            $('.search-zapchasti .second').removeClass('active');
+            $(this).addClass('active');
+            if($(this).hasClass('srv')){$('.search-zapchasti .second').addClass('active');}
+            if($(this).hasClass('zap')){$('.search-zapchasti .first').addClass('active');}
+
+        }else{return;}
+
+    });
+}
 $(document).ready(function(){
     shovDropdown();
     acordeon();
     focusPokus();
     mobileHeader();
+    tabusStart();
     if($('.search-block select').length>0)$('.search-block select').styler();
     if($('.search-zapchasti .titl select').length>0)$('.search-zapchasti .titl select').styler();
 });
