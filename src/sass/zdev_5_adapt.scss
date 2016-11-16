@@ -139,6 +139,20 @@
 
   /* /item-map-info-main -------------------------------------------------------------- */
 
+  
+  	//item-map-breath
+  .item-map-breath{
+	.txt{font-size: 36px;
+		&:before{ bottom:23px;}
+	}
+  }
+  
+  .item-map-perspective{
+	.titlius .txt{font-size: 36px;
+		&:before{ display:none;}
+	}
+  }
+  
 }
 @media screen and (max-width: 1024px) {
 
@@ -392,6 +406,17 @@
   /* /item-map-service */
 
   /* /item-map-info-main -------------------------------------------------------------- */
+  
+  .item-map-breath{
+	.txt{top: 40px;}
+	
+  }
+  .item-map-perspective {
+	.content{
+	  .flex-line-container{flex-wrap:wrap;}
+	  .img{ width:50%;}
+	}
+  }
 
 }
 @media screen and (max-width: 767px) {
@@ -582,6 +607,14 @@
   /* /uses-list-fancybox */
 
   /* /fancyboxes -------------------------------------------------------------- */
+  
+  
+  .item-map-breath .txt { font-size:26px;
+  	&:before{ display:none;}
+  }
+  
+  .item-map-perspective .titlius .txt{ font-size:26px;}
+  
 
 }
 @media screen and (max-width: 666px) {
@@ -773,7 +806,13 @@
   /* /uses-list-fancybox */
 
   /* /fancyboxes -------------------------------------------------------------- */
-
+  
+  
+  .item-map-breath .txt{ top:10px; font-size:18px;}
+  .item-map-perspective .content .img{ width:100%;}
+  
+  .item-map-perspective .titlius .txt{ font-size:18px;margin:0 10px;}
+  .item-map-perspective .button-wrap .transparent-button{max-width:280px; height:65px;}
 }
 @media screen and (max-width: 479px) {
 

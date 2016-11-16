@@ -183,22 +183,12 @@
   //fancybox pop-clarify
   #pop-clarify{
 	.product-title{
-	  h2,h1{}
-	  &:after{}
 	  &:before{ display:none;}
 	}
 	.pop-clarify-wrap{ padding: 30px 0px;}
 	.clarify-middle{ flex-direction:column;
-	  .clarify-img{ width:100%; margin-bottom:20px;
-		img{}
-	  }
+	  .clarify-img{ width:100%; margin-bottom:20px;}
 	  .clarify-form{width:100%;padding: 47px 8% 10px;
-		form{}
-		.form_row{
-		  p{}
-		  .form_input{ }
-		  input{}
-		}
 		.contact-submit{ width:100%;}
 	  }
 	  .clarify-button{ flex-direction:column-reverse;
@@ -265,33 +255,6 @@
 		}
 		.slider-big{ width:calc(100% - 80px - 10px); height:320px;
 		  .item{ height:320px; }
-		}
-	  }
-	  .product-description{
-		.row{}
-		.row-title{}
-		.row-text{
-		  p{}
-		}
-		.row-table{
-		  .table-row{
-			.item{
-			  &:first-child{
-				span{ }
-				&:after{}
-			  }
-			  &:last-child{}
-			}
-		  }
-		}
-	  }
-	  .product-logo{
-		.product-close-popup{}
-		a{}
-		.product-close-popup{}
-		.price-button{
-		  .item-text{}
-		  a{}
 		}
 	  }
 	}
@@ -387,25 +350,14 @@
 	  .product-description{
 		.row{ margin-bottom:20px;}
 		.row-title{ font-size:18px; margin-bottom:10px;}
-		.row-text{ font-size:12px;line-height:1.8;
-		  p{}
-		}
+		.row-text{ font-size:12px;line-height:1.8;}
 		.row-table{ font-size:13px;
-		  .table-row{ margin-bottom:15px;
-			.item{
-			  &:first-child{
-				span{ }
-				&:after{}
-			  }
-			  &:last-child{}
-			}
-		  }
+		  .table-row{ margin-bottom:15px;}
 		}
 	  }
 	  .product-logo{ padding-top:10px;
 		.product-close-popup{max-width:calc(100% - 44px);margin:30px 22px 0px;}
 		a{font-size:18px;}
-		.product-close-popup{}
 		.price-button{margin:10px 0 30px;max-width:100%;
 		  .item-text{ font-size:33px;}
 		  a{margin:0 auto;max-width:100%;}
