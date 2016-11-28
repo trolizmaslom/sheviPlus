@@ -65,6 +65,15 @@ img{vertical-align:bottom;border:0;max-width:100%;}
 .mbox{max-width:1750px;width:100%;margin:0 auto;position:relative;padding: 0 20px;}
 .mbox:after{content:"";clear:both;font-size:1px;line-height:1px;height:0;overflow:hidden;display:block;}
 
+/*titles------------------------------------------------------------------------------------------*/
+.title{padding: 49px 0 42px;
+  &.redline{ text-align:center; position:relative;
+	&:after{ width:42px; height:2px; background-color:$r; position:absolute; left:50%; transform:translateX(-50%); bottom:31px; content:'';}
+  }
+  h2{ margin: 0; font-weight: 700; font-size: 24px; text-transform: uppercase; color:#595959;letter-spacing: -0.5px;}
+}
+
+
 @media screen and (max-width: 1900px) {
 
     .mbox{ max-width:1450px;}
@@ -73,6 +82,11 @@ img{vertical-align:bottom;border:0;max-width:100%;}
 @media screen and (max-width: 1599px) {
 
     .mbox{ max-width:1276px;}
+	.title{padding: 46px 0 42px;
+	  &.redline:after{bottom:28px;}
+	  h2{font-size: 22px;}
+	}
+    
 
 }
 @media screen and (max-width: 1365px) {
@@ -165,13 +179,6 @@ input, textarea{
 
 
 /*END buttons----------------------------------------------------------------------------------------*/
-/*titles------------------------------------------------------------------------------------------*/
-.title{padding: 49px 0 42px;
-    &.redline{ text-align:center; position:relative;
-        &:after{ width:42px; height:2px; background-color:$r; position:absolute; left:50%; transform:translateX(-50%); bottom:31px; content:'';}
-    }
-    h2{ margin: 0; font-weight: 700; font-size: 24px; text-transform: uppercase; color:#595959;letter-spacing: -0.5px;}
-}
 
 /*END titles------------------------------------------------------------------------------------------*/
 /*fonts*/

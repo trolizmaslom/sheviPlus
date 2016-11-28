@@ -1,7 +1,41 @@
 @media screen and (max-width:1920px) {
 }
 @media screen and (max-width:1600px) {
+  
+  //  catalog-techcenter
+  .catalog-tech{
+	.row{ margin-bottom:44px; }
+	.title{ margin:0 0 37px; }
+	.row-head{ margin-bottom:30px; }
+	.row-body{
+	  .item-wrap{ padding:34px 33px 21px;
+		.item-title{ margin-bottom:42px; }
+		.item-row{ margin-bottom:24px; }
+	  }
+	}
+  }
+  
 }
+
+@media screen and (max-width: 1599px){
+  //  catalog-techcenter
+  .catalog-tech{
+	.row{ padding-top:17px; margin-bottom:33px;}
+	.title{ margin-bottom:0;}
+	.row-head{  }
+	.row-body{
+	  .item{ width:24.3%; margin-right:0.9%;}
+	  .item-wrap{padding: 22px 27px 21px;
+		.item-title{ font-size:22px; margin-bottom:45px;}
+		.item-row{ margin-bottom:30px;
+			&:last-child{ margin-bottom:0px;}
+		}
+	  }
+	}
+  }
+}
+
+
 @media screen and (max-width:1366px) {
   //item-map-top
   .item-map-top{
