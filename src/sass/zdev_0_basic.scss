@@ -65,6 +65,27 @@ img{vertical-align:bottom;border:0;max-width:100%;}
 .mbox{max-width:1750px;width:100%;margin:0 auto;position:relative;padding: 0 20px;}
 .mbox:after{content:"";clear:both;font-size:1px;line-height:1px;height:0;overflow:hidden;display:block;}
 
+@media screen and (max-width: 1900px) {
+
+    .mbox{ max-width:1450px;}
+
+}
+@media screen and (max-width: 1599px) {
+
+    .mbox{ max-width:1276px;}
+
+}
+@media screen and (max-width: 1365px) {
+
+    .mbox{max-width: 1230px}
+
+}
+@media screen and (max-width: 992px){ //was 1279
+
+    .mbox{ max-width:742px;}
+
+}
+
 .global-wrapper{ overflow: hidden;}
 
 /* /wraps styling*/
