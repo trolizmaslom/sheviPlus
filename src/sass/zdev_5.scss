@@ -324,7 +324,7 @@
 
 /* item-map-service */
 
-.item-map-service { display: flex; justify-content: space-between; align-items: stretch; flex-wrap: wrap;
+.item-map-service { display: flex; justify-content: space-between; align-items: stretch; flex-wrap: wrap;overflow: hidden;
   .black-part, .white-part { width: 50%; display: flex; align-items: flex-start; }
 
   .black-part { background-color: #000; position: relative; min-height: 780px; justify-content: flex-end;
