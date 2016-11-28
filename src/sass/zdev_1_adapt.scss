@@ -99,6 +99,27 @@
             ul li{ padding-bottom: 9px;}
         }
     }
+    .search-zapchasti{ padding-bottom: 0;
+        .services{min-height: 647px; padding-bottom: 0;
+            .img{ right: 53px;top: calc(50% - 194px); width: 53%; }
+            .txt{ padding-bottom: 50px;
+                .top{width: calc(100% - 461px); height: 4px; top: 26px;}
+                .bott{ height: 4px;}
+                .right{height: calc(100% - 26px); width: 4px;}
+                .name{ font-size: 40px; padding-bottom: 33px;}
+                .subttl{ font-size: 16px; line-height: 28px; margin-bottom: 60px;}
+                .txt-container{max-width: 440px;}
+                .but{ width: 200px; height: 66px; font-size: 15px; line-height: 56px; }
+
+                .price{
+                    p{ font-size: 20px;
+                        b{ font-size: 24px; }
+                        .tel{ font-size: 40px;}
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 1386px){
     header{
@@ -162,19 +183,49 @@
         }
     }
 }
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1300px){
+    header{
+        .mbox{ max-width:1200px;}
+    }
+    header .header-bot .search-button-s {
+        max-width: 281px;
+        font-size: 10px;
+        margin-left: 38px;
+    }
     .dostavka .car{ margin-top: 0;}
+    .top-block {
+        .mbox { max-width: 1200px; }
+    }
+    .search-block {
+        .mbox { max-width: 1241px; }
+        .item {width: 189px;}
+    }
+    .search-block .search-quad {  width: 290px;  margin-right: 14px;}
+    .catalog{
+        .mbox{max-width: 1253px;}
+        .item{ width: 190px;}
+    }
+    .catalog .group-wrap{ height: 50px;}
+    .catalog .name {
+        padding: 20px 0 0 19px;
+        height: 57px;
+    }
+    .footer .mbox {max-width: 836px; }
+    .catalog .row {
+        height: 387px;
+    }
 }
-@media screen and (max-width: 1024px){
 
-}
-@media screen and (max-width: 992px){
+@media screen and (max-width: 1140px){
     header{
         .desctop{ display: none;}
         .mobile{ display: block;}
     }
     .top-block-mobile{ display: block;}
     .top-block{ display: none;}
+    .title {
+        padding: 36px 0 21px;
+    }
     .footer {
         .mbox{ padding: 0 30px;}
         .top { display: none;}
@@ -188,11 +239,35 @@
         }
         .mobile{ display: block;}
     }
+    header .mbox,
+    .top-block .mbox,
+    .search-block .mbox,
+    .catalog .mbox{ padding: 0 28px;}
+    .search-block .item {
+        width: 172px;
+        margin-right: 8px;
+        &:last-child{ margin-right: 0;}
+    }
+    .search-block .search-quad {
+        width: 351px;
+        margin-right: 8px;
+        &:last-child{ margin-right: 0;}
+    }
+    .catalog{
+
+        .item{ width: 232px; margin-right:0;}
+    }
+    .search-zapchasti .content .left.menu{ display: none;}
+    .search-zapchasti .content .left{ width: 100%;}
+    .search-zapchasti .content .right{ width: 100%; padding-top: 40px;}
+    .search-zapchasti .content .titl .name{ float: left ; position: relative; bottom:auto; padding-top: 30px;}
+
 }
 @media screen and (max-width: 767px){
     .search-block .row{ justify-content: space-around;}
     .search-block .item{ margin-right: 0; margin-bottom: 20px;}
     .search-block .search-button{ margin-left: 0;}
+    .search-block .search-quad { margin-right: 0;}
 }
 @media screen and (max-width: 666px){
 
