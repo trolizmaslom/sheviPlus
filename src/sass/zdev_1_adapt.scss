@@ -1,14 +1,103 @@
 @media screen and (max-width: 1920px){
 
 }
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1620px){
+    header{
+        .mbox{max-width: 1450px;}
+        .header-top {padding: 17px 0 20px;
+            .logo a{ font-size: 40px;}
+            .socials-wrap { padding-right: 291px;
+                .soc{ width: 34px; height: 34px;}
+            }
+        }
+        .header-bot{padding: 16px 0;
+            .nav a{ font-size: 12px;}
+            .search-button-s{ max-width: 354px; height: 50px; line-height: 46px; font-size: 12px;
+                &:before{ width: 17px; height: 17px; top: 17px;}
+            }
+            .tel-box{ margin-left: 39px;}
+            .tel{ font-size: 25px;}
+            .txt{ font-size: 10px;}
+        }
 
-    header .header-bot{
+    }
+    .filled-button{ width: 165px; height: 34px; line-height: 30px; font-size: 15px;}
+    .top-block{height: 366px;
+        .mbox{max-width: 1464px;}
+        .content{ padding-top: 33px;    max-width: 478px;}
+        .top { margin-bottom: 24px;
+            border-bottom: 1px solid #f02128;
+            .txt{padding: 6px 0 0 45px;
+                p{ font-size: 15px;
+                    b{ font-size: 28px;}
+                    img{ width: 45px;}
+                }
+            }
+            .logo{ width: 141px;}
 
-        .search-button { margin-left: 10px;}
-        .tel-box{ margin-left: 15px;}
-        .tel{ font-size: 27px; }
+        }
+        .brand{ width: 114px; height: 84px;padding: 17px;}
+    }
+    .search-block{
+        .mbox{max-width: 1463px;}
+        .content { padding-bottom: 0; margin-bottom: 0;}
+        .item {       width: 221px;  margin-right: 20px;
 
+        }
+        .jq-selectbox{ height: 50px;}
+        .jq-selectbox__select{ line-height: 50px; font-size: 13.33px;padding: 0 40px 0 18px;}
+        .jq-selectbox__trigger-arrow{ right: 19px; top: 19px;}
+        .search-quad{ width: 340px; margin-right: 22px;        }
+        .button{ width: 66px;}
+    }
+    .title{padding: 46px 0 43px;
+        h2{ font-size: 20px;}
+    }
+    .submit-button{ height: 50px; line-height: 46px; font-size: 15px;
+        .search{ width: 15px; height: 15px; top: 15px; background-size:cover;}
+    }
+    .search-quad input{ height: 50px; line-height: 50px;}
+    .catalog{
+        .mbox{max-width: 1463px;}
+        .item{ width: 220px; margin-right: 20px; margin-bottom: 51px;}
+        .catalog .group-wrap {padding-left: 18px;}
+        .group{ font-size: 15px;}
+        .group-wrap {
+
+            padding-top: 15px;
+            padding-left: 19px;
+            height: 57px;}
+        .name {
+            font-weight: 700;
+            font-size: 15px;
+            padding: 14px 0 0 19px;
+            height: 71px;
+        }
+        .price{ font-size: 20px; height: 55px; line-height: 55px;
+            b{ font-size: 12px;}
+        }
+        .getprice{ height: 46px; line-height: 46px; font-size: 14px;}
+        .row{ height: 430px;}
+        .content { padding-bottom: 0; margin-bottom: 0;}
+    }
+    .footer{
+        .mbox{max-width: 951px;}
+        .bot{ font-size: 14px; padding-top: 34px;}
+        .mid{ padding-bottom: 49px; padding-top: 29px;
+            .socials-wrap {
+                .soc{ width: 34px; height: 34px;}
+            }
+            .pay-wrap a {
+                margin-left: 3px;
+                cursor: pointer;
+                width: 66px;
+            }
+        }
+        .top{
+            ul a{ font-size: 15px;}
+            ul h5{ font-size: 20px;}
+            ul li{ padding-bottom: 9px;}
+        }
     }
 }
 @media screen and (max-width: 1366px){
