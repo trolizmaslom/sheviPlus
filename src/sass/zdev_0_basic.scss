@@ -92,11 +92,12 @@ img{ vertical-align:bottom; border:0; max-width:100%; }
   }
   
 }
-@media screen and (max-width:992px) { //was 1279
+@media screen and (max-width:1023px) { //was 1279
   
   .mbox{ max-width:742px; }
   
 }
+
 .global-wrapper{ overflow:hidden; }
 /* /wraps styling*/
 
