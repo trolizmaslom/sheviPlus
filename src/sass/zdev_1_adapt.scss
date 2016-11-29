@@ -1,5 +1,7 @@
-@media screen and (max-width: 1920px){
-
+.helpful{ justify-content: space-between; margin-bottom: 70px;
+    .item-catalogius{margin: 0 3px;
+        .price a { margin: 0 10px;}
+    }
 }
 @media screen and (max-width: 1620px){
     header{
@@ -101,7 +103,7 @@
     }
     .search-zapchasti{ padding-bottom: 0;
         .services{min-height: 647px; padding-bottom: 0;
-            .img{ right: 53px;top: calc(50% - 194px); width: 53%; }
+            .img{ right: 53px; width: 53%; }
             .txt{ padding-bottom: 50px;
                 .top{width: calc(100% - 461px); height: 4px; top: 26px;}
                 .bott{ height: 4px;}
@@ -119,6 +121,24 @@
                 }
             }
         }
+    }
+    .helpful{
+        .item-catalogius{ width: 340px;
+            .img{ height: 134px; padding: 0 96px; margin: 0 auto;}
+            .name{ font-size: 14px;    padding: 11px 20px 0;                line-height: 25px;}
+            .properties{ font-size: 12px;padding: 17px 29px 0;
+                p{ margin: 0 0 10px;}
+                b{}
+            }
+            .tags{ min-height: 65px;
+                span{ height: 25px; line-height: 21px; font-size: 10px;    padding: 0 21px;}
+            }
+            .price{ height: 70px; font-size:14px;
+                b{ font-size: 20px;}
+                a{ width: 155px; height: 40px; font-size: 10px; line-height: 36px; margin: 0 10px;}
+            }
+        }
+
     }
 }
 @media screen and (max-width: 1386px){
@@ -182,6 +202,11 @@
             ul li { padding-bottom: 5px;}
         }
     }
+    .search-zapchasti .services .txt .name{ padding-bottom: 14px;}
+    .search-zapchasti .services .txt .subttl{ margin-bottom: 39px;}
+    .search-zapchasti .services .txt .but-wrap{ margin-bottom: 41px;}
+    .search-zapchasti .services .img{        right: 0;  width: 56%; }
+    .search-zapchasti .services {        min-height: 600px;}
 }
 @media screen and (max-width: 1300px){
     header{
@@ -214,9 +239,20 @@
     .catalog .row {
         height: 387px;
     }
+    .search-zapchasti .services{ padding-top: 55px;min-height: 549px;}
+    .helpful .item-catalogius .price a{ width: 135px;}
 }
 
 @media screen and (max-width: 1140px){
+    .title.redline:after {
+        bottom: 22px;
+    }
+    .helpful{flex-wrap: wrap; justify-content: space-around;
+        .item-catalogius{ margin: 0 20px 20px;}
+    }
+    .search-zapchasti .services .img{ display: none;}
+    .search-zapchasti .services .txt .txt-container{ margin: 0 auto;}
+    .search-zapchasti .services .txt .top {width: calc(50% - 220px);}
     header{
         .desctop{ display: none;}
         .mobile{ display: block;}
@@ -261,16 +297,50 @@
     .search-zapchasti .content .left{ width: 100%;}
     .search-zapchasti .content .right{ width: 100%; padding-top: 40px;}
     .search-zapchasti .content .titl .name{ float: left ; position: relative; bottom:auto; padding-top: 30px;}
-
+    .search-zapchasti .content .titl .sort{ position: absolute; right: 0; bottom: 7px;}
 }
 @media screen and (max-width: 767px){
     .search-block .row{ justify-content: space-around;}
     .search-block .item{ margin-right: 0; margin-bottom: 20px;}
     .search-block .search-button{ margin-left: 0;}
     .search-block .search-quad { margin-right: 0;}
+    .search-zapchasti .content .right.titl{ display: none;}
+
+    .search-zapchasti {
+        .services {padding-top: 18px;
+            .txt {
+                .name{ font-size: 48px; padding-bottom: 6px;}
+                .subttl{ font-size: 20px; line-height: 36px;}
+                .top,
+                .bott,
+                .right { display: none; font-size: 18px;}
+                .but-wrap{flex-wrap: wrap; justify-content: space-around;}
+                .but{ margin-bottom: 28px; width: 260px; height: 80px; line-height: 70px;}
+                .price{
+                    p{ font-size: 24px;
+                        b{ font-size: 30px; }
+                        .tel{ font-size: 30px;}
+                    }
+                }
+            }
+        }
+    }
+
 }
 @media screen and (max-width: 666px){
+    .item-catalogius{ width: 100%;}
+    .item-catalogius .tags span{margin-bottom: 10px;}
+    .item-catalogius .price{flex-wrap: wrap; justify-content: space-around; flex-direction: column-reverse; height: auto; padding: 15px 0;}
 
+    .item-catalogius .price .prc{ width: 100%; text-align: center; margin-bottom: 15px;}
+    .helpful{
+        .item-catalogius{ width: 100%;}
+        .item-catalogius .img{ height: auto; padding: 0;}
+        .item-catalogius .tags span{margin-bottom: 10px;}
+        .item-catalogius .price{flex-wrap: wrap; justify-content: space-around; flex-direction: column-reverse; height: auto; padding: 15px 0;}
+
+        .item-catalogius .price .prc{ width: 100%; text-align: center; margin-bottom: 15px;}
+    }
 }
 @media screen and (max-width: 479px){
     .catalog .item{ margin-right: 0;}

@@ -1,4 +1,4 @@
-<div class="row flex-box-container">
+<div class="row helpful flex-line-container">
     <div class="item-catalogius">
         <div class="item-catalogius-wrap clarify-info-all" data-mark-img-path="images/product-logo.png">
             <div class="img clarify-info-img"><img src="images/catal-it.png" alt=""></div>
