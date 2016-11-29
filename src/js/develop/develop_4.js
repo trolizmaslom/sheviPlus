@@ -77,6 +77,16 @@ function showProductText() {
 function popApShow(){
 
     var popap;
+    var closeBtn = false;
+
+    if($(window).width() <= 992){
+        closeBtn = true;
+    }
+    $(window).resize(function(){
+        if($(window).width() <= 992){
+            closeBtn = true;
+        }
+    });
 
     function goFancy() {
         $.fancybox.open({
@@ -86,9 +96,9 @@ function popApShow(){
             autoResize:true,
             margin:[20,0,20,0],
             wrapCSS:'fancybox-product',
-            'closeBtn' : false,
+            'closeBtn' : closeBtn,
             beforeShow:function(){
-                setTimeout(function(){goSlider()},50)
+                setTimeout(function(){goSlider()},100)
             },
             afterClose: function(){
                 $('.popup-hidden').removeAttr('style');
@@ -115,6 +125,7 @@ function popApShow(){
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
+            swipe:false,
             fade: true,
             asNavFor: '.fancy-product-wrap .slider-mini-wrap'
         });
