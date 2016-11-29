@@ -309,46 +309,28 @@
     .search-zapchasti .content .right{ width: 100%; padding-top: 40px;}
     .search-zapchasti .content .titl .name{ float: left ; position: relative; bottom:auto; padding-top: 30px;}
     .search-zapchasti .content .titl .sort{ position: absolute; right: 0; bottom: 7px;}
-}
-@media screen and (max-width: 1024px){
+
+
+
+
     /* about-lists */
-
-    .about-lists-wrap {
-        .about-lists {
-            .about-list {
-                h3 { font-size: 20px; line-height: 1.25; }
-            }
-        }
-    }
-
-    /* /about-lists */
-}
-@media screen and (max-width: 992px){
-    /* about-circles */
-
-    .about-circles-wrap {
-
-        .about-circles-row {
-            .about-circles-items {
-                .about-circles-item { width: 33.33%; }
-            }
-        }
-
-    }
-
-    /* /about-circles */
-    /* about-lists */
-
+    .about-lists-wrap .about-lists .about-list h3{ font-size: 24px;}
+    .about-lists-wrap .about-lists .about-list{ font-size: 16px;}
+    .about-circles-wrap .about-circles-row .about-circles-items .about-circles-item{ width: 50%;}
     .about-lists-wrap {
 
         .about-lists { flex-wrap: wrap; justify-content: center;
-            .about-list { width: 50%; margin-bottom: 40px; }
+            .about-list { width: 100%; margin-bottom: 40px; max-width: none; }
         }
 
         .about-lists-img { margin-top: -100px; }
 
     }
-
+    .about-author-wrap {
+        padding: 73px 0 100px 0;
+    }
+    .about-author-wrap .about-autor .about-autor-title{ font-size: 30px;}
+    .about-author-wrap .about-autor .about-autor-tel a{ font-size: 36px;}
     /* /about-lists */
 }
 @media screen and (max-width: 767px){
@@ -417,6 +399,13 @@
 
         .item-catalogius .price .prc{ width: 100%; text-align: center; margin-bottom: 15px;}
     }
+    .about-circles-wrap .about-circles-row .about-circles-items .about-circles-item{ width: 100%;}
+    .about-author-wrap .about-autor .about-autor-title{ font-size: 18px;}
+    .about-author-wrap .about-autor .about-autor-tel a{ font-size: 18px;}
+    .about-author-wrap .about-autor .about-autor-text{ font-size: 14px;}
+    .about-circles-wrap .about-circles-row:before{ width: 45px;}
+    .about-circles-wrap .about-circles-row .about-circles-title{ padding-left: 50px;}
+    .about-author-wrap .about-autor .about-autor-img{ width: 185px; height: 185px;}
 }
 @media screen and (max-width: 479px){
     .catalog .item{ margin-right: 0;}
