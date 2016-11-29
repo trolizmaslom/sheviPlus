@@ -325,8 +325,8 @@
         .first, .second{ display: none;
             &.active{ display: block;}
         }
-        .services{ background-image: url(../images/srvbg.png); background-size:cover; min-height: 780px; background-position: 50%; padding-top: 84px; margin-top: 49px; padding-bottom: 50px;
-            .img{ position: absolute; right: 0; top:calc(50% - 284px); z-index: 1; }
+        .services{ background-image: url(../images/srvbg.png); background-size:cover; min-height: 780px; background-position: 50%; padding-top: 84px; margin-top: 49px; padding-bottom: 50px; position: relative;
+            .img{ position: absolute; right: 0; top:50%; transform:translateY(-50%); z-index: 1; }
             .txt{ position: relative; z-index: 100; padding-bottom: 72px;
                 .top{ position: absolute; background-color: #eb7073; height: 5px; width: calc(100% - 530px); right: 0; top: 32px;}
                 .bott{ position: absolute; background-color: #7b5999; height: 5px; width: 200%; right: 0; bottom: 0;}
