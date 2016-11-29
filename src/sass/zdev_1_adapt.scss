@@ -1,7 +1,6 @@
-.helpful{ justify-content: space-between; margin-bottom: 70px;
-    .item-catalogius{margin: 0 3px;
-        .price a { margin: 0 10px;}
-    }
+.helpful{ justify-content: space-between; margin-bottom: 70px;}
+.item-catalogius{margin: 0 3px;
+    .price a { margin: 0 10px;}
 }
 @media screen and (max-width: 1620px){
     header{
@@ -122,7 +121,7 @@
             }
         }
     }
-    .helpful{
+
         .item-catalogius{ width: 340px;
             .img{ height: 134px; padding: 0 96px; margin: 0 auto;}
             .name{ font-size: 14px;    padding: 11px 20px 0;                line-height: 25px;}
@@ -139,7 +138,7 @@
             }
         }
 
-    }
+
 }
 @media screen and (max-width: 1386px){
     header{
@@ -240,7 +239,7 @@
         height: 387px;
     }
     .search-zapchasti .services{ padding-top: 55px;min-height: 549px;}
-    .helpful .item-catalogius .price a{ width: 135px;}
+   .item-catalogius .price a{ width: 135px;}
 }
 
 @media screen and (max-width: 1140px){
@@ -299,7 +298,46 @@
     .search-zapchasti .content .titl .name{ float: left ; position: relative; bottom:auto; padding-top: 30px;}
     .search-zapchasti .content .titl .sort{ position: absolute; right: 0; bottom: 7px;}
 }
+@media screen and (max-width: 1024px){
+    /* about-lists */
+
+    .about-lists-wrap {
+        .about-lists {
+            .about-list {
+                h3 { font-size: 20px; line-height: 1.25; }
+            }
+        }
+    }
+
+    /* /about-lists */
+}
+@media screen and (max-width: 992px){
+    /* about-lists */
+
+    .about-lists-wrap {
+
+        .about-lists { flex-wrap: wrap; justify-content: center;
+            .about-list { width: 50%; margin-bottom: 40px; }
+        }
+
+        .about-lists-img { margin-top: -100px; }
+
+    }
+
+    /* /about-lists */
+}
 @media screen and (max-width: 767px){
+    /* about-lists */
+
+    .about-lists-wrap {
+
+        .about-lists {
+            .about-list { width: 100%; }
+        }
+
+    }
+
+    /* /about-lists */
     .search-block .row{ justify-content: space-around;}
     .search-block .item{ margin-right: 0; margin-bottom: 20px;}
     .search-block .search-button{ margin-left: 0;}
