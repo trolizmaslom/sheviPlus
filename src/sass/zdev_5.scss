@@ -415,6 +415,9 @@
   }
   
   .content{ text-align: center; margin-bottom: 99px; padding-top: 38px;
+
+	.flex-line-container{flex-wrap:wrap;}
+
   	.img{ display:flex; align-items:center; justify-content:center; width:25%;
 		img{object-fit:contain;}
 	}
