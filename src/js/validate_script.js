@@ -214,6 +214,17 @@ function clarifyPopInfo() {
             $('#pop-clarify .clarify-product-logo').remove();
         }
 
+        var closeBtn = false;
+
+        if($(window).width() <= 1024){
+            closeBtn = true;
+        }
+        $(window).resize(function(){
+            if($(window).width() <= 1024){
+                closeBtn = true;
+            }
+        });
+
         $.fancybox.open('#pop-clarify', {
             padding: 0,
             margin:[20,0,20,0],
@@ -222,7 +233,7 @@ function clarifyPopInfo() {
             fitToView:true,
             minHeight:765,
             wrapCSS:'fancybox-clarify',
-            'closeBtn' : false,
+            'closeBtn' : closeBtn,
             afterClose: function () {
                 $('form').trigger("reset");
             }
