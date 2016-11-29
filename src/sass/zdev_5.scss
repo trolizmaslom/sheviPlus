@@ -321,9 +321,16 @@
 
 .fancy-list {
 
+  .fancybox-skin{ background-color: transparent;box-shadow: none;}
+  
   .fancybox-skin { border-radius: 0; }
 
   .where-uses { background-image: url(../images/uses-list-fancybox-background.jpg); background-position: center top; padding: 70px 0 50px 0; overflow: hidden;
+
+	.where-used-button{
+	  &.mobile{ display: none;}
+	}
+
 	.mbox {
 	  &:before { content: ''; display: block; position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 0); width: calc(100% - 40px); max-width: 1420px; height: 6px; background: rgb(235, 112, 115); background: -moz-linear-gradient(left, rgba(235, 112, 115, 1) 0%, rgba(123, 89, 153, 1) 100%); background: -webkit-linear-gradient(left, rgba(235, 112, 115, 1) 0%, rgba(123, 89, 153, 1) 100%); background: linear-gradient(to right, rgba(235, 112, 115, 1) 0%, rgba(123, 89, 153, 1) 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eb7073', endColorstr='#7b5999', GradientType=1); }
 	}
@@ -366,6 +373,7 @@
   }
 
 }
+
 /* /uses-list-fancybox */
 
 /* call-success */
