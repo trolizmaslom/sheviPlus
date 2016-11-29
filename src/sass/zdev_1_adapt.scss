@@ -298,7 +298,46 @@
     .search-zapchasti .content .titl .name{ float: left ; position: relative; bottom:auto; padding-top: 30px;}
     .search-zapchasti .content .titl .sort{ position: absolute; right: 0; bottom: 7px;}
 }
+@media screen and (max-width: 1024px){
+    /* about-lists */
+
+    .about-lists-wrap {
+        .about-lists {
+            .about-list {
+                h3 { font-size: 20px; line-height: 1.25; }
+            }
+        }
+    }
+
+    /* /about-lists */
+}
+@media screen and (max-width: 992px){
+    /* about-lists */
+
+    .about-lists-wrap {
+
+        .about-lists { flex-wrap: wrap; justify-content: center;
+            .about-list { width: 50%; margin-bottom: 40px; }
+        }
+
+        .about-lists-img { margin-top: -100px; }
+
+    }
+
+    /* /about-lists */
+}
 @media screen and (max-width: 767px){
+    /* about-lists */
+
+    .about-lists-wrap {
+
+        .about-lists {
+            .about-list { width: 100%; }
+        }
+
+    }
+
+    /* /about-lists */
     .search-block .row{ justify-content: space-around;}
     .search-block .item{ margin-right: 0; margin-bottom: 20px;}
     .search-block .search-button{ margin-left: 0;}
