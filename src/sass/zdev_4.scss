@@ -70,8 +70,12 @@ $r:#f2535a;
 	  .product-logo.mobile-show{ display:none;}
 	  .slick-slider{ margin-bottom:0; }
 	  .slider-mini{ width:115px;
-		.item{ height:110px; border:1px solid #ebebeb; cursor:pointer;
+		.item{ height:110px; border:1px solid #ebebeb; cursor:pointer; position:relative;
+		  &:after{ position:absolute; width:100%; height:100%; top:0; left:0; content:''; background-color:rgba(0,0,0,.6);background-image:url('../images/search-w.png');background-repeat:no-repeat;background-position:center center; opacity:0; visibility:hidden;transition:all ease .3s;}
 		  img{ width:100%; height:100%; }
+		  &:hover{
+			&:after{ opacity:1; visibility:visible;}
+		  }
 		}
 	  }
 	  .slider-big{ width:calc(100% - 115px - 30px);
