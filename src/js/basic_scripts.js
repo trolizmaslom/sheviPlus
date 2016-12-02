@@ -240,8 +240,11 @@ $(document).ready(function() {
     });
     $('.footer_placeholder').height($('.footer').outerHeight());
 
+    scrollUp('.item-map-service .white-part .white-part-button a', '.clarify-info-all');
+
     //goTo();
     //animationBlock($('.setion-animate'));
+
 });
 
 $(window).resize(function() {
