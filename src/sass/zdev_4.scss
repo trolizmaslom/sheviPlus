@@ -264,7 +264,6 @@ $r:#f2535a;
 	
   }
   .item-map-tubs-middle{ position:relative;
-	.item-map-tubs-middle-wrap{min-height:300px;}
   	.item{ position:absolute; left:0; width:100%; right:0; top:0; z-index:-1; visibility:hidden; opacity:0;transition:all ease .2s;
 	  &.active{ z-index:2; opacity:1; visibility:visible; position:relative;}
 	}
