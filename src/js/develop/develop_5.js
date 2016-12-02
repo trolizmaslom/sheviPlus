@@ -26,10 +26,22 @@
 
 /* /where uses popup */
 
+/* item-map-perspective fancybox items gallery */
+
+    function fancyboxGallery(){
+
+        $('.item-map-perspective .flex-line-container .img').fancybox();
+
+    }
+
+/* item-map-perspective fancybox items gallery */
+
 
 $(document).ready(function(){
 
     whereUsesPopup();
+
+    fancyboxGallery();
 
 });
 
