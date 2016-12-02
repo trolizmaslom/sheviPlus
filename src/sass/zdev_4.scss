@@ -140,6 +140,9 @@ $r:#f2535a;
 
 //popap product
 .popup-hidden{ display:none; }
+.fancybox-product{
+  .fancybox-close{ display:none;}
+}
 .fancy-product{
   .product-title{ color:#595959; font-size:24px; font-weight:400; margin-bottom:65px; position:relative;
 	&:after{ position:absolute; content:''; height:1px; width:100%; background-color:#e8e8e8; bottom:-15px; }
@@ -199,8 +202,8 @@ $r:#f2535a;
 
 //fancybox pop-clarify
 .fancybox-clarify{
-  .fancybox-close{ height:45px; width:45px; border:3px solid #eb7073; background:none; top:15px; right:15px; cursor:pointer; background-color:#fff;
-	&:after, &:before{ width:14px; height:2px; background-color:#eb7073; content:''; position:absolute; top:18px; left:13px; transform:rotate(45deg); transform-origin:50% 50%; }
+  .fancybox-close{ height:45px; width:45px; border:3px solid #eb7073; background:none; top:15px; right:15px; cursor:pointer; background-color:#fff; display:none;
+	&:after, &:before{ width:14px; height:2px; background-color:#eb7073; content:''; position:absolute; top:18px; left:13px; transform:rotate(45deg); transform-origin:50% 50%;}
 	&:before{ transform:rotate(-45deg); left:13px; }
   }
   .fancybox-skin{ background:#fff;}
