@@ -242,6 +242,8 @@ $(document).ready(function() {
 
     scrollUp('.item-map-service .white-part .white-part-button a', '.clarify-info-all');
 
+    scrollUp('.item-map-tubs-top-wrap .scroll-to-garanty', '.item-map-garanty');
+
     //goTo();
     //animationBlock($('.setion-animate'));
 
@@ -250,4 +252,5 @@ $(document).ready(function() {
 $(window).resize(function() {
 
     $('.footer_placeholder').height($('.footer').outerHeight());
+
 });
