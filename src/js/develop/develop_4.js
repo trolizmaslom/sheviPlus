@@ -62,48 +62,40 @@ function productSlider() {
 
 function showProductText() {
 
-    if($('.desc-text-hidden').height() < 120){
+    if ($('.desc-text-hidden').height() < 120) {
         $('.desc-text-button').remove();
         $('.desc-text').addClass('no-hidden');
     }
 
-    $('.desc-text-button span').click(function(){
+    $('.desc-text-button span').click(function () {
         var height = $('.desc-text-hidden').height();
         $('.desc-text-show').height(height);
         $(this).slideUp().remove();
     });
 }
 
-function popApShow(){
+function popApShow() {
 
     var popap;
-    var closeBtn = false;
-
-    if($(window).width() <= 992){
-        closeBtn = true;
-    }
-    $(window).resize(function(){
-        if($(window).width() <= 992){
-            closeBtn = true;
-        }
-    });
 
     function goFancy() {
         $.fancybox.open({
-            content:popap,
+            content: popap,
             width: "100%",
             autoSize: true,
-            autoResize:true,
-            margin:[20,0,20,0],
-            wrapCSS:'fancybox-product',
-            'closeBtn' : closeBtn,
-            beforeShow:function(){
-                setTimeout(function(){goSlider()},100)
+            autoResize: true,
+            margin: [20, 0, 20, 0],
+            wrapCSS: 'fancybox-product',
+            'closeBtn': true,
+            beforeShow: function () {
+                setTimeout(function () {
+                    goSlider()
+                }, 100)
             },
-            afterClose: function(){
+            afterClose: function () {
                 $('.popup-hidden').removeAttr('style');
             },
-            afterClose: function() {
+            afterClose: function () {
                 if ($('.fancy-product-wrap .slider-big-wrap').hasClass('slick-initialized')) {
                     $('.fancy-product-wrap .slider-big-wrap').slick("unslick");
                     $('.fancy-product-wrap .slider-mini-wrap').slick("unslick");
@@ -111,8 +103,9 @@ function popApShow(){
             }
         });
     }
+
     $(document).on('click', '.item-catalogius', function (event) {
-        if($(event.target).hasClass("button")){
+        if ($(event.target).hasClass("button")) {
             return false;
         }
         event.preventDefault();
@@ -125,7 +118,7 @@ function popApShow(){
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
-            swipe:false,
+            swipe: false,
             fade: true,
             asNavFor: '.fancy-product-wrap .slider-mini-wrap'
         });
@@ -148,7 +141,7 @@ function popApShow(){
         });
     }
 
-    $(document).on('click','.product-close-popup',function(event){
+    $(document).on('click', '.product-close-popup', function (event) {
         event.preventDefault();
         $.fancybox.close();
     })
