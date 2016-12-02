@@ -328,7 +328,7 @@
             &.active{ display: block;}
         }
         .services{ background-image: url(../images/srvbg.png); background-size:cover; min-height: 780px; background-position: 50%; padding-top: 84px; margin-top: 49px; padding-bottom: 50px; position: relative;
-            .img{ position: absolute; right: 0; top:50%; transform:translateY(-50%); z-index: 1; }
+            .img{ position: absolute; right: 0; top:50%; transform:translateY(-50%); z-index: 1; width: 54%;}
             .txt{ position: relative; z-index: 100; padding-bottom: 72px;
                 .top{ position: absolute; background-color: #eb7073; height: 5px; width: calc(100% - 530px); right: 0; top: 32px;}
                 .bott{ position: absolute; background-color: #7b5999; height: 5px; width: 200%; right: 0; bottom: 0;}
@@ -357,7 +357,7 @@
             b{ color: #595959; font-weight: 400;}
         }
         .tags{ font-size: 12px; font-weight: 600; text-transform: uppercase;padding: 15px 29px 0; min-height: 75px;
-            span{ height: 30px; border:2px solid #7fbe6a; border-radius: 15px; line-height: 26px; white-space: nowrap; padding: 0 33px; display: inline-block; margin-right: 8px;}
+            span{ height: 30px; border:2px solid #7fbe6a; border-radius: 15px; line-height: 26px; white-space: nowrap; padding: 0 33px; display: inline-block; margin:0 8px 8px 0;}
         }
         .price{ font-size: 12px; font-weight: 600; background-color: #fcf1f2; width: 100%; height: 85px; justify-content: flex-start;
             a{ text-decoration: none; color: #595959;text-transform: uppercase; background-color: #fff; width: 185px; height: 47px; display: inline-block; border:2px solid #f2535a; line-height: 43px; text-align: center; margin: 0 29px;
