@@ -240,11 +240,17 @@ $(document).ready(function() {
     });
     $('.footer_placeholder').height($('.footer').outerHeight());
 
+    scrollUp('.item-map-service .white-part .white-part-button a', '.clarify-info-all');
+
+    scrollUp('.item-map-tubs-top-wrap .scroll-to-garanty', '.item-map-garanty');
+
     //goTo();
     //animationBlock($('.setion-animate'));
+
 });
 
 $(window).resize(function() {
 
     $('.footer_placeholder').height($('.footer').outerHeight());
+
 });

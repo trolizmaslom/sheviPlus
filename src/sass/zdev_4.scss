@@ -70,8 +70,12 @@ $r:#f2535a;
 	  .product-logo.mobile-show{ display:none;}
 	  .slick-slider{ margin-bottom:0; }
 	  .slider-mini{ width:115px;
-		.item{ height:110px; border:1px solid #ebebeb; cursor:pointer;
+		.item{ height:110px; border:1px solid #ebebeb; cursor:pointer; position:relative;
+		  &:after{ position:absolute; width:100%; height:100%; top:0; left:0; content:''; background-color:rgba(0,0,0,.6);background-image:url('../images/search-w.png');background-repeat:no-repeat;background-position:center center; opacity:0; visibility:hidden;transition:all ease .3s;}
 		  img{ width:100%; height:100%; }
+		  &:hover{
+			&:after{ opacity:1; visibility:visible;}
+		  }
 		}
 	  }
 	  .slider-big{ width:calc(100% - 115px - 30px);
@@ -140,6 +144,9 @@ $r:#f2535a;
 
 //popap product
 .popup-hidden{ display:none; }
+.fancybox-product{
+  .fancybox-close{ display:none;}
+}
 .fancy-product{
   .product-title{ color:#595959; font-size:24px; font-weight:400; margin-bottom:65px; position:relative;
 	&:after{ position:absolute; content:''; height:1px; width:100%; background-color:#e8e8e8; bottom:-15px; }
@@ -199,8 +206,8 @@ $r:#f2535a;
 
 //fancybox pop-clarify
 .fancybox-clarify{
-  .fancybox-close{ height:45px; width:45px; border:3px solid #eb7073; background:none; top:15px; right:15px; cursor:pointer; background-color:#fff;
-	&:after, &:before{ width:14px; height:2px; background-color:#eb7073; content:''; position:absolute; top:18px; left:13px; transform:rotate(45deg); transform-origin:50% 50%; }
+  .fancybox-close{ height:45px; width:45px; border:3px solid #eb7073; background:none; top:15px; right:15px; cursor:pointer; background-color:#fff; display:none;
+	&:after, &:before{ width:14px; height:2px; background-color:#eb7073; content:''; position:absolute; top:18px; left:13px; transform:rotate(45deg); transform-origin:50% 50%;}
 	&:before{ transform:rotate(-45deg); left:13px; }
   }
   .fancybox-skin{ background:#fff;}
@@ -257,7 +264,6 @@ $r:#f2535a;
 	
   }
   .item-map-tubs-middle{ position:relative;
-	.item-map-tubs-middle-wrap{min-height:300px;}
   	.item{ position:absolute; left:0; width:100%; right:0; top:0; z-index:-1; visibility:hidden; opacity:0;transition:all ease .2s;
 	  &.active{ z-index:2; opacity:1; visibility:visible; position:relative;}
 	}

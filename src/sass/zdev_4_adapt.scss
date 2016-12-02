@@ -641,7 +641,7 @@
   //popap product
   
   .fancybox-product{
-	.fancybox-close{ height:45px; width:45px; border:3px solid #eb7073; background:none; top:15px; right:15px; cursor:pointer; background-color:#fff;
+	.fancybox-close{ height:45px; width:45px; border:3px solid #eb7073; background:none; top:15px; right:15px; cursor:pointer; background-color:#fff; display:block;
 	  &:after, &:before{ width:14px; height:2px; background-color:#eb7073; content:''; position:absolute; top:18px; left:13px; transform:rotate(45deg); transform-origin:50% 50%; }
 	  &:before{ transform:rotate(-45deg); left:13px; }
 	}
@@ -670,6 +670,9 @@
   }
   
   //fancybox pop-clarify
+  .fancybox-clarify{
+	.fancybox-close{ display:block;}
+  }
   #pop-clarify{
 	.product-title{ margin-bottom:0; padding-bottom:50px; overflow:hidden; overflow:hidden;
 	  &:after{ bottom:29px; }
