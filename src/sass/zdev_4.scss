@@ -360,4 +360,39 @@ $r:#f2535a;
 
 
 
+//discount-popup
+.fancybox-form{
+  .fancybox-close{ height:45px; width:45px; border:3px solid #eb7073; background:none; top:15px; right:15px; cursor:pointer; background-color:#fff;
+	&:after, &:before{ width:14px; height:2px; background-color:#eb7073; content:''; position:absolute; top:18px; left:13px; transform:rotate(45deg); transform-origin:50% 50%;}
+	&:before{ transform:rotate(-45deg); left:13px; }
+  }
+  .fancybox-skin{ background:#fff;}
+}
+.discount-popup{
+  .discount-popup-title{ text-align:center; font-size:25px; width:100%; padding:10px 5px 15px;
+  	h5{margin:0;}
+  }
+  .discount-popup-form{box-shadow:0px 0px 37.5px 12.5px rgba(0, 0, 0, 0.08);padding:60px 5% 10px; background-color:#fff;width:420px;
+	form{display: flex;flex-direction: column; width:100%;}
+	.errorText{ display:none !important;}
+	.form_row{ display:flex; flex-direction:column; margin-bottom:30px; width:100%;
+	  p{margin:0; font-size:16px; color:#4f4f4f; margin-bottom:12px;}
+	  .form_input{ width:100%; }
+	  input{ width:100%;border:2px solid #f2535a; padding:0px 27px; height:60px; font-size:16px;
+		&::-webkit-input-placeholder {color:#8f8f8f;}
+		&:-moz-placeholder {color:#8f8f8f;opacity:1;}
+		&::-moz-placeholder {color:#8f8f8f;opacity:1;}
+		&:-ms-input-placeholder {color:#8f8f8f;}
+		&.error{
+		  &::-webkit-input-placeholder {color:red;}
+		  &:-moz-placeholder {color:red;opacity:1;}
+		  &::-moz-placeholder {color:red;opacity:1;}
+		  &:-ms-input-placeholder {color:red;}
+		}
+	  }
+	}
+	.contact-submit{ width:250px; height:80px;border:none; background-color:$r; font-size:18px; color:#fff;margin:0 auto; font-weight:bold; margin-top:10px;}
+  }
+}
+
 /* /about -------------------------------------------------------------- */

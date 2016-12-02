@@ -250,7 +250,7 @@ $(document).ready(function () {
 
     validate('.clarify-middle .clarify-form form', {submitFunction: validationCall});
     validate('.service-form', {submitFunction: validationCall});
-
+    validate('.discount-popup-form>form', {submitFunction: validationCall});
     Maskedinput();
     fancyboxForm();
     showMoreFunc();
