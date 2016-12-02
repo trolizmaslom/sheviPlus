@@ -271,6 +271,12 @@ $r:#f2535a;
 }
 
 
+//fancybox-nav
+.fancybox-nav span{ background-image:none;}
+
+.fancybox-next span{ transform:rotate(45deg); border-top:4px solid #f2535a; border-right:4px solid #f2535a;}
+.fancybox-prev span{transform:rotate(-45deg); border-top:4px solid #f2535a; border-left:4px solid #f2535a;}
+
 /* about -------------------------------------------------------------- */
 
 /* about-top */
