@@ -20,7 +20,8 @@
             .nav{list-style-type: none; margin: 0; padding: 0; display: flex; justify-content:space-between; width: 100%;
                 li{ display: inline-block;}
                 a{  font-size: 14px; color:#595959; text-decoration: none; text-transform: uppercase;}
-                a:hover{ text-decoration: underline;}
+                a.active,
+                a:hover{ color: #f04950;}
             }
             .search-button-s{ font-size: 14px; text-transform: uppercase; display: block; border: 2px solid #f04950; color: #f04950; text-align: center; height: 60px; border-radius:30px; line-height: 56px; width: 100%; padding-left: 18px; cursor: pointer; max-width: 425px; position: relative; margin-left: 54px;
                 &:before{ position: absolute; content: ''; background-image: url(../images/search.png); width: 20px; height: 20px; background-position: 50%; background-repeat: no-repeat; left: 19px; top: 20px; background-size: cover;}
