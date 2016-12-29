@@ -111,6 +111,7 @@ $(document).ready(function(){
     tabusStart();
     serchHeader();
     if($('.search-block select').length>0)$('.search-block select').styler();
+    if($('.content-taba select').length>0)$('.content-taba select').styler();
     if($('.search-zapchasti .titl select').length>0)$('.search-zapchasti .titl select').styler();
 });
 

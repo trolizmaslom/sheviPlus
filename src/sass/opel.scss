@@ -1,0 +1,93 @@
+.opel-page{
+    .top-block{ background-image: url(../images/opelbg.jpg);
+        .bot{ justify-content: flex-end;}
+        .brand-wrap{ margin-left: 20px;}
+        .dropdown{ width: 200px; border:none; left: auto; top: 50%; right: 50%; transform:translateY(-50%);
+            a{ color: #8f8f8f; white-space: nowrap; padding: 10px 0;
+                &:hover{ background-color: #eb7073; color: #fff;}
+            }
+            li:last-child a{ padding-bottom: 15px;}
+            li:first-child a{ padding-top: 15px;}
+        }
+    }
+    .top-block-mobile{background-image: url(../images/opelbg.jpg);}
+    .tabs{
+        .content{ padding-top: 43px;}
+        .tabs-nav{ display: flex; justify-content:center;}
+        .tab-but{ width: 290px; height: 80px; display: flex; justify-content: center; align-items: center;  font-weight: 600; font-size: 30px; cursor: pointer; color: #8f8f8f; position: relative;
+            &:before{content: ''; display: block; width: 100%; height: 1px; background-color: #e6e6e6; position: absolute; left: 0; bottom: 0;}
+            &:hover{  color: #eb7073;}
+            &.active{  color: #eb7073;
+                &:before{ height: 3px; background-color: #eb7073;}
+            }
+        }
+        .tab-content{ padding-top: 50px;}
+        .one-tab{}
+        .tab-wrap{ min-height: 780px; position: relative;
+            &.one{ background-image: url(../images/tab1.jpg); background-position: 50%; background-size:cover; padding-bottom: 40px;
+                .imgs{ position: absolute; right: calc(100% + 48px); display: flex; flex-direction: column; justify-content: space-between; top: 234px;
+                    img{max-width: none; margin-top:20px;}
+                }
+                .content-taba{ position: relative; padding-top: 66px;}
+                .ramka{ position: absolute; top: 94px; left: 0; width: 100%; height: calc(100% - 26px); display: block; pointer-events: none;
+                    &:before{content: ''; width: 5px; height: 100%; display: block; position: absolute; right: -290px;
+                        background: #eb7073; /* Old browsers */
+                        background: -moz-linear-gradient(top,  #eb7073 0%, #7b5999 100%); /* FF3.6-15 */
+                        background: -webkit-linear-gradient(top,  #eb7073 0%,#7b5999 100%); /* Chrome10-25,Safari5.1-6 */
+                        background: linear-gradient(to bottom,  #eb7073 0%,#7b5999 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb7073', endColorstr='#7b5999',GradientType=0 ); /* IE6-9 */
+                    }
+
+                    &:after{content: ''; width: 2000%; height: 5px; display: block; position: absolute; bottom: 0; right: -290px; background-color: #7b5999;}
+                    .rrr{width: 534px; height: 5px; display: block; position: absolute; top: 0; right: -290px; background-color: #eb7073;}
+                }
+            }
+            .mbox{max-width: 1170px;}
+        }
+
+        .title{ padding: 0 0 32px;
+            h3{ max-width: 876px; font-size: 48px; font-weight: 900; color: #eb7073; margin: 0;
+                p{ margin: 0;}
+            }
+        }
+        .text{ padding-left: 145px;     font-weight: 300; color: #d0d0d0; font-size: 16px; line-height: 30px;
+            h5{ color: #fff; font-weight: 600; font-size: 30px; margin: 0 0 23px;}
+            p{ margin: 0;}
+            .phone{font-size: 48px; font-weight: 900; color: #eb7073; padding:26px 0 0;
+                h6{ margin: 0 0 22px;font-size: 24px; font-weight: 700; color: #eb7073;}
+            }
+            ul{ margin: 0;}
+        }
+        form{
+            .wrapper-for-form{ width: 100%; display: flex;justify-content: space-between;}
+            .column-f{ width: 840px;}
+            .column-r{ width:260px;}
+            .row{ justify-content: space-between; flex-wrap: wrap; margin-bottom: 20px;}
+            .item{ width: 260px; margin-bottom: 30px;}
+            .jq-selectbox__trigger{border: none;}
+            .jq-selectbox__trigger-arrow{border-top: 8px solid #ff0400;border-right: 8px solid transparent; border-left: 8px solid transparent; top: 23px; right: 30px;}
+            .jq-selectbox__select{ width: 100%; height: 100%; background: #fff;  border-radius: 5px; box-shadow: none; font-family: 'ProximaNova'; font-size: 16px; font-weight:400; color:#595959; text-shadow: none; line-height: 60px;padding: 0 45px 0 30px;}
+            .jq-selectbox{ width: 100%;height: 60px;}
+            input{ width: 100%; height: 60px; background-color: #fff; border:none;border-radius: 5px; padding-left: 30px;}
+            .row-title{ font-size: 20px; font-weight: 700; color: #fff; text-transform: uppercase;}
+            .button{ width: 100%; border-radius: 5px; background-color: #eb7073; border:none; height: 60px;}
+        }
+        
+
+    }
+}
+@media screen and (max-width: 1160px) {
+    .opel-page .tabs .tab-wrap.one .ramka{ display: none;}
+}
+@media screen and (max-width: 992px) {
+    .opel-page .tabs .text{ padding-left: 0;}
+    .opel-page .tabs .tab-content{ padding-top: 0;}
+}
+@media screen and (max-width: 480px) {
+    .opel-page .tabs .tab-but{ font-size: 16px; width: 100px;}
+    .opel-page .tabs .text .phone,
+    .opel-page .tabs .title h3{ font-size: 24px;}
+    .opel-page .tabs .text .phone h6,
+    .opel-page .tabs .title h3{ font-size: 20px;}
+}
+
