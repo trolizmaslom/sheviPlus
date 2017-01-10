@@ -122,19 +122,61 @@
             }
         }
     }
-    .oil-wrap{min-height: 655px; background-image: url(../images/sale01.jpg); background-size:cover; background-position: left 50%;
-        .oil{}
-        .ttl{font-weight: 600; color: #fff; font-size: 60px;}
-        .price{ color: #eb7073;
+    .oil-wrap{min-height: 655px; background-image: url(../images/sale01.jpg); background-size:cover; background-position: left 50%; background-color: #000;
+        .oil{ padding-top: 55px;}
+        .ttl{font-weight: 600; color: #fff; font-size: 60px; margin-bottom: 10px;}
+        .price{ color: #eb7073; line-height: 85px;
             span{ font-size: 120px; font-weight: 900;}
             b{ font-size:30px; font-weight: 400;}
         }
-        .wrks{ font-size: 20px; color: #fff; text-transform: uppercase; font-weight: 400;}
-        .bonus{ height: 70px; position: relative; border-radius: 35px; border:2px solid #eb7073; text-align: center; color: #fff; font-size: 24px;
-            &:before{ height: 70px; width: 70px; content: ''; display: block; position: absolute; top: 0; left: 0; background-image: url(../images/wheelww.png);}
+        .wrks{ font-size: 20px; color: #fff; text-transform: uppercase; font-weight: 400; margin-bottom: 33px;}
+        .bonus{ height: 70px; position: relative; border-radius: 35px; border:2px solid #eb7073;  color: #fff; font-size: 24px; display: flex; justify-content: center; align-items: center; width: 490px; padding-left: 45px; margin-bottom: 70px;
+            &:before{ height: 70px; width: 70px; content: ''; display: block; position: absolute; top: -2px; left: -2px; background-image: url(../images/wheelww.png);}
         }
-        .zakaz{}
-        .sub{}
+        .zakaz{ margin-bottom: 21px;
+            a{ color: #fff; font-weight: 700; font-size: 24px; display: flex; justify-content: center; align-items: center; border:5px solid #eb7073; height: 80px; width: 244px; text-decoration: none; cursor: pointer;
+                &:hover{ background-color: #eb7073; color: #fff;}
+            }
+        }
+        .sub{ font-size: 24px; color: #fff;
+            b{ font-size: 30px; font-weight: 600;}
+        }
+    }
+    .autosalon-wrap{
+        .mbox{max-width: 1820px; background-image: url(../images/opopop.jpg); background-size:cover; background-position: left 50%; background-color: #000; min-height: 960px; overflow: hidden;}
+        .content{ position: relative; width: 100%;padding: 62px 0 0 80px;
+            .ramka{ position: absolute; top: 94px; left: 0; width: 100%; height: calc(100% - 26px); display: block; pointer-events: none;
+                &:before{content: ''; width: 5px; height: 100%; display: block; position: absolute; right: 90px;
+                    background: #eb7073; /* Old browsers */
+                    background: -moz-linear-gradient(top,  #eb7073 0%, #7b5999 100%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(top,  #eb7073 0%,#7b5999 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(to bottom,  #eb7073 0%,#7b5999 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb7073', endColorstr='#7b5999',GradientType=0 ); /* IE6-9 */
+                }
+
+                &:after{content: ''; width: 2000%; height: 5px; display: block; position: absolute; bottom: 0; right: 90px; background-color: #7b5999;}
+                .rrr{width: 534px; height: 5px; display: block; position: absolute; top: 0; right: 90px; background-color: #eb7073;}
+            }
+        }
+        .text-wrap{ width: 100%; max-width: 670px;}
+        .ttl{ margin-bottom: 18px;
+            h3{ margin: 0;font-size: 48px; font-weight: 900; color: #eb7073;}
+        }
+        .sub{ font-size: 28px; font-weight: 300; line-height: 40px; margin-bottom: 45px;
+            p{ margin: 0; color: #eb7073;
+            &:last-child{ color: #fff; font-size: 30px; font-weight: 700;}
+            }
+        }
+        .base{ background-color: #402728;border-left: 5px solid #eb7073; font-size:24px; font-weight: 600;color: #eb7073; width: 545px; height: 80px; display: flex; justify-content: flex-start; align-items: center; padding-left: 43px; margin-bottom: 70px;
+            img{ margin-right: 31px;}
+        }
+        ul{ list-style-type: none; padding: 0; margin: 0;
+            li{ width: 615px; height: 80px; position: relative; margin-bottom: 10px;}
+            a{ position: relative; width: 100%; height: 100%; display: block; text-decoration: none;background-color: rgba(235, 112, 115, 0.1); border-radius: 40px; color: #fff; font-weight: 400; font-size: 20px; cursor: pointer; text-align: center; padding-top: 28px;
+                &:hover{ text-decoration: underline; background-color: rgba(235, 112, 115, 0.8);}
+                &:before{ content: ''; display: block; width: 8px; height: 8px; background-color: #fff; border-radius: 50%; position: absolute; left: 36px; top: 36px;}
+            }
+        }
     }
 }
 @media screen and (max-width: 1600px) {
@@ -157,6 +199,13 @@
 @media screen and (max-width: 666px) {
     .opel-page .tabs form .wrapper-for-form{flex-wrap: wrap;}
     .opel-page .tabs form .column-f{ margin-right: 0;}
+    .opel-page .oil-wrap .ttl{ font-size: 40px;}
+    .opel-page .oil-wrap .price span{ font-size: 80px;}
+    .opel-page .oil-wrap .bonus{ width: 100%; padding: 10px; display: block; text-align: center; height: auto;}
+    .opel-page .oil-wrap .bonus:before{ display: none;}
+    .opel-page .oil-wrap .sub{ font-size: 16px;}
+    .opel-page .oil-wrap .sub b{ font-size: 20px;}
+    .opel-page .oil-wrap .zakaz a{ margin: 0 auto;}
 }
 @media screen and (max-width: 480px) {
     .opel-page .tabs .tab-but{ font-size: 16px; width: 100px;}
@@ -165,4 +214,5 @@
     .opel-page .tabs .text .phone h6,
     .opel-page .tabs .title h3{ font-size: 20px;}
 }
+
 
