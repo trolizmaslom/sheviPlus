@@ -1,0 +1,46 @@
+.wrap-procl{
+	padding: 50px 50px 100px;
+	background: url('../images/car-bg.png') no-repeat right bottom;
+	.procl-title{
+		font-size: 60px;
+		color: #8f8f8f;
+		font-weight: 600;
+		font-family: ProximaNova;
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	.price{
+		font-weight: 900;
+		font-size: 120px;
+		color: #eb7073;
+		span{
+			font-weight: 400;
+			font-size: 30px;
+		}
+	}
+	p{
+		margin: 0;
+		line-height: 45px;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 20px;
+		color: #4f4f4f;
+		width: 37%;
+	}
+	.order{
+		padding: 15px 30px;
+		border: 5px solid #eb7073;
+		color: #eb7073;
+		font-weight: 700;
+		font-size: 24px;
+		display: inline-block;
+		text-decoration: none;
+		margin-top: 20px;
+		transition: .3s;
+		&:hover{
+			color: #fff;
+			background: #eb7073;
+			transition: .3s;
+		}
+	}
+}
