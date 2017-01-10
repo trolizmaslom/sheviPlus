@@ -122,19 +122,25 @@
             }
         }
     }
-    .oil-wrap{min-height: 655px; background-image: url(../images/sale01.jpg); background-size:cover; background-position: left 50%;
-        .oil{}
-        .ttl{font-weight: 600; color: #fff; font-size: 60px;}
-        .price{ color: #eb7073;
+    .oil-wrap{min-height: 655px; background-image: url(../images/sale01.jpg); background-size:cover; background-position: left 50%; background-color: #000;
+        .oil{ padding-top: 55px;}
+        .ttl{font-weight: 600; color: #fff; font-size: 60px; margin-bottom: 10px;}
+        .price{ color: #eb7073; line-height: 85px;
             span{ font-size: 120px; font-weight: 900;}
             b{ font-size:30px; font-weight: 400;}
         }
-        .wrks{ font-size: 20px; color: #fff; text-transform: uppercase; font-weight: 400;}
-        .bonus{ height: 70px; position: relative; border-radius: 35px; border:2px solid #eb7073; text-align: center; color: #fff; font-size: 24px;
-            &:before{ height: 70px; width: 70px; content: ''; display: block; position: absolute; top: 0; left: 0; background-image: url(../images/wheelww.png);}
+        .wrks{ font-size: 20px; color: #fff; text-transform: uppercase; font-weight: 400; margin-bottom: 33px;}
+        .bonus{ height: 70px; position: relative; border-radius: 35px; border:2px solid #eb7073;  color: #fff; font-size: 24px; display: flex; justify-content: center; align-items: center; width: 490px; padding-left: 45px; margin-bottom: 70px;
+            &:before{ height: 70px; width: 70px; content: ''; display: block; position: absolute; top: -2px; left: -2px; background-image: url(../images/wheelww.png);}
         }
-        .zakaz{}
-        .sub{}
+        .zakaz{ margin-bottom: 21px;
+            a{ color: #fff; font-weight: 700; font-size: 24px; display: flex; justify-content: center; align-items: center; border:5px solid #eb7073; height: 80px; width: 244px; text-decoration: none; cursor: pointer;
+                &:hover{ background-color: #eb7073; color: #fff;}
+            }
+        }
+        .sub{ font-size: 24px; color: #fff;
+            b{ font-size: 30px; font-weight: 600;}
+        }
     }
 }
 @media screen and (max-width: 1600px) {
@@ -157,6 +163,13 @@
 @media screen and (max-width: 666px) {
     .opel-page .tabs form .wrapper-for-form{flex-wrap: wrap;}
     .opel-page .tabs form .column-f{ margin-right: 0;}
+    .opel-page .oil-wrap .ttl{ font-size: 40px;}
+    .opel-page .oil-wrap .price span{ font-size: 80px;}
+    .opel-page .oil-wrap .bonus{ width: 100%; padding: 10px; display: block; text-align: center; height: auto;}
+    .opel-page .oil-wrap .bonus:before{ display: none;}
+    .opel-page .oil-wrap .sub{ font-size: 16px;}
+    .opel-page .oil-wrap .sub b{ font-size: 20px;}
+    .opel-page .oil-wrap .zakaz a{ margin: 0 auto;}
 }
 @media screen and (max-width: 480px) {
     .opel-page .tabs .tab-but{ font-size: 16px; width: 100px;}
