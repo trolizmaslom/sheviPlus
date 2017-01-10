@@ -101,8 +101,9 @@ function oneHeightItems(){
 
     }
     // options:{notebook:false, macBook:false, iPadHorizontal:false, iPadVertical:false, iPhoneHorizontal:false, iPhoneVertical:false, phoneHorizontal:false}
-
+     oneHeight('.oneHeight1', {notebook:true, macBook:true});
     oneHeight('.oneHeight', {notebook:true, macBook:true});
+   
 
 }
 
@@ -227,7 +228,7 @@ function headeButer(menuMobile,toggleMenu){
 /* DOCUMENT READY  */
 $(document).ready(function() {
 
-    //oneHeightItems();
+    oneHeightItems();
 
     $('.fancybox-img').fancybox({
         openEffect  : 'fade',
