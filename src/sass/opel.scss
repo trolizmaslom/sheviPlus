@@ -22,7 +22,9 @@
             }
         }
         .tab-content{ padding-top: 50px;}
-        .one-tab{}
+        .one-tab{ display: none;
+            &.active{ display: block;}
+        }
         .tab-wrap{ min-height: 780px; position: relative;
             &.one{ background-image: url(../images/tab1.jpg); background-position: 50%; background-size:cover; padding-bottom: 40px;
                 .imgs{ position: absolute; right: calc(100% + 48px); display: flex; flex-direction: column; justify-content: space-between; top: 234px;
@@ -45,8 +47,8 @@
             .mbox{max-width: 1170px;}
         }
 
-        .services-tab{ 
-            .services-wrap{display: flex; width: 1745px; justify-content: space-around;margin: 0 auto; align-items: center; flex-wrap: wrap; align-content: center; padding: 60px 0;
+        .services-tab{ width: 100%; max-width: 1745px; margin: 0 auto;
+            .services-wrap{display: flex;  justify-content: space-around;margin: 0 auto; align-items: center; flex-wrap: wrap; align-content: center; padding: 60px 0;
                 .service-item{width: 260px; height: 160px; display: flex; flex-wrap: wrap; 
                     .image-wrap{width: 100%; text-align: center;padding-top: 20px;
                         a{text-decoration: none; color: #4f4f4f;
@@ -82,10 +84,12 @@
         }
         form{
             .wrapper-for-form{ width: 100%; display: flex;justify-content: space-between;}
-            .column-f{ width: 840px;}
-            .column-r{ width:260px;}
-            .row{ justify-content: space-between; flex-wrap: wrap; margin-bottom: 20px;}
-            .item{ width: 260px; margin-bottom: 30px;}
+            .column-f{ width: 840px; margin-right: 30px;}
+            .column-r{ width:260px; }
+            .row{ justify-content: flex-start; flex-wrap: wrap; margin-bottom: 20px;}
+            .item{ width: 260px; margin-bottom: 30px; margin-right: 30px;
+                &:last-child{ margin-right: 0;}
+            }
             .jq-selectbox__trigger{border: none;}
             .jq-selectbox__trigger-arrow{border-top: 8px solid #ff0400;border-right: 8px solid transparent; border-left: 8px solid transparent; top: 23px; right: 30px;}
             .jq-selectbox__select{ width: 100%; height: 100%; background: #fff;  border-radius: 5px; box-shadow: none; font-family: 'ProximaNova'; font-size: 16px; font-weight:400; color:#595959; text-shadow: none; line-height: 60px;padding: 0 45px 0 30px;}
@@ -97,13 +101,48 @@
         
 
     }
+    .titles{ text-align: center;
+        h2{  font-size: 48px; font-weight: 900; color: #eb7073; margin: 0;}
+    }
+    .choise-wrap{ padding-top: 20px;
+        .content{}
+        .list{
+            ul{ padding: 30px 0; list-style-type:none; display: flex; justify-content: flex-start;flex-wrap: wrap; margin: 0 auto;}
+            li{ width: 260px; height: 180px; position: relative; margin-bottom: 20px;
+                &:hover{ box-shadow: 0px 0px 37.5px 12.5px rgba(44, 43, 40, 0.08); z-index: 160;
+                    a{color: #eb7073;}
+                }
+                .img{ height: 125px; width: 100%; display: flex; align-items: center; justify-content: center;}
+            }
+            a{ color: #8f8f8f; text-transform: uppercase; font-size: 16px; font-weight: 16px; position: relative; width: 100%; height: 100%; display: block; text-decoration: none; text-align: center;}
+        }
+        .ttl{ font-weight: 900; font-size: 36px; color: #4f4f4f; border-bottom: 1px solid #f2f2f2; padding-top: 34px;
+            .bound{ display: flex; justify-content: flex-start; align-items: center; height: 70px;
+                img{ margin-right: 15px;}
+            }
+        }
+    }
+}
+@media screen and (max-width: 1600px) {
+    .opel-page .tabs .services-tab{max-width: 1036px;}
 }
 @media screen and (max-width: 1160px) {
     .opel-page .tabs .tab-wrap.one .ramka{ display: none;}
+    .opel-page .choise-wrap .list ul{ justify-content: space-around;}
+}
+
+@media screen and (max-width: 1024px) {
+    .opel-page .tabs form .wrapper-for-form{ justify-content: space-around;}
+    .opel-page .tabs form .column-f{ width: 260px;}
+    .opel-page .tabs form .item{ margin-right: 0;}
 }
 @media screen and (max-width: 992px) {
     .opel-page .tabs .text{ padding-left: 0;}
     .opel-page .tabs .tab-content{ padding-top: 0;}
+}
+@media screen and (max-width: 666px) {
+    .opel-page .tabs form .wrapper-for-form{flex-wrap: wrap;}
+    .opel-page .tabs form .column-f{ margin-right: 0;}
 }
 @media screen and (max-width: 480px) {
     .opel-page .tabs .tab-but{ font-size: 16px; width: 100px;}
