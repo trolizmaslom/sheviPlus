@@ -122,6 +122,20 @@
             }
         }
     }
+    .oil-wrap{min-height: 655px; background-image: url(../images/sale01.jpg); background-size:cover; background-position: left 50%;
+        .oil{}
+        .ttl{font-weight: 600; color: #fff; font-size: 60px;}
+        .price{ color: #eb7073;
+            span{ font-size: 120px; font-weight: 900;}
+            b{ font-size:30px; font-weight: 400;}
+        }
+        .wrks{ font-size: 20px; color: #fff; text-transform: uppercase; font-weight: 400;}
+        .bonus{ height: 70px; position: relative; border-radius: 35px; border:2px solid #eb7073; text-align: center; color: #fff; font-size: 24px;
+            &:before{ height: 70px; width: 70px; content: ''; display: block; position: absolute; top: 0; left: 0; background-image: url(../images/wheelww.png);}
+        }
+        .zakaz{}
+        .sub{}
+    }
 }
 @media screen and (max-width: 1600px) {
     .opel-page .tabs .services-tab{max-width: 1036px;}
