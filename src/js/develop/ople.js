@@ -14,6 +14,20 @@ function tabNav() {
         }
     });
 }
+
+
+function fancyboxGallery() {
+    $('.gallery-link').fancybox({
+        openEffect: 'fade',
+        closeEffect: 'fade',
+        autoResize: true,
+        wrapCSS: 'fancyboxGalleryWrap',
+        'closeBtn': true,
+        fitToView: true,
+        padding: '0'
+    })
+}
+
 function mapInit2() {
     if ($('.contactses .maper').length > 0) {
         var maps = $('.contactses .maper');
@@ -65,5 +79,7 @@ function mapInit2() {
 }
 $(document).ready(function(){
    tabNav();
+   fancyboxGallery();
     mapInit2();
+
 });
