@@ -252,6 +252,7 @@ $(document).ready(function () {
     validate('.service-form', {submitFunction: validationCall});
     validate('.discount-popup-form>form', {submitFunction: validationCall});
     validate('.marka-content form', {submitFunction: validationCall});
+     validate('.services-form', {submitFunction: validationCall});
     
     Maskedinput();
     fancyboxForm();

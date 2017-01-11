@@ -28,6 +28,24 @@ function fancyboxGallery() {
     })
 }
 
+function fancyboxServices() {
+    $('.servicePopupLink').fancybox({
+        'beforeLoad': function(){
+            text = $(this.element).find('p').text();
+        },
+        openEffect: 'fade',
+        closeEffect: 'fade',
+        autoResize: true,
+        wrapCSS: 'servicesPoupWrap',
+        'closeBtn': true,
+        fitToView: true,
+        padding: '0',
+         'afterLoad': function(){
+            this.content.find('h3').text(text);
+        },
+    })
+}
+
 function mapInit2() {
     if ($('.contactses .maper').length > 0) {
         var maps = $('.contactses .maper');
@@ -82,5 +100,6 @@ $(document).ready(function(){
    tabNav();
    fancyboxGallery();
     mapInit2();
+    fancyboxServices();
 
 });
