@@ -151,13 +151,18 @@ function Maskedinput() {
 /*fansybox на форме*/
 function fancyboxForm() {
     $('.fancybox-form').fancybox({
-        openEffect: 'fade',
-        closeEffect: 'fade',
         autoResize: true,
         wrapCSS: 'fancybox-form',
-        'closeBtn': true,
-        fitToView: true,
-        padding: '0'
+        openEffect : 'fade',
+        closeEffect : 'fade',
+        autoSize:true,
+        width : 1030,
+        height : 835,
+        maxWidth : '100%',
+        'closeBtn' : true,
+        fitToView:true,
+        autoCenter: true,
+        padding:'0'
     })
 }
 
