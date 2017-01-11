@@ -164,7 +164,7 @@
         }
         .sub{ font-size: 28px; font-weight: 300; line-height: 40px; margin-bottom: 45px;
             p{ margin: 0; color: #eb7073;
-            &:last-child{ color: #fff; font-size: 30px; font-weight: 700;}
+                &:last-child{ color: #fff; font-size: 30px; font-weight: 700;}
             }
         }
         .base{ background-color: #402728;border-left: 5px solid #eb7073; font-size:24px; font-weight: 600;color: #eb7073; width: 100%; max-width: 545px; min-height: 80px; display: flex; justify-content: flex-start; align-items: center; margin-bottom: 70px;
@@ -180,7 +180,38 @@
             }
         }
     }
+    .contactses{
+        .contacts-wrap{ }
+        .ttl{
+            h3{ margin: 0; font-size: 48px; font-weight: 900; color: #eb7073; width: 100%; display: flex; justify-content: center; align-items: center;
+                img{ margin-left: 30px;}
+            }
+        }
+        .titlus{ font-size: 36px; font-weight: 600; color: #eb7073; text-align: center; position: relative;
+            p{ margin: 0;}
+        }
+        .content{display: flex;justify-content: space-around; width: 100%;}
+        .column{ width: 840px;
+            .titlus:before{ content: ''; width: 79px; height: 110px; border-left: 3px solid #f9d4d5;border-top: 3px solid #f9d4d5; position: absolute; left: 50%;}
+            &:last-child{
+                .titlus:before{ border-right: 3px solid #f9d4d5; border-left:none; right: 50%; left: auto;}
+            }
+        }
+        .maper{ width: 100%; height: 440px; margin-bottom: 50px;}
+        .items{ display: flex; justify-content: space-between; flex-wrap: wrap;}
+        .item{ background:white; padding:0; box-shadow: 0px 0px 29.75px 5.25px rgba(0, 0, 0, 0.08); border-radius:2px; width: 405px; height: 465px;
+            .item-wrap{
+                .item-title{ margin-bottom:33px;font-size: 26px; font-weight: 900;
+                    b{ color: #eb7073;}
+                }
+                .item-row{ margin-bottom:19px; }
+            }
+
+        }
+    }
 }
+
+
 @media screen and (max-width: 1600px) {
     .opel-page .tabs .services-tab{max-width: 1036px;}
 }
