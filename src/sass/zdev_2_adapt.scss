@@ -11,6 +11,13 @@
 	.socials .wrap-soc{
 		width: 85%;
 	}
+	.video .video-content .video-frame{
+		width: 100%;
+		height: 590px;
+	}
+	.video .video-content .watch-all{
+		margin-right: 0;
+	}
 }
 @media screen and (max-width: 1470px){
 	.wrap-procl{
@@ -70,6 +77,9 @@
 			width: 90px;
 		}
 	}
+	.video .video-content .video-frame{
+		height: 550px;
+	}
 }
 @media screen and (max-width: 1024px){
 	.about .content .ramka{
@@ -86,6 +96,12 @@
 	}
 	.about .content {
 	    padding: 0 20px 0 20px;
+	}
+	.video .video-content .video-frame{
+		height: 470px;
+	}
+	.video .video-content .title:before, .video .video-content .title:after, .video .video-content .video-frame:after, .video .video-content .video-frame:before{
+		display: none;
 	}
 }
 @media screen and (max-width: 992px){
@@ -125,7 +141,9 @@
 	}
 }
 @media screen and (max-width: 767px){
-
+	.video .video-content .video-frame{
+		height: 430px;
+	}
 }
 @media screen and (max-width: 666px){
 	.wrap-procl .procl-title{
@@ -152,6 +170,22 @@
 	.socials h4{
 		font-size: 43px;
 	}
+	.video .video-content .video-frame{
+		height: 350px;
+	}
+	.video .video-content .title h4{
+		font-size: 39px;
+	}
+	.video .video-content .title p{
+		font-size: 18px;
+	}
+	.video .video-content .watch-all a{
+		font-size: 16px;
+		span img{
+			width: 80%;
+			padding-left: 0;
+		}
+	}
 }
 @media screen and (max-width: 530px){
 	.socials .wrap-soc .link{
@@ -163,6 +197,9 @@
 	.socials h4{
 		font-size: 38px;
 	}
+	.video .video-content .video-frame{
+		height: 280px;
+	}
 }
 @media screen and (max-width: 510px){
 	.socials .wrap-soc .link{
@@ -170,6 +207,9 @@
 		width: 100%;
 		margin: 0 auto;
 		text-align: center;
+		img{
+			width: 50%;
+		}
 	}
 }
 @media screen and (max-width: 479px){
@@ -188,6 +228,9 @@
 	.wrap-procl{
 		padding: 30px 20px 160px;
 	}
+	.video .video-content .video-frame{
+		height: 230px;
+	}
 }
 @media screen and (max-width: 370px){
 	.wrap-procl{
@@ -195,5 +238,21 @@
 	}
 	.socials h4{
 		font-size: 30px;
+	}
+	.video .video-content .video-frame{
+		height: 180px;
+	}
+	.video .video-content .title h4{
+		font-size: 32px;
+	}
+	.video .video-content .title p{
+		font-size: 15px;
+	}
+	.video .video-content .watch-all a{
+		font-size: 15px;
+		span img{
+			width: 75%;
+			padding-left: 0;
+		}
 	}
 }

@@ -231,13 +231,25 @@
 			margin: 0 auto;
 			cursor: pointer;
 			z-index: 10;
-			&:hover{
-				.play{
-					img{
-						transform: scale(1.1);
-						transition: .3s;
-					}
-				}
+			&:before{
+				content: '';
+				position: absolute;
+				height: 143px;
+				width: 5px;
+				bottom: -143px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: linear-gradient(to bottom, #7b5999 0%, #99608f 100%);
+			}
+			&:after{
+				content: '';
+				position: absolute;
+				height: 5px;
+				width: 470px;
+				bottom: -143px;
+				right: 50%;
+				transform: translateX(0%);
+				background: linear-gradient(to left, #99608f 0%, #eb7073 100%);
 			}
 			iframe{
 				width: 100%;
@@ -248,6 +260,7 @@
 				position: absolute;
 				top: 50%;
 				left: 50%;
+				display: none;
 				transform: translate(-50%, -50%);
 				img{
 					transition: .3s;
