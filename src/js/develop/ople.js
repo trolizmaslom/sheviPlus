@@ -77,6 +77,7 @@ function mapInit2() {
         });
     }
 }
+
 $(document).ready(function(){
    tabNav();
    fancyboxGallery();
