@@ -82,5 +82,13 @@ $(document).ready(function(){
    tabNav();
    fancyboxGallery();
     mapInit2();
+    $(document).on('click touchstart',function (event){
 
+            var div =  $('.opel-page .dropdown');
+            var div2 =  $('.brand');
+            if (!div.is(event.target) && div.has(event.target).length === 0 && !div2.is(event.target) && div2.has(event.target).length === 0){
+                div.slideUp();
+            }
+
+    });
 });

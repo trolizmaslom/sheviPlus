@@ -2,6 +2,21 @@
 
 }
 @media screen and (max-width: 1600px){
+
+}
+@media screen and (max-width: 1470px){
+
+}
+@media screen and (max-width: 1366px){
+
+}
+@media screen and (max-width: 1280px){
+
+}
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 992px){
 	.wrap-procl{
 		background-position-x: 170%;
 	}
@@ -18,8 +33,6 @@
 	.video .video-content .watch-all{
 		margin-right: 0;
 	}
-}
-@media screen and (max-width: 1470px){
 	.wrap-procl{
 		background-position-x: 200%;
 	}
@@ -29,8 +42,6 @@
 	.socials .wrap-soc{
 		width: 98%;
 	}
-}
-@media screen and (max-width: 1366px){
 	.wrap-procl{
 		background-size: 80%;
 		padding: 65px 50px 142px;
@@ -39,15 +50,15 @@
 		width: 630px;
 	}
 	.about .content .about-content ul li {
-	    line-height: 25px;
-	    font-size: 16px;
-	    padding-bottom: 12px;
-	    &:before{
-	    	top: 8px;
-	    }
+		line-height: 25px;
+		font-size: 16px;
+		padding-bottom: 12px;
+		&:before{
+			top: 8px;
+		}
 	}
 	.about .content {
-	    padding: 0 0 0 50px;
+		padding: 0 0 0 50px;
 	}
 	.about .content h3{
 		padding-left: 70px;
@@ -63,8 +74,6 @@
 			left: 0;
 		}
 	}
-}
-@media screen and (max-width: 1280px){
 	.about .content .ramka{
 		&:before{
 			left: 20px;
@@ -80,8 +89,6 @@
 	.video .video-content .video-frame{
 		height: 550px;
 	}
-}
-@media screen and (max-width: 1024px){
 	.about .content .ramka{
 		display: none;
 	}
@@ -95,7 +102,7 @@
 		}
 	}
 	.about .content {
-	    padding: 0 20px 0 20px;
+		padding: 0 20px 0 20px;
 	}
 	.video .video-content .video-frame{
 		height: 470px;
@@ -103,8 +110,8 @@
 	.video .video-content .title:before, .video .video-content .title:after, .video .video-content .video-frame:after, .video .video-content .video-frame:before{
 		display: none;
 	}
-}
-@media screen and (max-width: 992px){
+
+
 	.wrap-procl .procl-title{
 		font-size: 50px;
 	}

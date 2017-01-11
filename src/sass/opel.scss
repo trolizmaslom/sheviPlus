@@ -1,4 +1,5 @@
 .opel-page{
+    header .header-bot .tel{        text-decoration: none;}
     .top-block{ background-image: url(../images/opelbg.jpg);
         .bot{ justify-content: flex-end;}
         .brand-wrap{ margin-left: 20px;}
@@ -72,6 +73,7 @@
         .title{ padding: 0 0 32px;
             h3{ max-width: 876px; font-size: 48px; font-weight: 900; color: #eb7073; margin: 0;
                 p{ margin: 0;}
+                a{color: #eb7073; text-decoration: none;}
             }
         }
         .text{ padding-left: 145px;     font-weight: 300; color: #d0d0d0; font-size: 16px; line-height: 30px;
@@ -79,6 +81,7 @@
             p{ margin: 0;}
             .phone{font-size: 48px; font-weight: 900; color: #eb7073; padding:26px 0 0;
                 h6{ margin: 0 0 22px;font-size: 24px; font-weight: 700; color: #eb7073;}
+                a{color: #eb7073; text-decoration: none;}
             }
             ul{ margin: 0;}
         }
@@ -217,30 +220,35 @@
 
 
 @media screen and (max-width: 1900px) {
-    .contactses .mbox{max-width: 1750px;}
+    .opel-page .mbox{max-width: 1750px;}
 }
 @media screen and (max-width: 1770px) {
-    .opel-page .contactses .column .titlus:before{ display: none;}
+
 
 }
 @media screen and (max-width: 1600px) {
-    .opel-page .tabs .services-tab{max-width: 1036px;}
+
 }
 @media screen and (max-width: 1500px) {
-    .opel-page .autosalon-wrap .content .ramka .rrr{ width: 50%;}
+
 }
 @media screen and (max-width: 1160px) {
 
-    .opel-page .tabs .tab-wrap.one .ramka{ display: none;}
-    .opel-page .choise-wrap .list ul{ justify-content: space-around;}
+
 }
 
 @media screen and (max-width: 1024px) {
+
+}
+@media screen and (max-width: 992px) {
+    .opel-page .contactses .column .titlus:before{ display: none;}
+    .opel-page .tabs .services-tab{max-width: 1036px;}
+    .opel-page .autosalon-wrap .content .ramka .rrr{ width: 50%;}
+    .opel-page .tabs .tab-wrap.one .ramka{ display: none;}
+    .opel-page .choise-wrap .list ul{ justify-content: space-around;}
     .opel-page .tabs form .wrapper-for-form{ justify-content: space-around;}
     .opel-page .tabs form .column-f{ width: 260px;}
     .opel-page .tabs form .item{ margin-right: 0;}
-}
-@media screen and (max-width: 992px) {
     .opel-page .tabs .text{ padding-left: 0;}
     .opel-page .tabs .tab-content{ padding-top: 0;}
     .opel-page .autosalon-wrap .content .ramka{ display: none;}
