@@ -180,9 +180,9 @@
             }
         }
     }
-    .contactses{
+    .contactses{ padding-top: 42px;
         .contacts-wrap{ }
-        .ttl{
+        .ttl{ margin-bottom: 111px;
             h3{ margin: 0; font-size: 48px; font-weight: 900; color: #eb7073; width: 100%; display: flex; justify-content: center; align-items: center;
                 img{ margin-left: 30px;}
             }
@@ -192,7 +192,7 @@
         }
         .content{display: flex;justify-content: space-around; width: 100%;}
         .column{ width: 840px;
-            .titlus:before{ content: ''; width: 79px; height: 110px; border-left: 3px solid #f9d4d5;border-top: 3px solid #f9d4d5; position: absolute; left: 50%;}
+            .titlus:before{ content: ''; width: 79px; height: 110px; border-left: 3px solid #f9d4d5;border-top: 3px solid #f9d4d5; position: absolute; left: 50%; top: -141px;}
             &:last-child{
                 .titlus:before{ border-right: 3px solid #f9d4d5; border-left:none; right: 50%; left: auto;}
             }
