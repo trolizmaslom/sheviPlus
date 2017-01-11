@@ -11,7 +11,7 @@ function shovDropdown() {
     });
 }
 function acordeon(){
-    $('.ttl').click(function () {
+    $('.acord .ttl').click(function () {
         $(this).toggleClass('active');
         if($(this).hasClass('active')){
             $(this).next().stop().slideDown();
