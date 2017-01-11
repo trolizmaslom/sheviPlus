@@ -187,10 +187,10 @@
                 img{ margin-left: 30px;}
             }
         }
-        .titlus{ font-size: 36px; font-weight: 600; color: #eb7073; text-align: center; position: relative;
+        .titlus{ font-size: 36px; font-weight: 600; color: #eb7073; text-align: center; position: relative; margin-bottom: 40px;
             p{ margin: 0;}
         }
-        .content{display: flex;justify-content: space-around; width: 100%;}
+        .content{display: flex;justify-content: space-around; width: 100%; flex-wrap: wrap;}
         .column{ width: 840px;
             .titlus:before{ content: ''; width: 79px; height: 110px; border-left: 3px solid #f9d4d5;border-top: 3px solid #f9d4d5; position: absolute; left: 50%; top: -141px;}
             &:last-child{
@@ -199,12 +199,16 @@
         }
         .maper{ width: 100%; height: 440px; margin-bottom: 50px;}
         .items{ display: flex; justify-content: space-between; flex-wrap: wrap;}
-        .item{ background:white; padding:0; box-shadow: 0px 0px 29.75px 5.25px rgba(0, 0, 0, 0.08); border-radius:2px; width: 405px; height: 465px;
+        .item{ background:white; padding:0; box-shadow: 0px 0px 29.75px 5.25px rgba(0, 0, 0, 0.08); border-radius:2px; width: 405px; height: 465px; margin-bottom: 30px; padding: 46px 48px 0;
             .item-wrap{
-                .item-title{ margin-bottom:33px;font-size: 26px; font-weight: 900;
+                .item-title{ margin-bottom:45px;font-size: 26px; font-weight: 900;
                     b{ color: #eb7073;}
                 }
-                .item-row{ margin-bottom:19px; }
+                .item-row{ margin-bottom:18px;
+                    &:last-child{ padding-top: 10px;
+                        a{ margin-right: 28px;}
+                    }
+                }
             }
 
         }
@@ -212,6 +216,13 @@
 }
 
 
+@media screen and (max-width: 1900px) {
+    .contactses .mbox{max-width: 1750px;}
+}
+@media screen and (max-width: 1770px) {
+    .opel-page .contactses .column .titlus:before{ display: none;}
+
+}
 @media screen and (max-width: 1600px) {
     .opel-page .tabs .services-tab{max-width: 1036px;}
 }
@@ -233,6 +244,9 @@
     .opel-page .tabs .text{ padding-left: 0;}
     .opel-page .tabs .tab-content{ padding-top: 0;}
     .opel-page .autosalon-wrap .content .ramka{ display: none;}
+    .opel-page .contactses .items{ justify-content: space-around;}
+    .opel-page .contactses .ttl h3{flex-wrap: wrap;}
+    .opel-page .contactses .ttl{ margin-bottom: 60px;}
 }
 @media screen and (max-width: 767px) {
     .opel-page .autosalon-wrap .content { padding: 62px 0 20px 0; }
@@ -259,6 +273,8 @@
     .opel-page .tabs .title h3{ font-size: 24px;}
     .opel-page .tabs .text .phone h6,
     .opel-page .tabs .title h3{ font-size: 20px;}
+    .opel-page .contactses .item{ width: 100%; height: auto; padding: 20px;}
+    .opel-page .contactses .ttl h3{ font-size: 32px;}
 }
 
 
