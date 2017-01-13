@@ -189,7 +189,7 @@
         .contacts-wrap{ }
         .ttl{ margin-bottom: 111px;
             h3{ margin: 0; font-size: 48px; font-weight: 900; color: #eb7073; width: 100%; display: flex; justify-content: center; align-items: center;
-                img{ margin-left: 30px;}
+                img{ margin-left: 30px;vertical-align: middle;}
             }
         }
         .titlus{ font-size: 36px; font-weight: 600; color: #eb7073; text-align: center; position: relative; margin-bottom: 40px;
@@ -406,8 +406,8 @@
     .opel-page .tabs .text h5{ font-size: 18px; margin: 0 0 14px;}
     .opel-page .tabs .text .phone {  font-size: 29px;  padding: 14px 0 0; }
     .opel-page .tabs .text .phone h6{ font-size: 14px; margin: 0 0 14px;}
-    .opel-page .tabs .tab-wrap.one .imgs img{ width: 179px;}
-    .opel-page .tabs .tab-wrap.one .imgs{ top: 156px;}
+    .opel-page .tabs .tab-wrap.one .imgs img{ width: 145px;}
+    .opel-page .tabs .tab-wrap.one .imgs{ top: 132px;}
 
     .opel-page .titles h2{ font-size: 29px;}
     .choise-wrap .mbox{ max-width: 1065px;}
@@ -456,7 +456,7 @@
     .opel-page .contactses .column{ width: 506px;}
     .opel-page .contactses .titlus{ font-size: 22px; margin-bottom: 24px;}
     .opel-page .contactses .ttl{ margin-bottom: 68px;}
-    .opel-page .contactses .column .titlus:before {width: 55px;height: 76px;top: -98px; }
+    .opel-page .contactses .column .titlus:before {width: 55px;height: 76px;top: -87px; }
     .opel-page .contactses .maper{ height: 262px; margin-bottom: 28px;}
     .opel-page .contactses .item{ width: 244px; padding: 28px;  height: 280px; margin-bottom: 17px; font-size: 10px;}
     .opel-page .contactses .item img{ width: 14px;}
@@ -465,9 +465,17 @@
     .opel-page .contactses .item .item-wrap .item-row:last-child{ padding-top: 8px;}
     .opel-page .contactses .item .item-wrap .item-row:last-child a{ width: 17px;}
 }
-@media screen and (max-width: 1160px) {
-
-
+@media screen and (max-width: 1100px) {
+    .opel-page .contactses .item .item-wrap .item-row{ right: 100%;}
+    .opel-page .tabs .tab-wrap.one .ramka{ top: 56px;}
+    .opel-page .tabs .tab-wrap.one .ramka .rrr {        width: 250px; height: 3px;right: -85px;}
+    .opel-page .tabs .tab-wrap.one .ramka:before{ width: 3px;right: -85px;}
+    .opel-page .tabs .tab-wrap.one .ramka:after{ height: 3px;right: -85px;}
+    .opel-page .contactses .mbox{ max-width: 911px;}
+    .opel-page .contactses .column{ width: 418px;}
+    .opel-page .contactses .item{ width: 200px; padding: 10px;  height: 280px; margin-bottom: 17px; font-size: 10px;}
+    .opel-page .contactses .ttl h3{ font-size: 25px;}
+    .opel-page .contactses .column .titlus:before{ width: 24px;}
 }
 
 @media screen and (max-width: 1024px) {
@@ -665,7 +673,7 @@
             .contacts-wrap{ }
             .ttl{ margin-bottom: 111px;
                 h3{ margin: 0; font-size: 48px; font-weight: 900; color: #eb7073; width: 100%; display: flex; justify-content: center; align-items: center;
-                    img{ margin-left: 30px;}
+                    img{ margin-left: 30px;vertical-align: middle;}
                 }
             }
             .titlus{ font-size: 36px; font-weight: 600; color: #eb7073; text-align: center; position: relative; margin-bottom: 40px;
