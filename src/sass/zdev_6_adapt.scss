@@ -1,6 +1,22 @@
 @media screen and (max-width: 1920px){ 
 
 }
+@media screen and (max-width: 1880px){
+	.gallery-block{
+		.main-wrapper{
+			.heading{position: relative;
+				h2{ 					
+				}
+			}
+			.gallery{
+				.photo-wrap{ margin-bottom: 20px; margin-right: auto; width: 16%; height: 190px; position: relative; cursor: pointer; overflow: hidden;
+					img{transition: all 0.5s; object-fit: cover; height: 100%;}
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 1724px){
 	.speci{
 		.main-wrapper{
@@ -25,19 +41,21 @@
 		 	}
 		}
 	}
-	.gallery-block{
-		.main-wrapper{
-			.heading{position: relative;
-				h2{ 					
-				}
-			}
-			.gallery{
-				.photo-wrap{ margin-bottom: 30px; margin-right: auto; width: 16%; height: 190px; position: relative; cursor: pointer; overflow: hidden;
-					img{transition: all 0.5s; object-fit: cover; height: 100%;}
-				}
+	
+	.opel-page{
+		.tabs{
+			.services-tab{
+				 .services-wrap{
+				 	.service-item{width: 16%;
+				 		.image-wrap{
+				 			a{}
+				 		}
+				 	}
+				 }				 
 			}
 		}
 	}
+	
 
 }
 @media screen and (max-width: 1400px){
@@ -79,7 +97,7 @@
 				}
 			}
 			.gallery{
-				.photo-wrap{ margin-bottom: 20px; margin-right: auto; width: 16%; height: 160px; position: relative; cursor: pointer; overflow: hidden;
+				.photo-wrap{ margin-bottom: 15px; margin-right: auto; width: 16%; height: 160px; position: relative; cursor: pointer; overflow: hidden;
 					img{transition: all 0.5s; object-fit: cover; height: 100%;}
 				}
 			}
@@ -122,7 +140,7 @@
 				}
 			}
 			.gallery{
-				.photo-wrap{ margin-bottom: 20px; margin-right: auto; width: 16%; height: 140px; position: relative; cursor: pointer; overflow: hidden;
+				.photo-wrap{ margin-bottom: 15px; margin-right: auto; width: 16%; height: 140px; position: relative; cursor: pointer; overflow: hidden;
 					img{transition: all 0.5s; object-fit: cover; height: 100%;}
 				}
 			}
@@ -145,15 +163,21 @@
 }
 @media screen and (max-width: 1124px){
 	body{ }
+	.servicesPoupWrap #services-popup{width: 100%; padding: 0px 30px 100px;
+
+	}	
 }
 @media screen and (max-width: 1024px){
-	.gallery-block .main-wrapper .heading .gradient-coner{display: none;
-		
+	.gallery-block .main-wrapper .heading .gradient-coner{display: none;		
 	}
-	
+
+	.servicesPoupWrap #services-popup{width: 100%;padding: 0px 0px 100px;
+
+	}	
 	
 }
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px){ 
+
 	//style reset
 		.speci, .gallery-block{padding: 50px 0; 
 			.main-wrapper{ width: 90%;   margin: 0 auto; 
