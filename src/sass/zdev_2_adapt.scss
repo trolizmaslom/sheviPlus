@@ -130,9 +130,6 @@
 	    margin-left: auto;
 	    padding-top: 22px;
 	}
-	.video .video-content .watch-all a {
-	    font-size: 14px;
-	}
 	.about .content {
 	    width: 1290px;
 	}
@@ -239,9 +236,6 @@
 	    margin-left: auto;
 	    padding-top: 22px;
 	}
-	.video .video-content .watch-all a {
-	    font-size: 14px;
-	}
 	.about .content {
 	    width: 1140px;
 	}
@@ -299,25 +293,187 @@
 		height: 100%;
 	}
 }
+@media screen and (max-width: 1140px){
+	.wrap-procl{
+		background-size: 60%;
+	}
+	.video .video-content .watch-all {
+	    width: 200px;
+	    margin-right: 100px;
+	}
+	.video .video-content .watch-all a {
+	    font-size: 12px;
+	}
+	.video .video-content .watch-all a span img {
+	    width: 70%;
+	}
+	.socials .wrap-soc .link {
+	    width: 17%;
+	}
+	.socials .wrap-soc .link a {
+	    height: 33%;
+	    display: inline-block;
+	}
+	.socials .wrap-soc .link a img {
+	    width: 100%;
+	}
+}
 @media screen and (max-width: 1024px){
-
+	.wrap-procl{
+		padding: 31px 69px 84px;
+		background-size: 57%;
+	}
+	.wrap-procl .procl-title{
+		font-size: 30px;
+	}
+	.wrap-procl .price{
+		font-size: 60px;
+	}
+	.wrap-procl .price span{
+		font-size: 15px;
+	}
+	.wrap-procl p {
+	    line-height: 25px;
+	    font-size: 10px;
+	    margin-top: -8px;
+	}
+	.wrap-procl .order {
+	    padding: 10px 32px;
+	    font-size: 12px;
+	    margin-top: 29px;
+	}
+	.video .video-content .title {
+		padding-bottom: 15px;
+    	padding-left: 72px;
+	}
+	.video .video-content .title h4{
+		font-size: 24px;
+	}
+	.video .video-content .title p{
+		font-size: 12px;
+	}
+	.video .video-content .video-frame{
+	    width: 710px;
+    	height: 319px;
+	}
+	.video .video-content .watch-all{
+		margin-right: 120px;
+	}
+	.video .video-content .title:before {
+	    height: 2px;
+	    width: 140px;
+	    top: 55px;
+	    left: -26%;
+	}
+	.video .video-content .title:after {
+	    height: 130px;
+	    width: 2px;
+	    top: 55px;
+	    left: -78px;
+	}
+	.about .content {
+	    width: 990px;
+	}
+	.about .content h3 {
+	    font-size: 25px;
+    	padding-left: 11px;
+	}
+	.about .content .about-content ul li {
+	    line-height: 14px;
+	    font-size: 12px;
+	    padding-bottom: 11px;
+	    padding-left: 11px;
+	}
+	.about .content .about-content ul li:before {
+	    left: -2px;
+	    top: 3px;
+	    width: 4px;
+	    height: 4px;
+	}
+	.about .content .about-content ul {
+	    padding-top: 15px;
+	}
+	.about .content .ramka:after{
+		left: 42px;
+	}
+	.about .content .ramka .rrr {
+	    width: 57px;
+	    height: 3px;
+	    top: -15px;
+	    left: 42px;
+	}
+	.about .content .ramka:before {
+	    width: 3px;
+	    left: 42px;
+	    top: -13px;
+	    height: 102%;
+	}
+	.socials h4{
+		font-size: 24px;
+	}
+	.socials .wrap-soc .link{
+		width: 16%;
+	}
 }
 @media screen and (max-width: 992px){
 	.wrap-procl{
 		background-position-x: 170%;
+		background-size: 50%;
 	}
 	.wrap-procl p{
 		width: 45%;
 	}
-	.socials .wrap-soc{
-		width: 85%;
+	.wrap-procl .order {
+        padding: 15px 50px;
+        border: 4px solid #eb7073;
+        font-size: 22px;
+        margin-top: 62px;
+    }
+	.socials{
+		padding: 30px 0 50px;
+		h4{
+			font-size: 40px;
+			margin-bottom: 10px;
+		}
+		.wrap-soc{
+		    width: 85%;
+			padding-top: 24px;
+		    padding-bottom: 30px;
+			.link{
+				a{
+					transition: .3s;
+					&:hover{
+						opacity: .6;
+						transition: .3s;
+					}
+				}
+			}
+		}
 	}
 	.video .video-content .video-frame{
 		width: 100%;
 		height: 590px;
 	}
+	.video .video-content .title{
+		margin: 0 auto;
+		width: 300px;
+		padding-bottom: 30px;
+		h4{
+			font-size: 34px;
+		}
+		p{
+			font-size: 20px;
+			font-weight: 500;
+		}
+	}
 	.video .video-content .watch-all{
 		margin-right: 0;
+		a{
+			font-size: 13px;
+			span{
+				padding-left: 10px;
+			}
+		}
 	}
 	.wrap-procl{
 		background-position-x: 200%;
@@ -345,9 +501,11 @@
 	}
 	.about .content {
 		padding: 0 0 0 50px;
+		width: 100%;
 	}
 	.about .content h3{
 		padding-left: 70px;
+    	font-size: 40px;
 	}
 	.about .content .ramka{
 		&:before{
@@ -372,9 +530,6 @@
 			width: 90px;
 		}
 	}
-	.video .video-content .video-frame{
-		height: 550px;
-	}
 	.about .content .ramka{
 		display: none;
 	}
@@ -396,16 +551,14 @@
 	.video .video-content .title:before, .video .video-content .title:after, .video .video-content .video-frame:after, .video .video-content .video-frame:before{
 		display: none;
 	}
-
-
 	.wrap-procl .procl-title{
-		font-size: 50px;
+		font-size: 40px;
 	}
 	.wrap-procl .price{
-		font-size: 90px;
+		font-size: 70px;
 	}
 	.wrap-procl p{
-		font-size: 17px;
+		font-size: 15px;
 		width: 500px;
 		margin-top: 0;
 	}
@@ -426,21 +579,30 @@
 		margin-top: 30px;
 	}
 	.wrap-procl{
-		background-size: 90%;
+		background-size: 86%;
 		padding: 30px 20px 100px;
 	}
 	.wrap-procl .order{
 		padding: 10px 25px;
 	}
+	.socials .wrap-soc .link {
+	    width: 26%;
+	}
+	.socials .wrap-soc .link a{
+		height: 46%;
+	}
 }
 @media screen and (max-width: 767px){
 	.video .video-content .video-frame{
-		height: 430px;
+		height: 400px;
 	}
 }
 @media screen and (max-width: 666px){
 	.wrap-procl .procl-title{
 		font-size: 30px;
+	}
+	.video .video-content .title {
+	    padding-left: 0px;
 	}
 	.wrap-procl .price{
 		font-size: 45px;
@@ -463,6 +625,15 @@
 	.socials h4{
 		font-size: 43px;
 	}
+	.socials .wrap-soc .link {
+	    width: 26%;
+	}
+	.socials h4 {
+	    font-size: 39px;
+	}
+	.socials .wrap-soc .link a {
+	    height: auto;
+	}
 	.video .video-content .video-frame{
 		height: 350px;
 	}
@@ -473,9 +644,9 @@
 		font-size: 18px;
 	}
 	.video .video-content .watch-all a{
-		font-size: 16px;
+		font-size: 13px;
 		span img{
-			width: 80%;
+			width: 77%;
 			padding-left: 0;
 		}
 	}
@@ -483,6 +654,7 @@
 @media screen and (max-width: 530px){
 	.socials .wrap-soc .link{
 		padding-bottom: 15px;
+		width: 40%;
 		.shadow{
 			display: none;
 		}
@@ -497,7 +669,7 @@
 @media screen and (max-width: 510px){
 	.socials .wrap-soc .link{
 		display: block;
-		width: 100%;
+		width: 250px;
 		margin: 0 auto;
 		text-align: center;
 		img{
@@ -529,6 +701,24 @@
 	.wrap-procl{
 		padding: 30px 20px 140px;
 	}
+	.wrap-procl .procl-title {
+	    font-size: 24px;
+	    line-height: 27px;
+	    padding-bottom: 15px;
+	}
+	.wrap-procl p {
+	    font-size: 12px;
+	    line-height: 21px;
+	}
+	.wrap-procl .order {
+	    padding: 8px 20px;
+	    border: 3px solid #eb7073;
+	    font-size: 16px;
+	    margin-top: 25px;
+	}
+	.video .video-content .watch-all{
+		width: 85%;
+	}
 	.socials h4{
 		font-size: 30px;
 	}
@@ -547,5 +737,12 @@
 			width: 75%;
 			padding-left: 0;
 		}
+	}
+	.about .content h3 {
+	    font-size: 36px;
+	}
+	.about .content .about-content ul li {
+	    line-height: 21px;
+	    font-size: 14px;
 	}
 }
