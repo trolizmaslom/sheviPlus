@@ -1,7 +1,8 @@
 .opel-page{
     header .header-bot .tel{        text-decoration: none;}
     .top-block{ background-image: url(../images/opelbg.jpg);
-        .bot{ justify-content: flex-end; padding-right: 54px;}
+        .content{ max-width: 505px;}
+        .bot{ justify-content: flex-end;}
         .brand-wrap{ margin-left: 20px;}
         .dropdown{ width: 200px; border:none; left: auto; top: 50%; right: 50%; transform:translateY(-50%);
             a{ color: #8f8f8f; white-space: nowrap; padding: 10px 0;
@@ -239,6 +240,9 @@
     .opel-page .contactses .item .item-wrap .item-row:last-child a{ width: 21px; display: inline-block; margin-right: 20px;}
 }
 @media screen and (max-width: 1700px) {
+    .opel-page .top-block .content {
+        max-width: 427px;
+    }
     .opel-page .tabs .tab-but{ font-size: 24px; height: 66px; width: 232px;}
     .opel-page .tabs .tab-but.active:before{ height: 2px;}
     .opel-page .tabs .tab-wrap .mbox{max-width: 946px;}
@@ -309,7 +313,7 @@
 }
 @media screen and (max-width: 1440px) {
     .opel-page .tabs .tab-but {        font-size: 21px;        height: 55px;        width: 203px;    }
-    .opel-page .tabs .tab-wrap .mbox{ width: 830px;}
+    .opel-page .tabs .tab-wrap .mbox{ max-width: 830px;}
     .opel-page .tabs .title h3{ font-size: 33px;}
     .opel-page .tabs .tab-wrap.one .content-taba{ padding-top: 45px;}
     .opel-page .tabs form .row-title{ font-size: 14px;}
@@ -383,9 +387,14 @@
     .opel-page .contactses .item .item-wrap .item-row:last-child{ padding-top: 8px;}
     .opel-page .contactses .item .item-wrap .item-row:last-child a{ width: 17px;}
 }
+@media screen and (max-width: 1388px) {
+    .opel-page .top-block .content {
+        max-width: 362px;
+    }
+}
 @media screen and (max-width: 1280px) {
     .opel-page .tabs .tab-but { font-size: 18px; height: 51px; width: 174px;}
-    .opel-page .tabs .tab-wrap .mbox{ width: 719px;}
+    .opel-page .tabs .tab-wrap .mbox{ max-width: 719px;}
     .opel-page .tabs .title h3{ font-size: 29px; max-width: 550px;}
     .opel-page .tabs .tab-wrap.one .content-taba{ padding-top: 39px;}
     .opel-page .tabs form .row-title{ font-size: 12px;}
