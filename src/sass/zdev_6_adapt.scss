@@ -159,15 +159,21 @@
 }
 @media screen and (max-width: 1124px){
 	body{ }
+	.servicesPoupWrap #services-popup{width: 100%; padding: 0px 30px 100px;
+
+	}	
 }
 @media screen and (max-width: 1024px){
-	.gallery-block .main-wrapper .heading .gradient-coner{display: none;
-		
+	.gallery-block .main-wrapper .heading .gradient-coner{display: none;		
 	}
-	
+
+	.servicesPoupWrap #services-popup{width: 100%;padding: 0px 0px 100px;
+
+	}	
 	
 }
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px){ 
+
 	//style reset
 		.speci, .gallery-block{padding: 50px 0; 
 			.main-wrapper{ width: 90%;   margin: 0 auto; 
