@@ -1,27 +1,58 @@
 @media screen and (max-width: 1700px){
-	.wrap-procl{
-		padding: 53px 115px 115px;
-		background-size: 54%;
+	.wrap-procl .procl-content{
+		padding-right: 0;
 	}
 	.wrap-procl .procl-title{
 		font-size: 48px;
 	}
-	.wrap-procl .price{
+	.wrap-procl .procl-content .left .price{
 		font-size: 96px;
+		margin-top: 30px;
 	}
-	.wrap-procl .price span{
+	.wrap-procl .procl-content .left .price span{
 		font-size: 24px;
 	}
-	.wrap-procl p {
+	.wrap-procl .procl-content .left p {
 	    line-height: 38px;
 	    font-size: 16px;
 	    margin-top: -13px;
 	}
-	.wrap-procl .order {
+	.wrap-procl .procl-content .left .order {
 	    padding: 16px 49px;
 	    border: 3px solid #eb7073;
 	    font-size: 21px;
 	    margin-top: 50px;
+	}
+	.wrap-procl .procl-content .left ul{
+		padding-bottom: 10px;
+	}
+	.wrap-procl .procl-content .left ul li{
+		line-height: 25px;
+	}
+	.wrap-procl .procl-content .right .bonus{
+		width: 440px;
+		height: 60px;
+		font-size: 22px;
+	}
+	.wrap-procl {
+	    padding: 33px 105px 95px;
+	}
+	.wrap-procl .procl-content .right .bonus:before{
+		height: 60px;
+		width: 60px;
+	}
+	.wrap-procl .procl-content .right p{
+		font-size: 21px;
+		span{
+			font-size: 24px;
+		}
+	}
+	.wrap-procl .procl-content .left ul li a{
+		font-size: 14px;
+	}
+	.wrap-procl .procl-content .right img{
+		height: 70%;
+		width: 70%;
 	}
 	.video .video-content .title h4{
 		font-size: 38px;
@@ -89,28 +120,57 @@
 }
 @media screen and (max-width: 1440px){
 	.wrap-procl{
-		padding: 46px 117px 98px;
+		padding: 46px 77px 78px;
 		background-size: 54%;
 	}
 	.wrap-procl .procl-title{
 		font-size: 42px;
 	}
-	.wrap-procl .price{
+	.wrap-procl .procl-content .left .price{
 		font-size: 84px;
 	}
-	.wrap-procl .price span{
+	.wrap-procl .procl-content .left .price span{
 		font-size: 24px;
 	}
-	.wrap-procl p {
+	.wrap-procl .procl-content .left p {
 	    line-height: 32px;
 	    font-size: 14px;
 	    margin-top: -10px;
 	}
-	.wrap-procl .order {
+	.wrap-procl .procl-content .left .order {
 	    padding: 15px 49px;
 	    border: 3px solid #eb7073;
 	    font-size: 16px;
 	    margin-top: 44px;
+	}
+	.wrap-procl .procl-content .right .bonus:before{
+		height: 50px;
+		width: 50px;
+	}
+	.wrap-procl .procl-content .right .bonus:after{
+		font-size: 40px;
+		left: -30px;
+	}
+	.wrap-procl .procl-content .right p{
+		font-size: 18px;
+		span{
+			font-size: 21px;
+		}
+	}
+	.wrap-procl .procl-content .left ul li{
+		line-height: 18px;
+	}
+	.wrap-procl .procl-content .left ul li a{
+		font-size: 13px;
+	}
+	.wrap-procl .procl-content .right img{
+		height: 75%;
+		width: 75%;
+	}
+	.wrap-procl .procl-content .right .bonus{
+		width: 400px;
+		height: 50px;
+		font-size: 19px;
 	}
 	.video .video-content .title h4{
 		font-size: 34px;
@@ -188,22 +248,51 @@
 	.wrap-procl .procl-title{
 		font-size: 36px;
 	}
-	.wrap-procl .price{
+	.wrap-procl .procl-content .left .price{
 		font-size: 72px;
 	}
-	.wrap-procl .price span{
+	.wrap-procl .procl-content .left .price span{
 		font-size: 18px;
 	}
-	.wrap-procl p {
+	.wrap-procl .procl-content .left p {
 	    line-height: 28px;
     	font-size: 12px;
 	    margin-top: -10px;
 	}
-	.wrap-procl .order {
+	.wrap-procl .procl-content .left .order {
 	    padding: 13px 40px;
 	    border: 3px solid #eb7073;
 	    font-size: 14px;
 	    margin-top: 37px;
+	}
+	.wrap-procl .procl-content .right .bonus:before{
+		height: 50px;
+		width: 50px;
+	}
+	.wrap-procl .procl-content .right .bonus:after{
+		font-size: 40px;
+		left: -30px;
+	}
+	.wrap-procl .procl-content .right p{
+		font-size: 16px;
+		span{
+			font-size: 18px;
+		}
+	}
+	.wrap-procl .procl-content .left ul li{
+		line-height: 17px;
+	}
+	.wrap-procl .procl-content .left ul li a{
+		font-size: 12px;
+	}
+	.wrap-procl .procl-content .right img{
+		height: 80%;
+		width: 80%;
+	}
+	.wrap-procl .procl-content .right .bonus{
+		width: 380px;
+		height: 50px;
+		font-size: 18px;
 	}
 	.video .video-content .title h4{
 		font-size: 29px;
@@ -292,6 +381,12 @@
 	.socials .wrap-soc .link a img{
 		height: 100%;
 	}
+	.marka-auto-popup{
+		padding: 80px 80px;
+	}
+	.marka-auto-popup{
+		width: 100%;
+	}
 }
 @media screen and (max-width: 1140px){
 	.wrap-procl{
@@ -326,21 +421,51 @@
 	.wrap-procl .procl-title{
 		font-size: 30px;
 	}
-	.wrap-procl .price{
+	.wrap-procl .procl-content .left .price{
 		font-size: 60px;
 	}
-	.wrap-procl .price span{
+	.wrap-procl .procl-content .left .price span{
 		font-size: 15px;
 	}
-	.wrap-procl p {
+	.wrap-procl .procl-content .left p {
 	    line-height: 25px;
 	    font-size: 10px;
 	    margin-top: -8px;
 	}
-	.wrap-procl .order {
+	.wrap-procl .procl-content .left .order {
 	    padding: 10px 32px;
 	    font-size: 12px;
 	    margin-top: 29px;
+	}
+	.wrap-procl .procl-content .right .bonus:before{
+		height: 50px;
+		width: 50px;
+	}
+	.wrap-procl .procl-content .right .bonus:after{
+		font-size: 40px;
+		left: -30px;
+	}
+	.wrap-procl .procl-content .right p{
+		font-size: 14px;
+		text-align: center;
+		span{
+			font-size: 15px;
+		}
+	}
+	.wrap-procl .procl-content .left ul li{
+		line-height: 14px;
+	}
+	.wrap-procl .procl-content .left ul li a{
+		font-size: 11px;
+	}
+	.wrap-procl .procl-content .right img{
+		height: 85%;
+		width: 85%;
+	}
+	.wrap-procl .procl-content .right .bonus{
+		width: 350px;
+		height: 50px;
+		font-size: 15px;
 	}
 	.video .video-content .title {
 		padding-bottom: 15px;
@@ -417,18 +542,60 @@
 }
 @media screen and (max-width: 992px){
 	.wrap-procl{
-		background-position-x: 170%;
-		background-size: 50%;
+		padding: 65px 50px 70px;
 	}
-	.wrap-procl p{
-		width: 45%;
+	.wrap-procl .procl-content .left p{
+		font-size: 16px;
 	}
-	.wrap-procl .order {
+	.wrap-procl .procl-content .left .order {
         padding: 15px 50px;
         border: 4px solid #eb7073;
         font-size: 22px;
         margin-top: 62px;
     }
+    .wrap-procl .procl-content .right .bonus:before{
+		height: 60px;
+		width: 60px;
+	}
+	.wrap-procl .procl-content .right .bonus:after{
+		font-size: 50px;
+		left: -30px;
+	}
+	.wrap-procl .procl-content .right p{
+		font-size: 16px;
+		text-align: center;
+		span{
+			font-size: 15px;
+		}
+	}
+	.wrap-procl .procl-content .left ul li{
+		line-height: 20px;
+	}
+	.wrap-procl .procl-content .left ul li a{
+		font-size: 16px;
+	}
+	.wrap-procl .procl-content .right img{
+		height: 90%;
+		width: 90%;
+	}
+	.wrap-procl .procl-content .right .bonus{
+		width: 370px;
+		height: 60px;
+		font-size: 18px;
+	}
+	.wrap-procl .procl-content{
+		flex-direction: column;
+		.left, .right{
+			width: 100%;
+		}
+	}
+	.wrap-procl .procl-content .right .bonus{
+		margin: 0 auto;
+	}
+	.wrap-procl .procl-content .right p{
+		width: 100%;
+		padding-top: 15px;
+	}
 	.socials{
 		padding: 30px 0 50px;
 		h4{
@@ -475,21 +642,8 @@
 			}
 		}
 	}
-	.wrap-procl{
-		background-position-x: 200%;
-	}
-	.wrap-procl p{
-		width: 40%;
-	}
 	.socials .wrap-soc{
 		width: 98%;
-	}
-	.wrap-procl{
-		background-size: 80%;
-		padding: 65px 50px 142px;
-	}
-	.wrap-procl p{
-		width: 630px;
 	}
 	.about .content .about-content ul li {
 		line-height: 25px;
@@ -591,10 +745,19 @@
 	.socials .wrap-soc .link a{
 		height: 46%;
 	}
+	.marka-auto-popup{
+		padding: 50px 50px;
+	}
+	.marka-auto-popup:before{
+		top: 120px;
+	}
 }
 @media screen and (max-width: 767px){
 	.video .video-content .video-frame{
 		height: 400px;
+	}
+	.marka-auto-popup .marka-content form .form-field{
+		width: 100%;
 	}
 }
 @media screen and (max-width: 666px){
@@ -614,7 +777,7 @@
 	}
 	.wrap-procl{
 		background-size: 100%;
-		padding: 30px 20px 200px;
+		padding: 30px 20px 60px;
 	}
 	.about .content .about-content ul{
 		padding-bottom: 0;
@@ -650,6 +813,9 @@
 			padding-left: 0;
 		}
 	}
+	.marka-auto-popup{
+		padding: 30px 15px;
+	}
 }
 @media screen and (max-width: 530px){
 	.socials .wrap-soc .link{
@@ -664,6 +830,10 @@
 	}
 	.video .video-content .video-frame{
 		height: 280px;
+	}
+	.marka-auto-popup .marka-content form .submit{
+		height: 60px;
+    	width: 195px;
 	}
 }
 @media screen and (max-width: 510px){
@@ -691,15 +861,29 @@
 		font-size: 15px;
 	}
 	.wrap-procl{
-		padding: 30px 20px 160px;
+		padding: 30px 20px 50px;
 	}
 	.video .video-content .video-frame{
 		height: 230px;
 	}
+	.wrap-procl .procl-content .left .order{
+		margin-top: 30px;
+	}
+	.wrap-procl .procl-content .right .bonus{
+		width: 100%;
+		margin-right: 0;
+		margin-left: auto;
+		text-align: center;
+		font-size: 22px;
+		padding-left: 0;
+		&:before, &:after{
+			display: none;
+		}
+	}
 }
 @media screen and (max-width: 370px){
 	.wrap-procl{
-		padding: 30px 20px 140px;
+		padding: 30px 20px 50px;
 	}
 	.wrap-procl .procl-title {
 	    font-size: 24px;
