@@ -450,18 +450,18 @@
     .opel-page .autosalon-wrap .content .ramka:before{ width: 3px;right: 47px;}
     .opel-page .autosalon-wrap .content .ramka:after{ height: 3px;right: 47px;}
     .opel-page .autosalon-wrap .text-wrap{ max-width: 410px;}
-    
-    .opel-page .contactses .ttl h3{        font-size: 33px;    }
-    .opel-page .contactses .mbox{ max-width: 1226px;   }
-    .opel-page .contactses .ttl h3 img{ width: 37px; margin-left: 20px;}
-    .opel-page .contactses .ttl h3 img:last-child{ width: 63px;}
-    .opel-page .contactses .column{ width: 578px;}
-    .opel-page .contactses .titlus{ font-size: 25px; margin-bottom: 27px;}
-    .opel-page .contactses .ttl{ margin-bottom: 78px;}
+
+    .opel-page .contactses .ttl h3{ font-size: 29px;}
+    .opel-page .contactses .mbox{ max-width: 1061px;}
+    .opel-page .contactses .column{ width: 506px;}
+    .opel-page .contactses .titlus{ font-size: 22px; margin-bottom: 24px;}
+    .opel-page .contactses .ttl{ margin-bottom: 68px;}
     .opel-page .contactses .column .titlus:before {width: 55px;height: 76px;top: -98px; }
-    .opel-page .contactses .maper{ height: 309px; margin-bottom: 35px;}
-    .opel-page .contactses .item{ width: 282px; padding: 33px; font-size: 11px; height: 326px; margin-bottom: 17px;}
-    .opel-page .contactses .item .item-wrap .item-title{ font-size: 18px; margin-bottom: 29px;}
+    .opel-page .contactses .maper{ height: 262px; margin-bottom: 28px;}
+    .opel-page .contactses .item{ width: 244px; padding: 28px;  height: 280px; margin-bottom: 17px; font-size: 10px;}
+    .opel-page .contactses .item img{ width: 14px;}
+    .opel-page .contactses .item .item-wrap .item-title{ font-size: 16px; margin-bottom: 27px;}
+    .opel-page .contactses .item .item-wrap .item-row{ margin-bottom: 11px;}
     .opel-page .contactses .item .item-wrap .item-row:last-child{ padding-top: 8px;}
     .opel-page .contactses .item .item-wrap .item-row:last-child a{ width: 17px;}
 }
@@ -691,6 +691,7 @@
                         }
                     }
                 }
+                img{ width: auto;}
 
             }
         }
