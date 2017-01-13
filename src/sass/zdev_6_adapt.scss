@@ -1,6 +1,22 @@
 @media screen and (max-width: 1920px){ 
 
 }
+@media screen and (max-width: 1880px){
+	.gallery-block{
+		.main-wrapper{
+			.heading{position: relative;
+				h2{ 					
+				}
+			}
+			.gallery{
+				.photo-wrap{ margin-bottom: 20px; margin-right: auto; width: 16%; height: 190px; position: relative; cursor: pointer; overflow: hidden;
+					img{transition: all 0.5s; object-fit: cover; height: 100%;}
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 1724px){
 	.speci{
 		.main-wrapper{
@@ -25,19 +41,7 @@
 		 	}
 		}
 	}
-	.gallery-block{
-		.main-wrapper{
-			.heading{position: relative;
-				h2{ 					
-				}
-			}
-			.gallery{
-				.photo-wrap{ margin-bottom: 30px; margin-right: auto; width: 16%; height: 190px; position: relative; cursor: pointer; overflow: hidden;
-					img{transition: all 0.5s; object-fit: cover; height: 100%;}
-				}
-			}
-		}
-	}
+	
 	.opel-page{
 		.tabs{
 			.services-tab{
@@ -93,7 +97,7 @@
 				}
 			}
 			.gallery{
-				.photo-wrap{ margin-bottom: 20px; margin-right: auto; width: 16%; height: 160px; position: relative; cursor: pointer; overflow: hidden;
+				.photo-wrap{ margin-bottom: 15px; margin-right: auto; width: 16%; height: 160px; position: relative; cursor: pointer; overflow: hidden;
 					img{transition: all 0.5s; object-fit: cover; height: 100%;}
 				}
 			}
@@ -136,7 +140,7 @@
 				}
 			}
 			.gallery{
-				.photo-wrap{ margin-bottom: 20px; margin-right: auto; width: 16%; height: 140px; position: relative; cursor: pointer; overflow: hidden;
+				.photo-wrap{ margin-bottom: 15px; margin-right: auto; width: 16%; height: 140px; position: relative; cursor: pointer; overflow: hidden;
 					img{transition: all 0.5s; object-fit: cover; height: 100%;}
 				}
 			}
