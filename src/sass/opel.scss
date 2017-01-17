@@ -1,4 +1,5 @@
 .opel-page{
+    .footer .mobile .tel-box,
     header .header-bot .tel{        text-decoration: none;}
     .top-block{ background-image: url(../images/opelbg.jpg);
         .content{ max-width: 505px;}
@@ -265,6 +266,7 @@
     .opel-page .top-block .content {        max-width: 427px;    }
 
     .opel-page header .header-bot .nav a { font-size: 16px;  }
+    .opel-page header .header-bot .tel-box { margin-left: 100px;  }
     .opel-page header .header-bot {        padding: 26px 0;    }
     .opel-page header .header-bot .tel{font-weight: 600;}
     .opel-page .tabs .tab-wrap.giku  .mbox{max-width: 1463px;}
@@ -311,6 +313,7 @@
 
 }
 @media screen and (max-width: 1440px) {
+    .opel-page header .header-bot .tel-box { margin-left: 64px;  }
     .opel-page header .header-bot{ padding: 25px 0;}
     .opel-page header .header-bot .tel{ font-size: 18px;}
     .opel-page .top-block .mainhref{ bottom: -4px; right: 22px; font-size: 24px;}
@@ -397,84 +400,58 @@
     }
 }
 @media screen and (max-width: 1280px) {
-    .opel-page .tabs .tab-but { font-size: 18px; height: 51px; width: 174px;}
-    .opel-page .tabs .tab-wrap .mbox{ max-width: 719px;}
-    .opel-page .tabs .title h3{ font-size: 29px; max-width: 550px;}
-    .opel-page .tabs .tab-wrap.one .content-taba{ padding-top: 39px;}
-    .opel-page .tabs form .row-title{ font-size: 12px;}
-    .opel-page .tabs .title {        padding: 0 0 20px;    }
-    .opel-page .tabs form .item{ width: 156px; margin-bottom: 18px; margin-right: 16px;}
-    .opel-page .tabs form .row{ margin-bottom: 12px;}
-    .opel-page .tabs form .jq-selectbox{ height: 36px;}
-    .opel-page .tabs form .jq-selectbox__select { line-height: 36px; }
-    .opel-page .tabs form input{ height: 36px; }
-    .opel-page .tabs form .button{ height: 36px; }
-    .opel-page .tabs .tab-wrap.one{min-height: 468px;}
+    .opel-page header .header-bot .nav a{ font-size: 12px;}
+    .opel-page header .header-bot {        padding: 23px 0 26px;    }
+    .opel-page .top-block .mainhref{ right: 51px;}
+    .opel-page .tabs .content{ padding-top: 6px;}
+    .opel-page .tabs .tab-content{ padding-top: 22px;}
+    .opel-page .tabs .tab-wrap .mbox{ max-width: 865px;}
+    .opel-page .tabs .tab-wrap.one .content-taba{ padding-top: 26px;}
+    .opel-page .tabs .title {        padding: 0 0 12px;    }
+    .opel-page .tabs .tab-wrap.one.giku .content-taba{ padding-top: 30px;}
+    .opel-page .tabs .giku .title h3{ padding-left: 0;}
+    .opel-page .tabs .giku .title {       padding: 0 0 31px;    }
+    .opel-page .tabs .tab-wrap.giku .mbox{ max-width: 1243px;}
+    .opel-page .tabs form .row{ margin-bottom: 20px;}
+    .opel-page .tabs .tab-wrap.one{min-height: 601px;}
     .opel-page .tabs .tab-wrap.one .ramka{ top: 56px;}
     .opel-page .tabs .tab-wrap.one .ramka .rrr {        width: 300px; height: 3px;right: -173px;}
     .opel-page .tabs .tab-wrap.one .ramka:before{ width: 3px;right: -173px;}
     .opel-page .tabs .tab-wrap.one .ramka:after{ height: 3px;right: -173px;}
+    .opel-page .tabs .tab-wrap.one .imgs{ top: calc(50% - 73px);}
 
-    .opel-page .tabs .text {        padding-left: 87px;        font-size: 10px;        line-height: 18px;    }
-    .opel-page .tabs .text h5{ font-size: 18px; margin: 0 0 14px;}
-    .opel-page .tabs .text .phone {  font-size: 29px;  padding: 14px 0 0; }
-    .opel-page .tabs .text .phone h6{ font-size: 14px; margin: 0 0 14px;}
-    .opel-page .tabs .tab-wrap.one .imgs img{ width: 145px;}
-    .opel-page .tabs .tab-wrap.one .imgs{ top: 132px;}
 
-    .opel-page .titles h2{ font-size: 29px;}
-    .choise-wrap .mbox{ max-width: 1065px;}
-    .opel-page .choise-wrap .ttl .bound img{ width: 52px; margin-right: 11px;}
-    .opel-page .choise-wrap .list:last-child .ttl .bound img{ width: 31px;}
-    .opel-page .choise-wrap .ttl{ font-size: 21px; padding-top: 22px;}
-    .opel-page .choise-wrap .ttl .bound{ height: 42px;}
-    .opel-page .choise-wrap .list li{ width: 156px; height: 97px;}
-    .opel-page .choise-wrap .list ul{ padding: 20px 0;}
-    .opel-page .choise-wrap .list li .img{ height: 73px;}
+    .choise-wrap .mbox{ max-width: 1228px;}
+    .opel-page .choise-wrap .ttl{ font-weight: 700;}
+    .opel-page .choise-wrap .list li{ width: 189px; height: 150px; margin-right: 0;}
+    .opel-page .choise-wrap .list ul{ padding: 18px 0 5px;}
 
-    .oil-wrap .mbox{max-width: 1067px;}
-    .opel-page .oil-wrap .ttl{ font-size: 36px;}
-    .opel-page .oil-wrap .oil{ padding-top: 34px;}
-    .opel-page .oil-wrap .price span{ font-size: 72px;}
-    .opel-page .oil-wrap .price b{ font-size: 17px;}
-    .opel-page .oil-wrap .price{ line-height: 44px;}
-    .opel-page .oil-wrap .wrks{ font-size: 12px; }
-    .opel-page .oil-wrap .bonus{ height: 42px;  border-radius: 21px; width: 294px; font-size: 14px; margin-bottom: 42px;}
-    .opel-page .oil-wrap .bonus:before{ width: 42px; height: 42px; }
-    .opel-page .oil-wrap .zakaz a{ width: 146px; height: 48px; font-size: 14px; }
-    .opel-page .oil-wrap .sub{ font-size: 14px;}
-    .opel-page .oil-wrap .sub b{ font-size: 16px;}
-    .opel-page .oil-wrap .zakaz{ margin-bottom: 14px;}
-    .opel-page .oil-wrap{min-height: 393px;}
 
-    .opel-page .autosalon-wrap .mbox{max-width: 1094px;min-height: 575px}
+    .oil-wrap .mbox{max-width: 1237px;}
+    .opel-page .oil-wrap .oil{ padding-top: 55px;}
+
+
+
+    .opel-page .autosalon-wrap .mbox{max-width: 1200px;min-height: 679px; background-size: 120%;}
     .opel-page .autosalon-wrap .ttl{ margin-bottom: 12px; }
-    .opel-page .autosalon-wrap .ttl h3{ font-size: 29px; }
-    .opel-page .autosalon-wrap .content{ padding: 36px 0 0 41px;}
-    .opel-page .autosalon-wrap .sub{ font-size: 17px; line-height: 24px; margin-bottom: 26px;}
-    .opel-page .autosalon-wrap .sub p:last-child{ font-size: 18px;}
-    .opel-page .autosalon-wrap .base{ font-size: 14px; min-height: 49px; max-width: 327px; padding: 0 15px; margin-bottom: 40px;}
-    .opel-page .autosalon-wrap .base img{ width: 16px; margin-right: 22px;}
-    .opel-page .autosalon-wrap ul li{max-width: 369px;min-height: 50px; margin-bottom: 4px;}
-    .opel-page .autosalon-wrap ul a{ font-size: 12px;padding: 18px;}
-    .opel-page .autosalon-wrap ul a:before{  left: 22px; top: 22px; width: 4px; height: 4px;}
+    .opel-page .autosalon-wrap .content{ padding: 40px 0 0 80px;}
+    .opel-page .autosalon-wrap .sub{ font-size: 18px; line-height: 30px; margin-bottom: 17px;}
     .opel-page .autosalon-wrap .content .ramka{ top: 56px;}
     .opel-page .autosalon-wrap .content .ramka .rrr {        width: 600px; height: 3px;right: 47px;}
     .opel-page .autosalon-wrap .content .ramka:before{ width: 3px;right: 47px;}
     .opel-page .autosalon-wrap .content .ramka:after{ height: 3px;right: 47px;}
-    .opel-page .autosalon-wrap .text-wrap{ max-width: 410px;}
 
-    .opel-page .contactses .ttl h3{ font-size: 29px;}
-    .opel-page .contactses .mbox{ max-width: 1061px;}
-    .opel-page .contactses .column{ width: 506px;}
-    .opel-page .contactses .titlus{ font-size: 22px; margin-bottom: 24px;}
-    .opel-page .contactses .ttl{ margin-bottom: 68px;}
-    .opel-page .contactses .column .titlus:before {width: 55px;height: 76px;top: -87px; }
-    .opel-page .contactses .maper{ height: 262px; margin-bottom: 28px;}
-    .opel-page .contactses .item{ width: 244px; padding: 28px;  height: 280px; margin-bottom: 17px; font-size: 10px;}
-    .opel-page .contactses .item img{ width: 14px;}
-    .opel-page .contactses .item .item-wrap .item-title{ font-size: 16px; margin-bottom: 27px;}
-    .opel-page .contactses .item .item-wrap .item-row{ margin-bottom: 11px;}
+
+
+    .opel-page .contactses .mbox{ max-width: 1240px;}
+    .opel-page .contactses .column{ width: 594px;}
+
+    .opel-page .contactses .ttl{ margin-bottom: 57px;}
+    .opel-page .contactses .column .titlus:before {width: 30px; height: 63px; top: -85px;}
+    .opel-page .contactses .maper{ height: 382px; margin-bottom: 18px;}
+    .opel-page .contactses .item{ width: 290px; padding: 24px 19px;  height: 391px; margin-bottom: 17px; }
+    .opel-page .contactses .item .item-wrap .item-title{ font-size: 16px; margin-bottom: 12px;}
+    .opel-page .contactses .item .item-wrap .item-row{ margin-bottom: 19px;}
     .opel-page .contactses .item .item-wrap .item-row:last-child{ padding-top: 8px;}
     .opel-page .contactses .item .item-wrap .item-row:last-child a{ width: 17px;}
 }

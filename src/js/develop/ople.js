@@ -91,6 +91,8 @@ function mapInit2() {
                 center: center,
                 disableDefaultUI: true,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
+                scrollwheel: false,
+                zoomControl:true,
                 zoomControlOptions: {
                     position: google.maps.ControlPosition.LEFT_BOTTOM
                 }
