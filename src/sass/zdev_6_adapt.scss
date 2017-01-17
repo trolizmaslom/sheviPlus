@@ -20,22 +20,36 @@
 @media screen and (max-width: 1724px){
 	.speci{
 		.main-wrapper{
+			.heading{
+				h2{font-size: 40px; margin-bottom: 0px;
+					
+				}
+			}
 			.speci-list{
 				.speci-items{ 
-					.speci-item{ width: 45%; display: flex; flex-wrap: wrap;  align-content: center;
-						.speci-name{font-size: 16px; width: 100%; }
-						.speci-position{font-size: 12px; width: 100%; }
-						.city{font-size: 16px; width: 100%; }
-						.tel-number{font-size: 14px; width: 100%; }
-						.button-wrap{width: 100%;
-							button{width: 95%;}
+					&:before{top: 4%;}
+					.item-name{
+						h3{margin-top: 0; }
+					}
+					.speci-item{ width: 46%; display: flex; flex-wrap: wrap;  align-content: stretch; min-height: 450px; 
+						.image-wrap{
+							img{width: 180px; height: 180px; object-fit: cover;}
+						}
+						.speci-name{font-size: 18px; width: 100%;
+								
+						   }
+						.speci-position{font-size: 14px; width: 100%; margin-top: 7px;line-height: 24px;}
+						.city{font-size: 18px; width: 100%;margin-top: 0; }
+						.tel-number{font-size: 16px; width: 100%; margin-top: 0;}
+						.button-wrap{width: 100%; align-self: flex-end;
+							button{width: 180px;}
 						}
 					}
-					&:before{ }
+					&:before{}
 				}
 			}
 			.getConsultation-wrap{ 
-		 		button{width: 300px; padding: 20px 0; font-size: 20px; color: #eb7073; border: 3px solid #eb7073; background: #fff; font-weight: bold;
+		 		button{width: 345px; padding: 20px 0; font-size: 20px; color: #eb7073; border: 3px solid #eb7073; background: #fff; font-weight: bold;
 		 			
 		 		}
 		 	}
@@ -58,36 +72,72 @@
 	
 
 }
-@media screen and (max-width: 1400px){
+
+@media screen and (max-width: 1550px){
 	.speci{
-		.main-wrapper{
+		.main-wrapper{width: 93%;
 			.heading{
-				h2{font-size: 32px; }
+				h2{font-size: 40px; }
 			}
 			.speci-list{
 				.speci-items{ 
 					.item-name{
-						h3{font-size: 28px; }
+						h3{font-size: 24px; margin-bottom: 20px; }
 					}
-					.speci-item{  padding: 15px 10px; min-height: 360px;
-						.speci-name{font-size: 14px; width: 100%; margin: 5px 0;}
-						.speci-position{font-size: 10px; width: 100%; margin: 5px 0;}
-						.city{font-size: 14px; width: 100%; margin: 5px 0;}
-						.tel-number{font-size: 12px; width: 100%; margin: 5px 0;}
-						.button-wrap{width: 100%;
-							button{width: 95%;}
+					.speci-item{  padding: 15px 10px; min-height: 380px; 
+						.image-wrap{
+								img{width: 160px; height: 120px; }
+							}
+						.speci-name{font-size: 16px; width: 100%; margin: 5px 0;}
+						.speci-position{font-size: 14px; width: 100%; margin: 5px 0 0px;}
+						.city{font-size: 18px; width: 100%; margin: 5px 0;}
+						.tel-number{font-size: 16px; width: 100%; margin: 5px 0;}
+						.button-wrap{width: 100%; 
+							button{width: 160px;padding: 10px 0;}
 						}
 					}
 					&:before{ }
 				}
 			}
 			.getConsultation-wrap{ 
-		 		button{width: 280px; padding: 15px 0; font-size: 18px; color: #eb7073; border: 3px solid #eb7073; background: #fff; font-weight: bold;
+		 		button{width: 320px; padding: 15px 0; font-size: 18px; color: #eb7073; border: 3px solid #eb7073; background: #fff; font-weight: bold;
 		 			
 		 		}
 		 	}
 		}
 	}
+}
+
+@media screen and (max-width: 1400px){
+	// .speci{
+	// 	.main-wrapper{
+	// 		.heading{
+	// 			h2{font-size: 32px; }
+	// 		}
+	// 		.speci-list{
+	// 			.speci-items{ 
+	// 				.item-name{
+	// 					h3{font-size: 28px; }
+	// 				}
+	// 				.speci-item{  padding: 15px 10px; min-height: 360px;
+	// 					.speci-name{font-size: 14px; width: 100%; margin: 5px 0;}
+	// 					.speci-position{font-size: 10px; width: 100%; margin: 5px 0;}
+	// 					.city{font-size: 14px; width: 100%; margin: 5px 0;}
+	// 					.tel-number{font-size: 12px; width: 100%; margin: 5px 0;}
+	// 					.button-wrap{width: 100%;
+	// 						button{width: 95%;}
+	// 					}
+	// 				}
+	// 				&:before{ }
+	// 			}
+	// 		}
+	// 		.getConsultation-wrap{ 
+	// 	 		button{width: 280px; padding: 15px 0; font-size: 18px; color: #eb7073; border: 3px solid #eb7073; background: #fff; font-weight: bold;
+		 			
+	// 	 		}
+	// 	 	}
+	// 	}
+	// }
 
 	.gallery-block{
 		.main-wrapper{
