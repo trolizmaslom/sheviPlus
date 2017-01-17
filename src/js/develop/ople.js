@@ -42,10 +42,30 @@ function fancyboxServices() {
         padding: '0',
          'afterLoad': function(){
             this.content.find('h3').text(text);
-        },
+        }
     })
 }
-
+function fancyTop() {
+    $('.opel-page .dropdown a').fancybox({
+        'beforeLoad': function(){
+            text = $(this.element).find('span').text();
+        },
+        openEffect : 'fade',
+        closeEffect : 'fade',
+        autoSize:true,
+        width : 1030,
+        height : 835,
+        maxWidth : '100%',
+        wrapCSS:'wrap-marka',
+        'closeBtn' : true,
+        fitToView:true,
+        autoCenter: true,
+        padding:'0',
+        'afterLoad': function(){
+            this.content.find('.title span').text(text);
+        }
+    });
+}
 function mapInit2() {
     if ($('.contactses .maper').length > 0) {
         var maps = $('.contactses .maper');
@@ -71,6 +91,8 @@ function mapInit2() {
                 center: center,
                 disableDefaultUI: true,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
+                scrollwheel: false,
+                zoomControl:true,
                 zoomControlOptions: {
                     position: google.maps.ControlPosition.LEFT_BOTTOM
                 }
@@ -95,9 +117,31 @@ function mapInit2() {
         });
     }
 }
+function goTo2(){
 
+    $('.mainhref').click(function(e){
+        e.preventDefault();
+        var href = $(this).attr('href');
+        var target = $(href).offset().top;
+        $(scroller).animate({scrollTop:target},500);
+    });
+    $('header .nav a').click(function(e){
+        e.preventDefault();
+        var href = $(this).attr('href');
+        var target = $(href).offset().top;
+        if($(this).attr('data-lock') != undefined){
+            var tt = $(this).attr('data-lock');
+            if (tt == 'srv'){$('.srv_click').click();}
+            if (tt == 'zap'){$('.zap_click').click();}
+            if (tt == 'raz'){$('.raz_click').click();}
+        }
+        $(scroller).animate({scrollTop:target},500);
+    });
+}
 $(document).ready(function(){
+    goTo2();
    tabNav();
+    fancyTop();
    fancyboxGallery();
     mapInit2();
     fancyboxServices();
