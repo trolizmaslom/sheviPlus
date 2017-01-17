@@ -124,6 +124,7 @@ function popNext(popupId, popupWrap) {
         padding: 0,
         fitToView: true,
         wrapCSS: popupWrap,
+        closeBtn:false,
         autoSize: true,
         afterClose: function () {
             $('form').trigger("reset");
