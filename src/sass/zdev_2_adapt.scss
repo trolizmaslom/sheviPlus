@@ -502,29 +502,22 @@
 		width: 100%;
 	}
 }
-@media screen and (max-width: 1140px){
-	.wrap-procl{
-		background-size: 60%;
+@media screen and (max-width: 1200px){
+	.about .content .ramka:after{
+	    left: 30px;
+	    height: 5px;
+	    bottom: -39px;
 	}
-	.video .video-content .watch-all {
-	    width: 200px;
-	    margin-right: 100px;
+	.about .content .ramka .rrr {
+	    width: 70px;
+	    height: 5px;
+	    top: -9px;
+	    left: 30px;
 	}
-	.video .video-content .watch-all a {
-	    font-size: 12px;
-	}
-	.video .video-content .watch-all a span img {
-	    width: 70%;
-	}
-	.socials .wrap-soc .link {
-	    width: 17%;
-	}
-	.socials .wrap-soc .link a {
-	    height: 33%;
-	    display: inline-block;
-	}
-	.socials .wrap-soc .link a img {
-	    width: 100%;
+	.about .content .ramka:before {
+	    left: 30px;
+	    top: -8px;
+	    width: 5px;
 	}
 }
 @media screen and (max-width: 1024px){
@@ -533,22 +526,22 @@
 		background-size: 57%;
 	}
 	.wrap-procl .procl-title{
-		font-size: 30px;
+		font-size: 35px;
 	}
 	.wrap-procl .procl-content .left .price{
-		font-size: 60px;
+		font-size: 63px;
 	}
 	.wrap-procl .procl-content .left .price span{
-		font-size: 15px;
+		font-size: 18px;
 	}
 	.wrap-procl .procl-content .left p {
 	    line-height: 25px;
-	    font-size: 10px;
+	    font-size: 13px;
 	    margin-top: -8px;
 	}
 	.wrap-procl .procl-content .left .order {
-	    padding: 10px 32px;
-	    font-size: 12px;
+	    padding: 15px 37px;
+	    font-size: 14px;
 	    margin-top: 29px;
 	}
 	.wrap-procl .procl-content .right .bonus:before{
@@ -562,19 +555,20 @@
 	.wrap-procl .procl-content .right p{
 		font-size: 14px;
 		text-align: center;
+		margin-top: -5px;
 		span{
 			font-size: 15px;
 		}
 	}
 	.wrap-procl .procl-content .left ul li{
-		line-height: 14px;
+		line-height: 16px;
 	}
 	.wrap-procl .procl-content .left ul li a{
-		font-size: 11px;
+		font-size: 13px;
 	}
 	.wrap-procl .procl-content .right img{
-		height: 85%;
-		width: 85%;
+		height: 80%;
+		width: 90%;
 	}
 	.wrap-procl .procl-content .right .bonus{
 		width: 350px;
@@ -596,7 +590,7 @@
     	height: 319px;
 	}
 	.video .video-content .watch-all{
-		margin-right: 120px;
+		margin-right: 70px;
 	}
 	.video .video-content .title:before {
 	    height: 2px;
@@ -608,32 +602,34 @@
 	    height: 130px;
 	    width: 2px;
 	    top: 55px;
-	    left: -78px;
+	    left: -26%;
 	}
 	.about .content {
 	    width: 990px;
 	}
 	.about .content h3 {
-	    font-size: 25px;
+	    font-size: 28px;
     	padding-left: 11px;
 	}
 	.about .content .about-content ul li {
-	    line-height: 14px;
-	    font-size: 12px;
-	    padding-bottom: 11px;
+	    line-height: 19px;
+	    font-size: 14px;
+	    padding-bottom: 15px;
 	    padding-left: 11px;
 	}
 	.about .content .about-content ul li:before {
-	    left: -2px;
-	    top: 3px;
-	    width: 4px;
-	    height: 4px;
+	    left: -4px;
+	    top: 7px;
+	    width: 5px;
+	    height: 5px;
 	}
 	.about .content .about-content ul {
 	    padding-top: 15px;
 	}
 	.about .content .ramka:after{
 		left: 42px;
+		bottom: 3px;
+		height: 4px;
 	}
 	.about .content .ramka .rrr {
 	    width: 57px;
@@ -651,10 +647,36 @@
 		font-size: 24px;
 	}
 	.socials .wrap-soc .link{
-		width: 16%;
+		width: 19%;
 	}
 }
-@media screen and (max-width: 992px){
+@media screen and (max-width: 1023px){
+	.about .content {
+	    padding: 0;
+	}
+	.about .content .ramka:after{
+		left: -50px;
+		bottom: 3px;
+		height: 4px;
+	}
+	.about .content .ramka .rrr {
+	    width: 57px;
+	    height: 3px;
+	    top: -15px;
+	    left: -50px;
+	}
+	.about .content .ramka:before {
+	    width: 3px;
+	    left: -50px;
+	    top: -13px;
+	    height: 102%;
+	}
+	.video .video-content .watch-all{
+		margin-right: 0px;
+		width: 220px;
+	}
+}
+@media screen and (max-width: 991px){
 	.wrap-procl{
 		padding: 65px 50px 70px;
 	}
@@ -813,6 +835,10 @@
 	.about .content {
 		padding: 0 20px 0 20px;
 	}
+	.about .content .about-content .car{
+		transform: translateX(20%);
+		z-index: -1;
+	}
 	.video .video-content .video-frame{
 		height: 470px;
 	}
@@ -853,8 +879,11 @@
 	.wrap-procl .order{
 		padding: 10px 25px;
 	}
-	.socials .wrap-soc .link {
+	.socials .wrap-soc .link, .socials .wrap-soc .link:last-child {
 	    width: 26%;
+	}
+	.socials .wrap-soc .link:last-child a{
+		width: 75%;
 	}
 	.socials .wrap-soc .link a{
 		height: 46%;
@@ -864,6 +893,10 @@
 	}
 	.marka-auto-popup:before{
 		top: 120px;
+	}
+	.socials .wrap-soc .link a img {
+	    height: 100%;
+	    width: 100%;
 	}
 }
 @media screen and (max-width: 767px){
@@ -930,6 +963,9 @@
 	.marka-auto-popup{
 		padding: 30px 15px;
 	}
+	.about .content .about-content .car{
+		display: none;
+	}
 }
 @media screen and (max-width: 530px){
 	.socials .wrap-soc .link{
@@ -938,6 +974,9 @@
 		.shadow{
 			display: none;
 		}
+	}
+	.socials .wrap-soc .link:last-child a {
+		min-height: 215%;
 	}
 	.socials h4{
 		font-size: 38px;
@@ -951,14 +990,22 @@
 	}
 }
 @media screen and (max-width: 510px){
-	.socials .wrap-soc .link{
+	.socials .wrap-soc .link, .socials .wrap-soc .link:last-child{
 		display: block;
 		width: 250px;
+		height: 80px;
 		margin: 0 auto;
 		text-align: center;
 		img{
 			width: 50%;
 		}
+	}
+	.socials .wrap-soc .link img, .socials .wrap-soc .link:last-child img {
+	    width: 100%;
+	    left: 0;
+	}
+	.socials .wrap-soc .link:last-child a {
+	    min-height: 100%;
 	}
 }
 @media screen and (max-width: 479px){
