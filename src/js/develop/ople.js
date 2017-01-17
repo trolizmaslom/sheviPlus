@@ -91,6 +91,8 @@ function mapInit2() {
                 center: center,
                 disableDefaultUI: true,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
+                scrollwheel: false,
+                zoomControl:true,
                 zoomControlOptions: {
                     position: google.maps.ControlPosition.LEFT_BOTTOM
                 }
@@ -116,6 +118,13 @@ function mapInit2() {
     }
 }
 function goTo2(){
+
+    $('.mainhref').click(function(e){
+        e.preventDefault();
+        var href = $(this).attr('href');
+        var target = $(href).offset().top;
+        $(scroller).animate({scrollTop:target},500);
+    });
     $('header .nav a').click(function(e){
         e.preventDefault();
         var href = $(this).attr('href');
