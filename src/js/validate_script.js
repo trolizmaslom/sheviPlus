@@ -128,6 +128,7 @@ function popNext(popupId, popupWrap) {
         autoSize: true,
         afterClose: function () {
             $('form').trigger("reset");
+            $('form select').trigger('refresh');
             clearTimeout(timer);
         }
     });
