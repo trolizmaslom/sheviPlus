@@ -721,8 +721,21 @@
 	}
 	.wrap-procl .procl-content{
 		flex-direction: column;
-		.left, .right{
+		.left{
 			width: 100%;
+		}
+		.right{
+			width: 100%;
+			position: relative;
+			img{
+				position: absolute;
+				right: 0;
+				height: 455px;
+			    width: 720px;
+			    top: -540%;
+			    right: -37%;
+			    z-index: -1;
+			}
 		}
 	}
 	.wrap-procl .procl-content .right .bonus{
@@ -898,6 +911,13 @@
 	    height: 100%;
 	    width: 100%;
 	}
+	.wrap-procl .procl-content .right{
+		padding-top: 15px;
+		img{
+		    right: -55%;
+		    top: -440%;
+		}
+	}
 }
 @media screen and (max-width: 767px){
 	.video .video-content .video-frame{
@@ -965,6 +985,11 @@
 	}
 	.about .content .about-content .car{
 		display: none;
+	}
+	.wrap-procl .procl-content .right{
+		img{
+		    display: none;
+		}
 	}
 }
 @media screen and (max-width: 530px){
