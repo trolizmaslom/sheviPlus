@@ -118,6 +118,13 @@ function mapInit2() {
     }
 }
 function goTo2(){
+
+    $('.mainhref').click(function(e){
+        e.preventDefault();
+        var href = $(this).attr('href');
+        var target = $(href).offset().top;
+        $(scroller).animate({scrollTop:target},500);
+    });
     $('header .nav a').click(function(e){
         e.preventDefault();
         var href = $(this).attr('href');
