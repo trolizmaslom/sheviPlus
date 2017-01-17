@@ -39,8 +39,8 @@
 	}
 }
 
-.gallery-block{
-	.main-wrapper{width: 94%;
+.gallery-block{padding:  0px;
+	.main-wrapper{width: 94%; max-width: 1920px;
 		.heading{position: relative;
 			
 			.gradient-coner{ min-height: 260px; width: 600px; position: absolute;top: -78%; z-index: 1;
@@ -50,7 +50,7 @@
 				&:after{content: ''; display: block; position: absolute;right: 0; bottom: 0;  width: 100%; min-height: 5px; background-image: linear-gradient(left,#eb7073, #9b608e);					
 				}
 			}
-			h2{ text-align: left; width: auto; background: #fff; position: relative; z-index: 3; display: inline-block; padding-right: 20px;
+			h2{ text-align: left; width: auto; background: #fff; position: relative; z-index: 3; display: inline-block; padding-right: 20px; font-family: ProximaNova; font-weight: 800;
 				
 			}
 		}
