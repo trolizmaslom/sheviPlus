@@ -256,7 +256,8 @@ $(document).ready(function () {
     validate('.clarify-middle .clarify-form form', {submitFunction: validationCall});
     validate('.service-form', {submitFunction: validationCall});
     validate('.discount-popup-form>form', {submitFunction: validationCall});
-    validate('.marka-content form', {submitFunction: validationCall});
+    validate('#marka-auto-op form', {submitFunction: validationCall});
+    validate('#marka-auto-ch form', {submitFunction: validationCall});
      validate('.services-form', {submitFunction: validationCall});
     
     Maskedinput();
