@@ -195,18 +195,18 @@
             <div class="heading">
                 <h3>Комплексная диагностика</h3>
             </div>
-            <form action="ajax.php" class="services-form">
+            <form action="lendos.php" class="services-form">
                 <label>
                     <p>Ваше Имя</p>
-                    <input type="text" name="name" placeholder="Введите Ваше Имя*" required="required">
+                    <input type="text" name="contact_name" placeholder="Введите Ваше Имя*" required="required">
                 </label>
                 <label>
                     <p>Телефон</p>
-                   <input type="text"  name="tel" placeholder="Введите Ваш телефон*" required="required" class="tel-mask">
+                   <input type="text"  name="contact_tel" placeholder="Введите Ваш телефон*" required="required" class="tel-mask">
                 </label>               
                 <label class="for-select">
                     <p>Выбрать дополнительные услуги</p>
-                    <select>                        
+                    <select required="required" name="add-service">
                         <option value="Регулярное ТО">Регулярное ТО</option>
                         <option value="Комплексная диагностика">Комплексная диагностика</option>
                         <option value="Компютерная диагностика">Компютерная диагностика</option>
@@ -229,11 +229,11 @@
                 </label>
                  <label>
                     <p>Указать свою услугу</p>
-                    <input type="text" name="privatService" placeholder="Укажите свою услугу" required="required">
+                    <input type="text" name="service" placeholder="Укажите свою услугу" required="required">
                 </label>
                 <label class="for-select">
                     <p>Марка автомобиля</p>
-                    <select>
+                    <select required="required" name="brand">
                         <option value="">Выберите марку автомобиля</option>
                         <option value="Chevrolet">Chevrolet</option>
                         <option value="Opel">Opel</option>
@@ -241,7 +241,7 @@
                 </label>
                 <label  class="for-select">
                     <p>Модель автомобиля</p>
-                    <select>
+                    <select required="required" name="model">
                         <option value="">Выберите модель автомобиля</option>
                         <option value="CRUZE">CRUZE</option>
                         <option value="AVEO (T250/255)">AVEO (T250/255)</option>
@@ -257,7 +257,7 @@
                 </label>
                 <label>
                     <p>Примечание</p>
-                    <textarea placeholder="Напишите Ваше сообщение" value=""></textarea>
+                    <textarea placeholder="Напишите Ваше сообщение" value="" name="service-text"></textarea>
                 </label>
                 <div class="button-wrap">
                     <button>Заказать</button>
@@ -269,30 +269,30 @@
     <div id="marka-auto-op" class="marka-auto-popup">
         <div class="title">Opel <span>Astra-H</span></div>
         <div class="marka-content">
-            <form action="ajax.php">
+            <form action="lendos.php">
                 <div class="form-field">
                     <p>Ваше Имя</p>
-                    <input type="text" placeholder="Введите Ваше Имя*" required \>
+                    <input type="text" placeholder="Введите Ваше Имя*" name="contact_name" required="required">
                 </div>
                 <div class="form-field">
                     <p>Телефон</p>
-                    <input type="text" class="tel" placeholder="Введите Ваш телефон*" required \>
+                    <input type="text" class="tel-mask" name="contact_tel" placeholder="Введите Ваш телефон*" required="required">
                 </div>
                 <div class="form-field">
                     <p>Выбрать дополнительные услуги</p>
                     <select name="diagnostika" class="diagnostika" data-placeholdeer="Комплексная диагностика">
-                        <option disabled selected>Комплексная диагностика</option>
-                        <option>345</option>
-                        <option>567</option>
+                        <option value="Комплексная диагностика">Комплексная диагностика</option>
+                        <option value="345">345</option>
+                        <option value="567">567</option>
                     </select>
                 </div>
                 <div class="form-field">
                     <p>Указать свою услугу</p>
-                    <input type="text" placeholder="Укажите свою услугу" required \>
+                    <input type="text" name="service" placeholder="Укажите свою услугу" required="required">
                 </div>
                 <div class="form-field txt">
                     <p>Примечание</p>
-                    <textarea cols="30" rows="4" placeholder="Напишите Ваше сообщение..."></textarea>
+                    <textarea cols="30" rows="4" name="service-text" placeholder="Напишите Ваше сообщение..."></textarea>
                 </div>
                 <button type="submit" class="submit">Заказать</button>
             </form>

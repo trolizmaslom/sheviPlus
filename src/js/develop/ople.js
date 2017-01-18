@@ -117,6 +117,23 @@ function mapInit2() {
         });
     }
 }
+function onChanSel() {//data-jqfs-class
+    if($('#brand')){
+        $('#brand').on('change', function () {
+            var i=$(this).val();
+            if(i=='opel'){
+                $('#model-styler li[data-jqfs-class="ch-m"]').css('display','none');
+                $('#model-styler li[data-jqfs-class="op-m"]').css('display','block');
+            }else if(i=='chevrolet'){
+                $('#model-styler li[data-jqfs-class="ch-m"]').css('display','block');
+                $('#model-styler li[data-jqfs-class="op-m"]').css('display','none');
+            }else{
+                $('#model-styler li[data-jqfs-class="ch-m"]').css('display','block');
+                $('#model-styler li[data-jqfs-class="op-m"]').css('display','block');
+            }
+        });
+    }
+}
 function goTo2(){
 
     $('.mainhref').click(function(e){
@@ -140,6 +157,7 @@ function goTo2(){
 }
 $(document).ready(function(){
     goTo2();
+    onChanSel();
    tabNav();
     fancyTop();
    fancyboxGallery();
