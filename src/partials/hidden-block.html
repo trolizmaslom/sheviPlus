@@ -195,14 +195,14 @@
             <div class="heading">
                 <h3>Комплексная диагностика</h3>
             </div>
-            <form action="" class="services-form">
+            <form action="ajax.php" class="services-form">
                 <label>
                     <p>Ваше Имя</p>
                     <input type="text" name="name" placeholder="Введите Ваше Имя*" required="required">
                 </label>
                 <label>
                     <p>Телефон</p>
-                    <input type="tel" class="tel-mask" name="name" placeholder="Введите Ваш телефон*" required="required">
+                   <input type="text"  name="tel" placeholder="Введите Ваш телефон*" required="required" class="tel-mask">
                 </label>               
                 <label class="for-select">
                     <p>Выбрать дополнительные услуги</p>
@@ -232,7 +232,7 @@
                     <input type="text" name="privatService" placeholder="Укажите свою услугу" required="required">
                 </label>
                 <label class="for-select">
-                    <p>Ваше Имя</p>
+                    <p>Марка автомобиля</p>
                     <select>
                          <option>Выберите марку автомобиля</option>
                         <option>Chevrolet</option>
@@ -240,7 +240,7 @@
                     </select>
                 </label>
                 <label  class="for-select">
-                    <p>Ваше Имя</p>
+                    <p>Модель автомобиля</p>
                     <select>
                         <option >Выберите модель автомобиля</option>
                         <option>CRUZE</option>
@@ -269,7 +269,7 @@
     <div id="marka-auto-op" class="marka-auto-popup">
         <div class="title">Opel <span>Astra-H</span></div>
         <div class="marka-content">
-            <form action="/">
+            <form action="ajax.php">
                 <div class="form-field">
                     <p>Ваше Имя</p>
                     <input type="text" placeholder="Введите Ваше Имя*" required \>
@@ -301,7 +301,7 @@
     <div id="marka-auto-ch" class="marka-auto-popup">
         <div class="title">Chevrolet <span>Astra-H</span></div>
         <div class="marka-content">
-            <form action="/">
+            <form action="ajax.php">
                 <div class="form-field">
                     <p>Ваше Имя</p>
                     <input type="text" placeholder="Введите Ваше Имя*" required \>
