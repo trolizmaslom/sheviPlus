@@ -3,7 +3,7 @@
 }
 .opel-page{
     .footer .mobile .tel-box,
-    header .header-bot .tel{        text-decoration: none;}
+    .header-bot .tel{        text-decoration: none;}
     .top-block{ background-image: url(../images/opelbg.jpg);
         .content{ max-width: 505px;}
         .bot{ justify-content: flex-end;}
@@ -76,24 +76,24 @@
 
         .services-tab{ width: 91%;  margin: 0 auto; max-width: 1750px;
             .services-wrap{display: flex;  justify-content: space-around;margin: 0 auto; align-items: center; flex-wrap: wrap; align-content: center; padding: 60px 0;
-                .service-item{width: 260px; height: 160px; display: flex; flex-wrap: wrap; 
+                .service-item{width: 260px; height: 160px; display: flex; flex-wrap: wrap;
                     .image-wrap{width: 100%; text-align: center;padding-top: 20px;
                         a{text-decoration: none; color: #4f4f4f; display: inline-block;
                             width: 100%;
                             height: 100%;
                             img:nth-child(2){display: none;
 
-                            } 
+                            }
                         }
                         &:hover{box-shadow: 0 0 30px 0 rgba(0,0,0,0.3); cursor: pointer;
                             a{
                                 img:nth-child(1){display:none;
-                                    }   
+                                    }
                                 img:nth-child(2){display: inline;
-                                    }  
-                            } 
-                        }        
-                    } 
+                                    }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -133,7 +133,7 @@
             .row-title{ font-size: 20px; font-weight: 700; color: #fff; text-transform: uppercase;}
             .button{ width: 100%; border-radius: 5px; background-color: #eb7073; border:none; height: 60px;}
         }
-        
+
 
     }
     .titles{ text-align: center;
@@ -277,10 +277,10 @@
 @media screen and (max-width: 1700px) {
     .opel-page .top-block .content {        max-width: 427px;    }
 
-    .opel-page header .header-bot .nav a { font-size: 16px;  }
-    .opel-page header .header-bot .tel-box { margin-left: 100px;  }
-    .opel-page header .header-bot {        padding: 26px 0;    }
-    .opel-page header .header-bot .tel{font-weight: 600;}
+    .opel-page  .header-bot .nav a { font-size: 16px;  }
+    .opel-page  .header-bot .tel-box { margin-left: 100px;  }
+    .opel-page  .header-bot {        padding: 26px 0;    }
+    .opel-page  .header-bot .tel{font-weight: 600;}
     .opel-page .tabs .tab-wrap.giku  .mbox{max-width: 1463px;}
     .opel-page .tabs .content{ padding-top: 31px;}
     .opel-page .tabs .tab-but{ font-size: 24px; height: 66px; width: 288px;}
@@ -325,9 +325,9 @@
 
 }
 @media screen and (max-width: 1440px) {
-    .opel-page header .header-bot .tel-box { margin-left: 64px;  }
-    .opel-page header .header-bot{ padding: 25px 0;}
-    .opel-page header .header-bot .tel{ font-size: 18px;}
+    .opel-page  .header-bot .tel-box { margin-left: 64px;  }
+    .opel-page  .header-bot{ padding: 25px 0;}
+    .opel-page  .header-bot .tel{ font-size: 18px;}
     .opel-page .top-block .mainhref{ bottom: -4px; right: 22px; font-size: 24px;}
     .opel-page .tabs .content{ padding-top: 16px;}
     .opel-page .tabs .tab-content{ padding-top: 32px;}
@@ -412,8 +412,8 @@
     }
 }
 @media screen and (max-width: 1280px) {
-    .opel-page header .header-bot .nav a{ font-size: 12px;}
-    .opel-page header .header-bot {        padding: 23px 0 26px;    }
+    .opel-page .header-bot .nav a{ font-size: 12px;}
+    .opel-page .header-bot {        padding: 23px 0 26px;    }
     .opel-page .top-block .mainhref{ right: 51px;}
     .opel-page .tabs .content{ padding-top: 6px;}
     .opel-page .tabs .tab-content{ padding-top: 22px;}

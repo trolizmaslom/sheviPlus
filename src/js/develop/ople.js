@@ -161,7 +161,7 @@ function goTo2(){
         var target = $(href).offset().top;
         $(scroller).animate({scrollTop:target},500);
     });
-    $('header .nav a').click(function(e){
+    $('.nav a').click(function(e){
         e.preventDefault();
         var href = $(this).attr('href');
         var target = $(href).offset().top;

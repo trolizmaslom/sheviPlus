@@ -264,10 +264,11 @@
     .search-zapchasti .services .img{ display: none;}
     .search-zapchasti .services .txt .txt-container{ margin: 0 auto;}
     .search-zapchasti .services .txt .top {width: calc(50% - 220px);}
-    header{
+
         .desctop{ display: none;}
-        .mobile{ display: block;}
-    }
+        header .mobile{ display: block;}
+    .footerik .mobile{ display: block;}
+
     .top-block-mobile{ display: block;}
     .top-block{ display: none;}
     .title {
