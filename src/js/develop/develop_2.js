@@ -26,7 +26,9 @@ $(document).ready(function(){
 	    padding:'0',
 	    'afterLoad': function(){
 		    this.content.find('.title span').text(text);
-		},
+			var r = this.content.find('.title').text();
+		    this.content.find('.clarify-product-title-name').text(r);
+		}
 	});
 });
 

@@ -5,12 +5,20 @@ $mess .= '<hr>';
 if(isset($_POST['info'])) {
     $subject = $_POST['info'];
 }
+if(isset($_POST['title_name'])) {
+    $name = substr(htmlspecialchars(trim($_POST['title_name'])), 0, 100);
+    $mess .= '<b>Заголовок сообщения:</b>' . $name . '<br>';
+}
 if(isset($_POST['contact_name'])) {
     $name = substr(htmlspecialchars(trim($_POST['contact_name'])), 0, 100);
     $mess .= '<b>Имя:</b>' . $name . '<br>';
 }
 if(isset($_POST['contact_tel'])) {
     $tel = substr(htmlspecialchars(trim($_POST['contact_tel'])), 0, 100);
+    $mess .= '<b>Телефон:</b>' . $tel . '<br>';
+}
+if(isset($_POST['contact_email'])) {
+    $tel = substr(htmlspecialchars(trim($_POST['contact_email'])), 0, 100);
     $mess .= '<b>Телефон:</b>' . $tel . '<br>';
 }
 if(isset($_POST['add-service'])) {
