@@ -269,30 +269,30 @@
     <div id="marka-auto-op" class="marka-auto-popup">
         <div class="title">Opel <span>Astra-H</span></div>
         <div class="marka-content">
-            <form action="ajax.php">
+            <form action="lendos.php">
                 <div class="form-field">
                     <p>Ваше Имя</p>
-                    <input type="text" placeholder="Введите Ваше Имя*" required \>
+                    <input type="text" placeholder="Введите Ваше Имя*" name="contact_name" required="required">
                 </div>
                 <div class="form-field">
                     <p>Телефон</p>
-                    <input type="text" class="tel" placeholder="Введите Ваш телефон*" required \>
+                    <input type="text" class="tel-mask" name="contact_tel" placeholder="Введите Ваш телефон*" required="required">
                 </div>
                 <div class="form-field">
                     <p>Выбрать дополнительные услуги</p>
                     <select name="diagnostika" class="diagnostika" data-placeholdeer="Комплексная диагностика">
-                        <option disabled selected>Комплексная диагностика</option>
-                        <option>345</option>
-                        <option>567</option>
+                        <option value="">Комплексная диагностика</option>
+                        <option value="345">345</option>
+                        <option value="567">567</option>
                     </select>
                 </div>
                 <div class="form-field">
                     <p>Указать свою услугу</p>
-                    <input type="text" placeholder="Укажите свою услугу" required \>
+                    <input type="text" name="service" placeholder="Укажите свою услугу" required="required">
                 </div>
                 <div class="form-field txt">
                     <p>Примечание</p>
-                    <textarea cols="30" rows="4" placeholder="Напишите Ваше сообщение..."></textarea>
+                    <textarea cols="30" rows="4" name="service-text" placeholder="Напишите Ваше сообщение..."></textarea>
                 </div>
                 <button type="submit" class="submit">Заказать</button>
             </form>
