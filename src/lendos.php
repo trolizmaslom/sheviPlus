@@ -13,6 +13,10 @@ if(isset($_POST['contact_tel'])) {
     $tel = substr(htmlspecialchars(trim($_POST['contact_tel'])), 0, 100);
     $mess .= '<b>Телефон:</b>' . $tel . '<br>';
 }
+if(isset($_POST['add-service'])) {
+    $tel = substr(htmlspecialchars(trim($_POST['add-service'])), 0, 100);
+    $mess .= '<b>дополнительная услуга:</b>' . $tel . '<br>';
+}
 if(isset($_POST['brand'])) {
     $mail = substr(htmlspecialchars(trim($_POST['brand'])), 0, 100);
     $mess .= '<b>Марка:</b>' . $mail . '<br>';
