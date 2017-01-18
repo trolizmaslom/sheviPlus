@@ -5,7 +5,7 @@
 		}
 		.speci-list{display: flex; justify-content: space-around;align-items: center; flex-wrap: wrap; width: 100%;
 			.speci-items{display: flex; flex-wrap: wrap; width: 33%; justify-content: space-around; align-items: center; position: relative; 
-				&:before{content: ''; display: block; position:absolute;width: 75%; border-top: 1px solid #f9d4d5; border-right: 1px solid #f9d4d5; border-left: 1px solid #f9d4d5;  min-height: 100px; top: 11%;
+				&:before{content: ''; display: block; position:absolute;width: 75%; border-top: 1px solid #f9d4d5; border-right: 1px solid #f9d4d5; border-left: 1px solid #f9d4d5;  min-height: 100px; top: 11%; left: 12.5%;
 					z-index: 1;
 				}
 				.item-name{width: 100%; text-align: center;  position: relative; z-index: 2;
