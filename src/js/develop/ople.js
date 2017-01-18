@@ -133,6 +133,22 @@ function onChanSel() {//data-jqfs-class
             }
         });
     }
+    if($('#brand2')){
+        $('#brand2').on('change', function () {
+            
+            var i=$(this).val();
+            if(i=='opel'){
+                $('#model2 .ch-m').css('display','none');
+                $('#model2 .op-m').css('display','block');
+            }else if(i=='chevrolet'){
+                $('#model2 .ch-m').css('display','block');
+                $('#model2 .op-m').css('display','none');
+            }else{
+                $('#model2 .ch-m').css('display','block');
+                $('#model2 .op-m').css('display','block');
+            }
+        });
+    }
 }
 function goTo2(){
 
@@ -153,6 +169,8 @@ function goTo2(){
             if (tt == 'raz'){$('.raz_click').click();}
         }
         $(scroller).animate({scrollTop:target},500);
+        $('.opel-page .menu-block').stop().slideUp();
+        $('.opel-page .header .menu').removeClass('active');
     });
 }
 $(document).ready(function(){
