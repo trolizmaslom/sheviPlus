@@ -63,6 +63,9 @@ function fancyTop() {
         padding:'0',
         'afterLoad': function(){
             this.content.find('.title span').text(text);
+            var r = this.content.find('.title').text();
+            this.content.find('.clarify-product-title-name').text(r);
+            console.log(r)
         }
     });
 }
@@ -86,7 +89,7 @@ function mapInit2() {
                 var center = new google.maps.LatLng(mapMosc[0].cordX, mapMosc[0].cordY);
             }
             var myOptions = {
-                zoom: 13,
+                zoom: 9,
                 styles: grayStyles,
                 center: center,
                 disableDefaultUI: true,
@@ -158,7 +161,7 @@ function goTo2(){
         var target = $(href).offset().top;
         $(scroller).animate({scrollTop:target},500);
     });
-    $('header .nav a').click(function(e){
+    $('.nav a').click(function(e){
         e.preventDefault();
         var href = $(this).attr('href');
         var target = $(href).offset().top;

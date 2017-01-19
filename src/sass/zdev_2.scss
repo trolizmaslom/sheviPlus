@@ -269,7 +269,8 @@
     .video-content {
         .title {
             margin: 0 auto;
-            width: 300px;
+            width: 62%;
+            margin-right: 30px;
             padding-bottom: 30px;
             position: relative;
             &:before {
@@ -278,13 +279,13 @@
                 height: 5px;
                 width: 280px;
                 top: 75px;
-                left: -100%;
+                left: -28%;
                 background: linear-gradient(to left, #eb7073 0%, #7b5999 100%);
             }
             &:after {
                 content: '';
                 position: absolute;
-                height: 130px;
+                height: 170px;
                 width: 5px;
                 top: 75px;
                 left: -300px;
@@ -301,6 +302,7 @@
                 color: #4f4f4f;
                 font-weight: 500;
                 margin: 0;
+                display: none;
             }
         }
         .video-frame {

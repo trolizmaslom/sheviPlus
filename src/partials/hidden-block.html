@@ -196,6 +196,7 @@
                 <h3>Комплексная диагностика</h3>
             </div>
             <form action="lendos.php" class="services-form">
+                <input type="hidden" name="title_name" value="" class="clarify-product-title-name">
                 <label>
                     <p>Ваше Имя</p>
                     <input type="text" name="contact_name" placeholder="Введите Ваше Имя*" required="required">
@@ -283,6 +284,7 @@
         <div class="title">Opel <span>Astra-H</span></div>
         <div class="marka-content">
             <form action="lendos.php">
+                <input type="hidden" name="title_name" value="" class="clarify-product-title-name">
                 <div class="form-field">
                     <p>Ваше Имя</p>
                     <input type="text" placeholder="Введите Ваше Имя*" name="contact_name" required="required">
@@ -330,6 +332,7 @@
         <div class="title">Chevrolet <span>Astra-H</span></div>
         <div class="marka-content">
             <form action="ajax.php">
+                <input type="hidden" name="title_name" value="" class="clarify-product-title-name">
                 <div class="form-field">
                     <p>Ваше Имя</p>
                     <input type="text" placeholder="Введите Ваше Имя*" required \>
@@ -341,9 +344,24 @@
                 <div class="form-field">
                     <p>Выбрать дополнительные услуги</p>
                     <select name="diagnostika" class="diagnostika" data-placeholdeer="Комплексная диагностика">
-                        <option disabled selected>Комплексная диагностика</option>
-                        <option>345</option>
-                        <option>567</option>
+                        <option value="Регулярное ТО">Регулярное ТО</option>
+                        <option value="Комплексная диагностика">Комплексная диагностика</option>
+                        <option value="Компютерная диагностика">Компютерная диагностика</option>
+                        <option value="Ремонт тормозной системы">Ремонт тормозной системы</option>
+                        <option value="Ремонт ходовой части">Ремонт ходовой части</option>
+                        <option value="Ремонт рулевого управления">Ремонт рулевого управления</option>
+                        <option value="Ремонт двигателя">Ремонт двигателя</option>
+                        <option value="Ремонт АКПП и МКПП">Ремонт АКПП и МКПП</option>
+                        <option value="Замена сцепления">Замена сцепления</option>
+                        <option value="Обслуживание и ремонт кондиционеров">Обслуживание и ремонт кондиционеров</option>
+                        <option value="Ремонт системы охлаждения">Ремонт системы охлаждения</option>
+                        <option value="Ремонт выхлопной системы">Ремонт выхлопной системы</option>
+                        <option value="Ремонт топливной системы">Ремонт топливной системы</option>
+                        <option value="Ремонт электрооборудования">Ремонт электрооборудования</option>
+                        <option value="Работы по шумоизоляции автомобиля">Работы по шумоизоляции автомобиля</option>
+                        <option value="Установка дополнительного оборудования">Установка дополнительного оборудования</option>
+                        <option value="Компютерный сход-развал">Компютерный сход-развал</option>
+                        <option value="Шиномонтаж и балансировка">Шиномонтаж и балансировка</option>
                     </select>
                 </div>
                 <div class="form-field">
@@ -363,24 +381,24 @@
             <div class="pop-clarify-wrap">
 
                     <div class="clarify-form">
-                        <form action="ajax.php">
-                            <input type="hidden" name="clarify-product-title-name" value="" class="clarify-product-title-name">
+                        <form action="lendos.php">
+                            <input type="hidden" name="title_name" value="Общая форма связи" class="clarify-product-title-name">
                             <div class="form_row">
                                 <p>Ваше Имя</p>
                                 <div class="form_input">
-                                    <input type="text" name="clarify-name" required="required" value="" placeholder="Введите Ваше Имя">
+                                    <input type="text" name="contact_name" required="required" value="" placeholder="Введите Ваше Имя">
                                 </div>
                             </div>
                             <div class="form_row">
                                 <p>Телефон</p>
                                 <div class="form_input">
-                                    <input type="text" name="clarify-telephone" required="required" value="" placeholder="Введите Ваш телефон"  class="tel-mask">
+                                    <input type="text" name="contact_tel" required="required" value="" placeholder="Введите Ваш телефон"  class="tel-mask">
                                 </div>
                             </div>
                             <div class="form_row">
                                 <p>E-mail</p>
                                 <div class="form_input">
-                                    <input type="text" name="clarify-mail"  value="" placeholder="Введите Ваш E-mail">
+                                    <input type="email" name="contact_email"  value="" placeholder="Введите Ваш E-mail">
                                 </div>
                             </div>
                             <div class="form_row">

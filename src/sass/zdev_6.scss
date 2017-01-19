@@ -11,7 +11,7 @@
 				.item-name{width: 100%; text-align: center;  position: relative; z-index: 2;
 					h3{color: #eb7073; font-size: 36px; width: auto; display: inline-block; background: #fff; padding: 0 30px;}
 				}
-				.speci-item{ width: 260px;padding: 15px; border: 1px solid #f1f1f1; position: relative; z-index: 2; background: #fff; min-height: 420px;
+				.speci-item{ width: 260px;padding: 15px; border: 1px solid #f1f1f1; position: relative; z-index: 2; background: #fff; min-height: 420px; justify-content: center;
 					&:hover{box-shadow: 0 0 50px  0 rgba(0, 0, 0, 0.3);}
 					.speci-name{font-size: 18px; color: #4f4f4f; margin: 10px 0;
 						
