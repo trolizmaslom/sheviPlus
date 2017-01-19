@@ -425,7 +425,7 @@
 	}
 	.speci .main-wrapper .speci-list .speci-items{}
 	.speci .main-wrapper .speci-list .speci-items{width: 100%; justify-content: center;
-		&:before{width: 40%;}
+		&:before{display: none;}
 		.speci-item{
 			&:nth-child(2){margin-right: 30px;}
 		}
@@ -446,7 +446,7 @@
 @media screen and (max-width: 666px){
 	.speci .main-wrapper .heading h2{font-size: 32px;}
 	.speci .main-wrapper .speci-list .speci-items{
-		&:before{display: none;}
+
 		.item-name h3{ font-size: 28px; }
 		.speci-item{
 			&:nth-child(2){margin-right: 30px;}
