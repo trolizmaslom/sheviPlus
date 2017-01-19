@@ -89,7 +89,7 @@ function mapInit2() {
                 var center = new google.maps.LatLng(mapMosc[0].cordX, mapMosc[0].cordY);
             }
             var myOptions = {
-                zoom: 13,
+                zoom: 9,
                 styles: grayStyles,
                 center: center,
                 disableDefaultUI: true,
