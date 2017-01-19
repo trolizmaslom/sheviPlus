@@ -1,3 +1,15 @@
+@media screen and (max-width: 1900px){
+	.video .video-content .title {
+	    margin: 0 auto;
+	    width: 70%;
+	    margin-right: 0px;
+	    padding-bottom: 30px;
+	    position: relative;
+	    &:before{
+	    	left: -30%;
+	    }
+	}
+}
 @media screen and (max-width: 1600px){
 	.wrap-procl .procl-content{
 		padding-right: 0;
@@ -66,16 +78,16 @@
     	width: 100%;
 	}
 	.video .video-content .title {
-	    width: 320px;
 	    padding-bottom: 24px;
 	    padding-left: 70px;
 	    &:before{
 	    	top: 65px;
-    		left: -81%;
+    		left: -10%;
+    		width: 150px;
 	    }
 	    &:after{
 	    	top: 65px;
-    		left: -260px;
+    		left: -10%;
 	    }
 	}
 	.video .video-content .title h4{
@@ -242,12 +254,10 @@
 	    padding-bottom: 17px;
 	    &:before{
 	    	top: 56px;
-    		left: -63%;
-    		width: 178px;
+    		width: 100px;
 	    }
 	    &:after{
 	    	top: 57px;
-    		left: -202px;
 	    }
 	}
 	.video .video-content .video-frame{
@@ -415,15 +425,13 @@
 	}
 	.video .video-content .title:before {
 	    height: 4px;
-	    width: 178px;
+	    width: 90px;
 	    top: 58px;
-	    left: -63%;
 	}
 	.video .video-content .title:after {
 	    height: 130px;
 	    width: 4px;
 	    top: 60px;
-	    left: -202px;
 	}
 	.video .video-content .video-frame{
 	    width: 826px;
@@ -596,8 +604,7 @@
 	}
 	.video .video-content .title {
 	    padding-bottom: 15px;
-    	padding-left: 128px;
-    	width: 350px;
+    	padding-left: 40px;
 	}
 	.video .video-content .title h4{
 		font-size: 35px;
@@ -615,15 +622,15 @@
 	}
 	.video .video-content .title:before {
 		height: 4px;
-	    width: 178px;
+	    width: 80px;
 	    top: 53px;
-	    left: -23%;
+	    left: -12%;
 	}
 	.video .video-content .title:after {
 	    height: 130px;
 	    width: 4px;
 	    top: 53px;
-	    left: -23%;
+	    left: -12%;
 	}
 	.about .content {
 	    width: 990px;
@@ -819,7 +826,7 @@
 	}
 	.video .video-content .title{
 		margin: 0 auto;
-		width: 300px;
+		width: 100%;
 		padding-bottom: 30px;
 		padding-left: 0;
 		h4{
