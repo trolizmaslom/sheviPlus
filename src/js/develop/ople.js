@@ -42,6 +42,11 @@ function fancyboxServices() {
         padding: '0',
          'afterLoad': function(){
             this.content.find('h3').text(text);
+        },
+        helpers : {
+            overlay : {
+                locked: true //Вот этот параметр
+            }
         }
     })
 }
