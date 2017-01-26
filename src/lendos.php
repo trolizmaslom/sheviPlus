@@ -6,8 +6,8 @@ if(isset($_POST['info'])) {
     $subject = $_POST['info'];
 }
 if(isset($_POST['title_name'])) {
-    $name = substr(htmlspecialchars(trim($_POST['title_name'])), 0, 100);
-    $mess .= '<b>Заголовок сообщения:</b>' . $name . '<br>';
+    $name1 = substr(htmlspecialchars(trim($_POST['title_name'])), 0, 100);
+    $mess .= '<b>Заголовок сообщения:</b>' . $name1 . '<br>';
 }
 if(isset($_POST['contact_name'])) {
     $name = substr(htmlspecialchars(trim($_POST['contact_name'])), 0, 100);
@@ -18,40 +18,44 @@ if(isset($_POST['contact_tel'])) {
     $mess .= '<b>Телефон:</b>' . $tel . '<br>';
 }
 if(isset($_POST['contact_email'])) {
-    $tel = substr(htmlspecialchars(trim($_POST['contact_email'])), 0, 100);
-    $mess .= '<b>Телефон:</b>' . $tel . '<br>';
+    $tel1 = substr(htmlspecialchars(trim($_POST['contact_email'])), 0, 100);
+    $mess .= '<b>Телефон:</b>' . $tel1 . '<br>';
 }
 if(isset($_POST['add-service'])) {
-    $tel = substr(htmlspecialchars(trim($_POST['add-service'])), 0, 100);
-    $mess .= '<b>дополнительная услуга:</b>' . $tel . '<br>';
+    $tel2 = substr(htmlspecialchars(trim($_POST['add-service'])), 0, 100);
+    $mess .= '<b>дополнительная услуга:</b>' . $tel2 . '<br>';
 }
 if(isset($_POST['brand'])) {
     $mail = substr(htmlspecialchars(trim($_POST['brand'])), 0, 100);
     $mess .= '<b>Марка:</b>' . $mail . '<br>';
 }
 if(isset($_POST['model'])) {
-    $mail = substr(htmlspecialchars(trim($_POST['model'])), 0, 100);
-    $mess .= '<b>Модель:</b>' . $mail . '<br>';
+    $mail1 = substr(htmlspecialchars(trim($_POST['model'])), 0, 100);
+    $mess .= '<b>Модель:</b>' . $mail1 . '<br>';
+}
+if(isset($_POST['custom-model'])) {
+    $mail2 = substr(htmlspecialchars(trim($_POST['custom-model'])), 0, 100);
+    $mess .= '<b>Модель пользователя:</b>' . $mail2 . '<br>';
 }
 if(isset($_POST['year'])) {
-    $mail = substr(htmlspecialchars(trim($_POST['year'])), 0, 100);
-    $mess .= '<b>Год:</b>' . $mail . '<br>';
+    $mail3 = substr(htmlspecialchars(trim($_POST['year'])), 0, 100);
+    $mess .= '<b>Год:</b>' . $mail3 . '<br>';
 }
 if(isset($_POST['zap-name'])) {
-    $mail = substr(htmlspecialchars(trim($_POST['zap-name'])), 0, 100);
-    $mess .= '<b>название запчасти:</b>' . $mail . '<br>';
+    $mail4 = substr(htmlspecialchars(trim($_POST['zap-name'])), 0, 100);
+    $mess .= '<b>название запчасти:</b>' . $mail4 . '<br>';
 }
 if(isset($_POST['diagnostika'])) {
-    $mail = substr(htmlspecialchars(trim($_POST['diagnostika'])), 0, 100);
-    $mess .= '<b>Диагностика:</b>' . $mail . '<br>';
+    $mail5 = substr(htmlspecialchars(trim($_POST['diagnostika'])), 0, 100);
+    $mess .= '<b>Диагностика:</b>' . $mail5 . '<br>';
 }
 if(isset($_POST['service'])) {
-    $mail = substr(htmlspecialchars(trim($_POST['service'])), 0, 100);
-    $mess .= '<b>Услуга клиента:</b>' . $mail . '<br>';
+    $mail6 = substr(htmlspecialchars(trim($_POST['service'])), 0, 100);
+    $mess .= '<b>Услуга клиента:</b>' . $mail6 . '<br>';
 }
 if(isset($_POST['service-text'])) {
-    $mail = substr(htmlspecialchars(trim($_POST['service-text'])), 0, 100);
-    $mess .= '<b>Сообщение клиента:</b>' . $mail . '<br>';
+    $mail7 = substr(htmlspecialchars(trim($_POST['service-text'])), 0, 100);
+    $mess .= '<b>Сообщение клиента:</b>' . $mail7 . '<br>';
 }
 $mess .= '<hr>';
 // подключаем файл класса для отправки почты

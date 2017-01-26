@@ -1,4 +1,4 @@
-<div class="hidden-block">
+<div class="hidden-block"> 
 
     <div id="call_success">
         <div class="call-success">
@@ -8,7 +8,6 @@
              </div>
         </div>
     </div>
-
 
     <div id="pop-clarify">
         <div class="mbox">
@@ -244,6 +243,7 @@
                     <p>Модель автомобиля</p>
                     <select required="required" name="model" id="model2">
                         <option value="">Выберите модель автомобиля</option>
+                        <option value="custom-model" class="claim-for-hidden-input">Указать свою модель</option>
                         <option class="ch-m" value="CRUZE">CRUZE</option>
                         <option class="ch-m" value="AVEO (T250/255)">AVEO (T250/255)</option>
                         <option class="ch-m" value="AVEO (T300)">AVEO (T300)</option>
@@ -269,7 +269,12 @@
                         <option class="op-m" value="ZAFIRA-c">ZAFIRA-c</option>
                     </select>
                 </label>
-                <label>
+                
+                <div class="wrap-for-hidden-input">
+                    <input type="text" name="custom-model" placeholder="Выберите модель автомобиля" class="custom-model">
+                 </div>
+
+                <label class="forcur-textarea">
                     <p>Примечание</p>
                     <textarea placeholder="Напишите Ваше сообщение" value="" name="service-text"></textarea>
                 </label>

@@ -204,6 +204,20 @@ function goTo2(){
         $('.opel-page .header .menu').removeClass('active');
     });
 }
+
+function showHiddenInput(){    
+    if($("#model2")){
+        $(".custom-model").slideUp();
+        $($("#model2")).on("change",function(){
+             var i=$(this).val();
+            if(i=="custom-model"){
+                $(".custom-model").slideDown();
+            }else{
+                 $(".custom-model").slideUp();
+            }
+        })
+    }
+}
 $(document).ready(function(){
     goTo2();
     onChanSel();
@@ -220,6 +234,7 @@ $(document).ready(function(){
             }
 
     });
+    showHiddenInput();
 });
 
 $(window).resize(function(){

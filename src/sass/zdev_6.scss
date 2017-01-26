@@ -1,4 +1,4 @@
-.speci, .gallery-block{padding: 50px 0; 
+.speci, .gallery-block{padding: 50px 0;  
 	.main-wrapper{ width: 90%;   margin: 0 auto; 
 		.heading{padding: 30px;
 			h2{font-size: 48px; color: #eb7073; text-align: center; font-family: ProximaNova; font-weight: 800; }
@@ -73,6 +73,14 @@
 		.services-wrap{width: 770px; margin: 0 auto;
 			.heading{font-size: 36px; text-align: center; color: #ed7073; font-weight: bold;}
 			.services-form{display: flex; flex-wrap: wrap; justify-content: space-around; position: relative;
+				.wrap-for-hidden-input{width: 100%; display: flex; justify-content: center;padding: 30px 0 10px;
+					.custom-model{width: 350px; border: 2px solid #e8e8e8; padding:20px 30px; color:#8f8f8f;
+						&::-webkit-input-placeholder {color:#8f8f8f; }
+						&::-moz-placeholder          {color:#8f8f8f; }/* Firefox 19+ */
+						&:-moz-placeholder           {color:#8f8f8f; }/* Firefox 18- */
+						&:-ms-input-placeholder      {color:#8f8f8f; }
+					}
+				 }
 				&:before{
 						content: '';
 						position: absolute;
@@ -104,8 +112,9 @@
 						&:-moz-placeholder           {color:#8f8f8f; }/* Firefox 18- */
 						&:-ms-input-placeholder      {color:#8f8f8f; }
 					}
-					&:nth-child(8){width: 95%;}					
+								
 				}
+				.forcur-textarea{width: 95%;}
 				.button-wrap{text-align: center; width: 100%;padding: 20px 0 0;
 						button{width: 250px; padding: 30px 0; background: #fff; border: 3px solid #ed7073; font-size: 18px; font-weight: bold; color: #ed7073;  }
 					}
