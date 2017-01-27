@@ -73,6 +73,7 @@
 		.services-wrap{width: 770px; margin: 0 auto;
 			.heading{font-size: 36px; text-align: center; color: #ed7073; font-weight: bold;}
 			.services-form{display: flex; flex-wrap: wrap; justify-content: space-around; position: relative;
+				.form-field{padding-top: 25px;}
 				.wrap-for-hidden-input{width: 100%; display: flex; justify-content: center;padding: 30px 0 10px;
 					.custom-model{width: 350px; border: 2px solid #e8e8e8; padding:20px 30px; color:#8f8f8f;
 						&::-webkit-input-placeholder {color:#8f8f8f; }
@@ -98,6 +99,7 @@
 						&:-moz-placeholder           {color:#8f8f8f; }/* Firefox 18- */
 						&:-ms-input-placeholder      {color:#8f8f8f; }
 						&.error{border:  2px solid #ed7073}
+						&.hiddenRecaptcha{position: absolute; top: -1px; left: -1px; width: 304px; height: 78px; z-index: 0;}
 					}
 					select{width: 100%; border: 2px solid #e8e8e8; padding:20px 30px; position: relative;color:#8f8f8f; cursor: pointer;
 						

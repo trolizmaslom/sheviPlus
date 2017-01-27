@@ -1,6 +1,11 @@
 
 $(document).ready(function(){
 
+	$('#captcha1').html($('#captcha').clone(true,true));
+	$('#captcha2').html($('#captcha').clone(true,true));
+	$('#captcha3').html($('#captcha').clone(true,true));
+	$('#captcha4').html($('#captcha').clone(true,true));
+
 	$('#player').click(function(){
 		$(this).next('.play').css('display', 'none');
 	});

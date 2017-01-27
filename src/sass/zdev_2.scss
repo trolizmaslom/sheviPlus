@@ -407,6 +407,10 @@
             .form-field {
                 width: 45%;
                 padding-bottom: 15px;
+                position: relative;
+                &:nth-child(7){
+                    padding-top: 35px;
+                }
                 &.txt {
                     width: 100%;
                 }
@@ -438,6 +442,14 @@
                     }
                     &:-ms-input-placeholder {
                         color: #8f8f8f;
+                    }
+                    &.hiddenRecaptcha{
+                        position: absolute;
+                        top: -1px;
+                        left: -1px;
+                        width: 304px;
+                        height: 78px;
+                        z-index: 0;
                     }
                 }
                 select {
@@ -499,4 +511,23 @@
         right: 5px;
         background: url('../images/close.png') no-repeat center center;
     }
+}
+
+.g-recaptcha{
+    margin: 0 auto;
+    z-index: 10;
+    position: absolute;
+}
+
+.hiddenRecaptcha{
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 304px;
+    height: 78px;
+    z-index: 0;
+}
+
+.form-field{
+    position: relative;
 }

@@ -23,9 +23,11 @@ function validate(form, options) {
                 if (typeof(setings.errorFunction) === 'function') {
                     setings.errorFunction(form);
                 }
+                console.log('test invalidHandler');
             },
             errorPlacement: function (error, element) {
                 error.appendTo(element.closest('.form_input'));
+                console.log('test errorPlacement');
             },
             highlight: function (element, errorClass, validClass) {
                 $(element).addClass('error');
@@ -93,6 +95,11 @@ function validate(form, options) {
         })
     }
 }
+
+function recaptchaCallback() {
+    $('.g-recaptcha').closest('.form-field').find('.hiddenRecaptcha').attr('value', '1');
+    $('.g-recaptcha').closest('.form-field').find('.hiddenRecaptcha').removeClass('error');
+};
 
 /*Отправка формы с вызовом попапа*/
 function validationCall(form) {
