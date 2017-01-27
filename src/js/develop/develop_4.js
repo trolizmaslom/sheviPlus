@@ -1,3 +1,4 @@
+
 function mapInit() {
     if ($('.contacts .item-map-wrap').length > 0) {
         var maps = $('.contacts .item-map-wrap');

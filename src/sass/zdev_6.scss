@@ -91,16 +91,16 @@
 						width: 100%;
 						background: #e8e8e8;
 					}
+				input{width: 100%; border: 2px solid #e8e8e8; padding:20px 30px; 
+					&::-webkit-input-placeholder {color:#8f8f8f; }
+					&::-moz-placeholder          {color:#8f8f8f; }/* Firefox 19+ */
+					&:-moz-placeholder           {color:#8f8f8f; }/* Firefox 18- */
+					&:-ms-input-placeholder      {color:#8f8f8f; }
+					&.error{border:  2px solid #ed7073}
+					&.hiddenRecaptcha{position: absolute; top: 24px; left: 30%; width: 306px; height: 78px; z-index: 0;}
+				}
 				label{width: 350px;  position: relative;
 				&.for-select:after{content: ""; position: absolute; display: block; width: 15px; min-height: 15px; border-right: 2px solid #8f8f8f; border-bottom:  2px solid #8f8f8f; bottom: 30px; right: 20px; transform: rotate(45deg); }
-					input{width: 100%; border: 2px solid #e8e8e8; padding:20px 30px; 
-						&::-webkit-input-placeholder {color:#8f8f8f; }
-						&::-moz-placeholder          {color:#8f8f8f; }/* Firefox 19+ */
-						&:-moz-placeholder           {color:#8f8f8f; }/* Firefox 18- */
-						&:-ms-input-placeholder      {color:#8f8f8f; }
-						&.error{border:  2px solid #ed7073}
-						&.hiddenRecaptcha{position: absolute; top: -1px; left: -1px; width: 304px; height: 78px; z-index: 0;}
-					}
 					select{width: 100%; border: 2px solid #e8e8e8; padding:20px 30px; position: relative;color:#8f8f8f; cursor: pointer;
 						
 					}

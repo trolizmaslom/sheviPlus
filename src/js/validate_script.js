@@ -96,11 +96,6 @@ function validate(form, options) {
     }
 }
 
-function recaptchaCallback() {
-    $('.g-recaptcha').closest('.form-field').find('.hiddenRecaptcha').attr('value', '1');
-    $('.g-recaptcha').closest('.form-field').find('.hiddenRecaptcha').removeClass('error');
-};
-
 /*Отправка формы с вызовом попапа*/
 function validationCall(form) {
 
@@ -171,7 +166,7 @@ function fancyboxForm() {
         'closeBtn' : true,
         fitToView:true,
         autoCenter: true,
-        padding:'0'
+        padding:'0',
     })
 }
 

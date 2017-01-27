@@ -1,6 +1,68 @@
 /**
  * Created by nickolaygotsliyk on 28.12.16.
  */
+
+// function recaptchaCallback() {
+//     console.log($(this));
+//     $(this).closest('.form-field').find('.hiddenRecaptcha').attr('value', '1');
+//     $(this).closest('.form-field').find('.hiddenRecaptcha').removeClass('error');
+// };
+
+var captcha;
+var captcha1;
+var captcha2;
+var captcha3;
+var captcha4;
+
+var onloadCallback = function() {
+    // Renders the HTML element with id 'example1' as a reCAPTCHA widget.
+    // The id of the reCAPTCHA widget is assigned to 'widgetId1'.
+    console.log("onLoad Recaptcha");
+
+    captcha = grecaptcha.render('captcha', {
+        'sitekey' : '6Ld3QRMUAAAAAKLpbnFnVNca5Nv3bWzSNp_yODVb',
+        'callback' : function() {
+            $('#captcha').find('.hiddenRecaptcha').attr('value', '1');
+            $('#captcha').find('.hiddenRecaptcha').removeClass('error');
+        }
+    });
+    captcha1 = grecaptcha.render('captcha1', {
+        'sitekey' : '6Ld3QRMUAAAAAKLpbnFnVNca5Nv3bWzSNp_yODVb',
+        'callback' : function() {
+            $('#captcha1').find('.hiddenRecaptcha').attr('value', '1');
+            $('#captcha1').find('.hiddenRecaptcha').removeClass('error');
+        }
+    });
+    captcha2 = grecaptcha.render('captcha2', {
+        'sitekey' : '6Ld3QRMUAAAAAKLpbnFnVNca5Nv3bWzSNp_yODVb',
+        'callback' : function() {
+            $('#captcha2').find('.hiddenRecaptcha').attr('value', '1');
+            $('#captcha2').find('.hiddenRecaptcha').removeClass('error');
+        }
+    });
+    captcha3 = grecaptcha.render('captcha3', {
+        'sitekey' : '6Ld3QRMUAAAAAKLpbnFnVNca5Nv3bWzSNp_yODVb',
+        'callback' : function() {
+            $('#captcha3').find('.hiddenRecaptcha').attr('value', '1');
+            $('#captcha3').find('.hiddenRecaptcha').removeClass('error');
+        }
+    });
+    captcha4 = grecaptcha.render('captcha4', {
+        'sitekey' : '6Ld3QRMUAAAAAKLpbnFnVNca5Nv3bWzSNp_yODVb',
+        'callback' : function() {
+            $('#captcha4').find('.hiddenRecaptcha').attr('value', '1');
+            $('#captcha4').find('.hiddenRecaptcha').removeClass('error');
+        }
+    });
+
+    $('#captcha').append('<input type="text" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha" required="required">');
+    $('#captcha1').append('<input type="text" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha1" required="required">');
+    $('#captcha2').append('<input type="text" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha2" required="required">');
+    $('#captcha3').append('<input type="text" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha3" required="required">');
+    $('#captcha4').append('<input type="text" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha4" required="required">');
+};
+
+
 function tabNav() {
     $('.tab-but').click(function (e) {
         e.preventDefault;
@@ -57,6 +119,7 @@ function fancyboxServices() {
                 $("body").removeClass("fancybox-lock");
                 $(".global-wrapper").removeClass("fancybox-lock");
                 $("body").css("height","initial");
+                $('#captcha1').empty();
             }
 
         },
@@ -235,6 +298,7 @@ $(document).ready(function(){
 
     });
     showHiddenInput();
+
 });
 
 $(window).resize(function(){

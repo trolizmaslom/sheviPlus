@@ -1,11 +1,6 @@
 
 $(document).ready(function(){
 
-	$('#captcha1').html($('#captcha').clone(true,true));
-	$('#captcha2').html($('#captcha').clone(true,true));
-	$('#captcha3').html($('#captcha').clone(true,true));
-	$('#captcha4').html($('#captcha').clone(true,true));
-
 	$('#player').click(function(){
 		$(this).next('.play').css('display', 'none');
 	});
@@ -30,11 +25,17 @@ $(document).ready(function(){
 	    autoCenter: true,
 	    padding:'0',
 	    'afterLoad': function(){
+
+	  //   	var captchaWidgetId = grecaptcha.render( 'captcha2', {
+			//   'sitekey' : '6Ld3QRMUAAAAAKLpbnFnVNca5Nv3bWzSNp_yODVb',  // required
+			//   'callback': 'recaptchaCallback'  // optional
+			// });
+			// $('#captcha2').append('<input type="text" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha2" required="required">');
+
 		    this.content.find('.title span').text(text);
 			var r = this.content.find('.title').text();
 		    this.content.find('.clarify-product-title-name').text(r);
 		     if($("html").hasClass("ios") || $("html").hasClass("android")){
-		     	console.log("1");
                 $("html").addClass("fancybox-lock");
                 $("body").addClass("fancybox-lock");
                 $(".global-wrapper").addClass("fancybox-lock");
@@ -49,6 +50,7 @@ $(document).ready(function(){
                 $(".global-wrapper").removeClass("fancybox-lock");
                 $("body").css("height","initial");
             }
+            $('#captcha2').empty();
         },
         onUpdate: function(){
         	 if($("html").hasClass("ios") || $("html").hasClass("android")){
