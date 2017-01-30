@@ -170,6 +170,23 @@ function fancyboxForm() {
     })
 }
 
+function fancyboxForm1() {
+    $('.fancybox-form1').fancybox({
+        autoResize: true,
+        wrapCSS: 'fancybox-form1',
+        openEffect : 'fade',
+        closeEffect : 'fade',
+        autoSize:true,
+        width : 1030,
+        height : 835,
+        maxWidth : '100%',
+        'closeBtn' : true,
+        fitToView:true,
+        autoCenter: true,
+        padding:'0',
+    })
+}
+
 
 function showMoreFunc() {
     if ($('.show-more-product').length > 0) {
@@ -264,9 +281,11 @@ $(document).ready(function () {
     validate('#marka-auto-ch form', {submitFunction: validationCall});
      validate('.services-form', {submitFunction: validationCall});
      validate('.tab-wrap.giku form', {submitFunction: validationCall});
+     validate('#pop-zakaz form', {submitFunction: validationCall});
 
     Maskedinput();
     fancyboxForm();
+    fancyboxForm1();
     showMoreFunc();
     productTubs();
 });
