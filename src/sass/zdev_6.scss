@@ -67,8 +67,8 @@
 	}
 }
 .servicesPoupWrap{
-	.fancybox-inner{background: #fff;}
-	#services-popup{width: 1024px; padding: 0px 0 100px; background: #fff; 
+	.fancybox-inner{background: #fff; border-radius: 10px;}
+	#services-popup{width: 1024px; padding: 0px 0 100px; background: #fff;  border-radius: 10px;
 	
 		.services-wrap{width: 770px; margin: 0 auto;
 			.heading{font-size: 36px; text-align: center; color: #ed7073; font-weight: bold;}
@@ -99,7 +99,7 @@
 					&:-moz-placeholder           {color:#8f8f8f; }/* Firefox 18- */
 					&:-ms-input-placeholder      {color:#8f8f8f; }
 					&.error{border:  2px solid #ed7073}
-					&.hiddenRecaptcha{position: absolute; top: 24px; left: 50%; transform: translateX(-50%); width: 306px; height: 78px; z-index: 0;}
+					&.hiddenRecaptcha{position: absolute; top: 23px; left: calc(50% - 1px); transform: translateX(-50%); width: 306px; height: 80px; z-index: 0;}
 				}
 				label{width: 350px;  position: relative;
 				&.for-select:after{content: ""; position: absolute; display: block; width: 15px; min-height: 15px; border-right: 2px solid #8f8f8f; border-bottom:  2px solid #8f8f8f; bottom: 30px; right: 20px; transform: rotate(45deg); }

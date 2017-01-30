@@ -53,7 +53,7 @@
                     .rrr{width: 534px; height: 5px; display: block; position: absolute; top: 0; right: -290px; background-color: #eb7073;}
                 }
             }
-            .info-wrapik{ position: relative; border-left:2px solid #985b5c; font-weight: 600; font-size: 28px; color: #fff;
+            .info-wrapik{ position: relative; border-left:2px solid #985b5c; font-weight: 600; font-size: 28px; color: #fff; 
                 padding: 38px 0 48px;
                 width: 100%;
                 max-width: 838px;
@@ -118,7 +118,9 @@
                 border: 1px solid red;
             }
             select.error + .jq-selectbox__select{border: 1px solid red;}
-            .wrapper-for-form{ width: 100%; display: flex;justify-content: space-between; margin-bottom: 11px;}
+            .wrapper-for-form{ width: 100%; display: flex;justify-content: space-between; margin-bottom: 11px;
+                .form-field{min-height: 80px;margin-bottom: 20px;}
+            }
             .g-recaptcha {margin: 0 auto;}
             .column-f{ width: 840px; margin-right: 30px;}
             .column-r{ width:260px; }
@@ -358,7 +360,7 @@
     .opel-page .tabs form input{ height: 50px; }
     .opel-page .tabs form .button{ height: 50px; }
     .opel-page .tabs form .row{ font-size: 14px;}
-    .opel-page .tabs .tab-wrap .info-wrapik{ font-size: 20px; max-width: 617px;    padding: 30px 0 35px; line-height: 37px;}
+    .opel-page .tabs .tab-wrap .info-wrapik{ font-size: 20px; max-width: 617px;padding: 30px 0 35px; line-height: 37px;}
     .opel-page .tabs .tab-wrap .info-wrapik p:nth-child(2){ font-size: 26px;}
     .opel-page .tabs form .wrapper-for-form{ margin-bottom: 0;}
     .opel-page .tabs form .column-r .row:last-child{ margin-bottom: 7px;}
