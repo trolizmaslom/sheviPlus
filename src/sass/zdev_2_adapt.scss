@@ -690,6 +690,12 @@
 	.socials .wrap-soc{
 		padding-top: 17px;
 	}
+	.marka-auto-popup{
+		width: 100%;
+		padding: 70px 30px 100px;
+	}
+	.marka-auto-popup .marka-content {width: 100%;}
+	.marka-auto-popup .title {width: 100%; padding: 0 10px;}
 }
 @media screen and (max-width: 1023px){
 	.about .content {
@@ -1056,7 +1062,13 @@
 		}
 	}
 	.marka-auto-popup{
-		padding: 30px 15px;
+		padding: 30px 30px;
+	}
+	.marka-auto-popup:before {
+	    top: 130px;
+	}
+	.marka-auto-popup .marka-content {
+		padding-top: 80px;
 	}
 	.about .content .about-content .car{
 		display: none;
@@ -1074,6 +1086,9 @@
 		.shadow{
 			display: none;
 		}
+	}
+	.marka-auto-popup .title{
+		font-size: 30px;
 	}
 	.socials .wrap-soc .link:last-child a {
 		min-height: 215%;
@@ -1118,6 +1133,18 @@
 			font-size: 25px;
 		}
 	}
+	.wrap-marka {
+		width: 100% !important;
+	    margin: 0 !important;
+	    left: 0 !important;
+	    .fancybox-inner{
+	    	width: 100% !important;
+	    }
+	}
+	.marka-auto-popup {
+	    padding: 30px 10px;
+	}
+	.marka-auto-popup .title {width: 100%; padding: 0 5px;}
 	.wrap-procl p{
 		font-size: 15px;
 	}

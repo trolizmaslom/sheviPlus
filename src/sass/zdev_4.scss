@@ -285,6 +285,7 @@ $r:#f2535a;
 					}
 				}
 			}
+			.form-field div{ left: 50%; transform: translateX(-50%); }
 			.contact-submit{ width:250px; height:80px;border:none; background-color:$r; font-size:18px; color:#fff;margin:0 auto; font-weight:bold; margin-top:10px;}
 		}
 		.clarify-button{ width:25%; display:flex; flex-direction:column; align-items:center;
