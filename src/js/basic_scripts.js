@@ -244,7 +244,7 @@ $(document).ready(function() {
     scrollUp('.item-map-service .white-part .white-part-button a', '.clarify-info-all');
 
     scrollUp('.item-map-tubs-top-wrap .scroll-to-garanty', '.item-map-garanty');
-
+    scrollUp("#up-button", ".global-wrapper");
     //goTo();
     //animationBlock($('.setion-animate'));
 
