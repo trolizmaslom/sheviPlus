@@ -169,9 +169,17 @@ function fancyboxForm() {
         padding:'0',
     })
 }
-
+var currentPosition2=null;
+var curElement2 = null;   
 function fancyboxForm1() {
     $('.fancybox-form1').fancybox({
+        'beforeLoad': function(){    
+
+            if($("html").hasClass("ios") || $("html").hasClass("android")){
+                curElement2 = $(this.element);
+                currentPosition2 = $(this.element).offset().top;
+            }  
+        },
         autoResize: true,
         wrapCSS: 'fancybox-form1',
         openEffect : 'fade',
@@ -184,6 +192,31 @@ function fancyboxForm1() {
         fitToView:true,
         autoCenter: true,
         padding:'0',
+        'afterLoad': function(){             
+             if($("html").hasClass("ios") || $("html").hasClass("android")){
+                $("html").addClass("fancybox-lock");
+                $("body").addClass("fancybox-lock");
+                $(".global-wrapper").addClass("fancybox-lock");
+                var windowHeight =$(window).height();
+                $(".global-wrapper").height(windowHeight);
+            }
+        },
+        afterClose: function(){
+            if($("html").hasClass("ios") || $("html").hasClass("android")){
+                $("html").removeClass("fancybox-lock");
+                $("body").removeClass("fancybox-lock");
+                $(".global-wrapper").removeClass("fancybox-lock");
+                $(".global-wrapper").css("height","initial");
+                $(document).scrollTop(currentPosition2);  
+            }
+            $('#captcha2').empty();
+        },
+        onUpdate: function(){
+             if($("html").hasClass("ios") || $("html").hasClass("android")){
+             var windowHeight =$(window).height();
+                $("body").height(windowHeight);
+            }
+        }
     })
 }
 

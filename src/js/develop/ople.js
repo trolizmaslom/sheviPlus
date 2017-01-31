@@ -72,7 +72,6 @@ function tabNav() {
             $(this).addClass('active');
             var i = $(this).index();
             $('.one-tab').eq(i).addClass('active');
-
         }
     });
 }
@@ -90,10 +89,17 @@ function fancyboxGallery() {
     })
 }
 
+var currentPosition=null;
+var curElement = null;
+
 function fancyboxServices() {
     $('.servicePopupLink').fancybox({
-        'beforeLoad': function(){
+        'beforeLoad': function(){            
             text = $(this.element).find('p').text();
+            if($("html").hasClass("ios") || $("html").hasClass("android")){
+                curElement = $(this.element);
+                currentPosition = $(this.element).offset().top;
+            }            
         },
         openEffect: 'fade',
         closeEffect: 'fade',
@@ -110,7 +116,7 @@ function fancyboxServices() {
                 $("body").addClass("fancybox-lock");
                 $(".global-wrapper").addClass("fancybox-lock");
                 var windowHeight =$(window).height();
-                $("body").height(windowHeight);
+                $(".global-wrapper").height(windowHeight); 
             }
         },
         afterClose: function(){
@@ -118,15 +124,16 @@ function fancyboxServices() {
                 $("html").removeClass("fancybox-lock");
                 $("body").removeClass("fancybox-lock");
                 $(".global-wrapper").removeClass("fancybox-lock");
-                $("body").css("height","initial");
-                $('#captcha1').empty();
+                $(".global-wrapper").css("height","initial");                
+                $(document).scrollTop(currentPosition);                
             }
+            $('#captcha1').empty();
 
         },
         onUpdate: function(){
             if($("html").hasClass("ios") || $("html").hasClass("android")){
                 var windowHeight =$(window).height();
-                $("body").height(windowHeight);
+                $(".global-wrapper").height(windowHeight);
             }
         },
         helpers : {
@@ -139,7 +146,12 @@ function fancyboxServices() {
 function fancyTop() {
     $('.opel-page .dropdown a').fancybox({
         'beforeLoad': function(){
+
             text = $(this.element).find('span').text();
+            if($("html").hasClass("ios") || $("html").hasClass("android")){
+                curElement = $(this.element);
+                currentPosition = $(this.element).offset().top;
+            }  
         },
         openEffect : 'fade',
         closeEffect : 'fade',
@@ -157,6 +169,29 @@ function fancyTop() {
             var r = this.content.find('.title').text();
             this.content.find('.clarify-product-title-name').text(r);
             console.log(r)
+        },
+        afterClose: function(){
+             if($("html").hasClass("ios") || $("html").hasClass("android")){
+                $("html").removeClass("fancybox-lock");
+                $("body").removeClass("fancybox-lock");
+                $(".global-wrapper").removeClass("fancybox-lock");
+                $(".global-wrapper").css("height","initial");
+                
+                $(document).scrollTop(currentPosition);                
+            }
+            $('#captcha1').empty();
+
+        },
+        onUpdate: function(){
+            if($("html").hasClass("ios") || $("html").hasClass("android")){
+                var windowHeight =$(window).height();
+                $(".global-wrapper").height(windowHeight);
+            }
+        },
+        helpers : {
+            overlay : {
+                locked: true//Вот этот параметр
+            }
         }
     });
 }
@@ -298,7 +333,22 @@ $(document).ready(function(){
 
     });
     showHiddenInput();
+    $("#services-popup").on("click", function(event){
+       
+        event.stopPropagation();
+        console.log(event.target);
+    })
 
+    $('#services-popup input').attr({
+        "ondrag":"return false",
+        "ondragdrop":"return false",
+        "ondragstart":"return false"
+    });
+
+     $('#services-popup input').on("touchmove", function(){
+        console.log("2");  
+        return false;     
+     })
 });
 
 $(window).resize(function(){

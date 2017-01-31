@@ -9,9 +9,18 @@ $(document).ready(function(){
 		$(this).css('display', 'none');
 	});
 
+
+    var currentPosition1=null;
+    var curElement1 = null;
+
 	$('.choise .content .list ul li a').fancybox({
 		'beforeLoad': function(){
+
 		    text = $(this.element).find('span:last-child').text();
+            if($("html").hasClass("ios") || $("html").hasClass("android")){
+                curElement1 = $(this.element);
+                currentPosition1 = $(this.element).offset().top;
+            }  
 		},
 		openEffect: 'fade',
         closeEffect: 'fade',
@@ -29,7 +38,7 @@ $(document).ready(function(){
                 $("body").addClass("fancybox-lock");
                 $(".global-wrapper").addClass("fancybox-lock");
                 var windowHeight =$(window).height();
-                $("body").height(windowHeight);
+                $(".global-wrapper").height(windowHeight);
             }
 		},
 		afterClose: function(){
@@ -37,7 +46,8 @@ $(document).ready(function(){
                 $("html").removeClass("fancybox-lock");
                 $("body").removeClass("fancybox-lock");
                 $(".global-wrapper").removeClass("fancybox-lock");
-                $("body").css("height","initial");
+                $(".global-wrapper").css("height","initial");
+                $(document).scrollTop(currentPosition1);  
             }
             $('#captcha2').empty();
         },
