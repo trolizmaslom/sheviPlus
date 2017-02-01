@@ -442,6 +442,7 @@
 	.speci .main-wrapper .speci-list .speci-items{
 		&:before{width: 60%;}
 	}
+	#up-button{transform: scale(0.4); right: -3%; bottom: 0px;}
 }
 @media screen and (max-width: 666px){
 	.speci .main-wrapper .heading h2{font-size: 32px;}
@@ -452,7 +453,7 @@
 			&:nth-child(2){margin-right: 30px;}
 		}
 	}
-	#up-button{transform: scale(0.3); bottom: 0px;}
+	#up-button{transform: scale(0.3); right: -5%; bottom: 0px;}
 }
 @media screen and (max-width: 560px){
 	
@@ -471,6 +472,7 @@
 	.speci .main-wrapper .getConsultation-wrap button{
 		width: 260px;  font-size: 18px;
 	}
+	#up-button{transform: scale(0.3); right: -10%; bottom: 0px;}
 	.gallery-block .main-wrapper .heading h2{ font-size: 32px; }
 	.gallery-block .main-wrapper .gallery .photo-wrap{margin-right: 0;}
 	.servicesPoupWrap{ width: 100%!important; margin: 0!important; left: 0!important;

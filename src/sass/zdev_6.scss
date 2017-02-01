@@ -132,6 +132,6 @@
 	}
 }
 
-#up-button{position: fixed; bottom: 30px; right: 5%;z-index: 9999; transform: scale(0.6); cursor: pointer;
-	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+#up-button{position: fixed; opacity: 0; transition: .3s; bottom: 30px; right: 0%;z-index: 9999; transform: scale(0.5); cursor: pointer; box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+	&.active {opacity: 1; transition: .3s;}
 }

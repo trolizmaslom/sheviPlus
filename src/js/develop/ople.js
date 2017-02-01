@@ -351,5 +351,13 @@ $(document).ready(function(){
      })
 });
 
+$(document).scroll(function(){
+    if ($(window).scrollTop() >= 500) {
+        $('#up-button').addClass('active');
+    } else {
+        $('#up-button').removeClass('active');
+    }
+});
+
 $(window).resize(function(){
 });
