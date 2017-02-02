@@ -336,12 +336,13 @@
 		width: 16%;
 		a{
 			width: 100%;
-			min-height: 45%;
+			// min-height: 45%;
     		display: inline-block;
     		position: relative;
     		img{
-    			position: absolute;
-    			height: 100%;
+    			// position: absolute;
+    			// height: 100%;
+    			width: 75%;
     		}
 		}
 		.shadow img{
@@ -497,11 +498,12 @@
 	    height: 36%;
 	    display: inline-block;
 	}
-	.socials .wrap-soc .link:last-child a {
-	    min-height: 36%;
+	.socials .wrap-soc .link:last-child a img {
+	    // min-height: 36%;
+	    height: 100%;
 	}
 	.socials .wrap-soc .link a img{
-		height: 100%;
+		// height: 100%;
 	}
 	.marka-auto-popup{
 		padding: 80px 80px;
@@ -971,7 +973,7 @@
 		display: none;
 	}
 	.socials .wrap-soc .link:last-child a{
-		width: 75%;
+		// width: 75%;
 	}
 	.socials .wrap-soc .link a{
 		height: 46%;
