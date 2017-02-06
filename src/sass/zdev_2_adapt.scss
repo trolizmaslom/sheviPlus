@@ -10,6 +10,23 @@
 	    }
 	}
 }
+@media screen and (max-width: 1700px){
+	.articles .article-part .desc .text {
+	    line-height: 27px;
+	    font-size: 15px;
+	}
+	.articles .article-part .photo .name {
+		width: 200px;
+		font-size: 16px;
+		line-height: 25px;
+	}
+	.articles .article-part .pic .name {
+		right: -210px;
+	}
+	.articles .article-part .pic{
+		width: 480px;
+	}
+}
 @media screen and (max-width: 1600px){
 	.wrap-procl .procl-content{
 		padding-right: 0;
@@ -165,6 +182,33 @@
 	.socials .wrap-soc .link{
 		width: 18%;
 	}
+	.articles .article-part .pic .name {
+		max-width: 360px;
+	}
+	.articles .article-part .pic {
+	    width: 420px;
+	}
+	.articles .article-part h3 {
+		font-size: 34px;
+	}
+	.articles .article-part .desc .text .case {
+		font-size: 16px;
+	}
+	.articles .article-part .desc .text {
+		line-height: 25px;
+	}
+	.articles .article-part .pic {
+		padding-top: 15px;
+	}
+	.articles .article-part .photo {
+		width: 20%;
+	}
+	.articles .article-part .photo .image {
+		width: 85%;
+	}
+	.articles .article-part .photo .name {
+		width: 85%;
+	}
 }
 @media screen and (max-width: 1366px){
 	.wrap-procl{
@@ -293,7 +337,7 @@
 	    padding-bottom: 18px;
 	    padding-left: 14px;
 	}
-	.about .content .about-content ul li:before {
+	.about .content .about-content ul li:before, .articles .article-part .desc .text ul li:before {
 		left: -12px;
 	    top: 12px;
 	    width: 7px;
@@ -348,6 +392,24 @@
 		.shadow img{
 			width: 75%;
 		}
+	}
+	.articles .article-part h3 {
+	    font-size: 31px;
+	}
+	.articles .article-part .desc .text {
+		font-size: 14px;
+		line-height: 23px;
+	}
+	.articles .article-part .desc .text ul li {
+		font-size: 14px;
+		line-height: 25px;
+	}
+	.articles .article-part .pic .name {
+		max-width: 300px;
+		font-size: 15px;
+	}
+	.articles .ramka .rrr, .articles .ramka:before, {
+		top: 103px;
 	}
 }
 @media screen and (max-width: 1280px){
@@ -456,7 +518,7 @@
 	    padding-bottom: 17px;
 	    padding-left: 18px;
 	}
-	.about .content .about-content ul li:before {
+	.about .content .about-content ul li:before, .articles .article-part .desc .text ul li:before {
 		left: -8px;
 	    top: 13px;
 	    width: 7px;
@@ -511,6 +573,19 @@
 	.marka-auto-popup{
 		width: 100%;
 	}
+	.articles .article-part .pic {
+	    width: 350px;
+	}
+	.articles .ramka .rrr {
+		width: 65px;
+	}
+	.articles .article-part h3 {
+	    font-size: 28px;
+	}
+	.articles .article-part .desc .text {
+	    font-size: 13px;
+	    line-height: 20px;
+	}
 }
 @media screen and (max-width: 1200px){
 	.about .content .ramka:after{
@@ -528,6 +603,60 @@
 	    left: 30px;
 	    top: -8px;
 	    width: 5px;
+	}
+	.articles .article-part .pic .name {
+	    right: -170px;
+	}
+	.articles .article-part .photo .name {
+	    font-size: 14px;
+	    line-height: 20px;
+	}
+}
+@media screen and (max-width: 1140px){
+	.articles .article-part h3 {
+	    font-size: 26px;
+	}
+	.articles .article-part .pic .name {
+		line-height: 25px;
+	}
+	.articles .ramka .rrr {
+	    width: 50px;
+	}
+	.articles .article-part .pic {
+	    width: 310px;
+	}
+	.articles .article-part .pic .name {
+	    right: -120px;
+	}
+	.articles .article-part .pic .name:before {
+		width: 70px;
+		bottom: 14px;
+		right: 99%;
+	}
+	.articles .article-part .pic .name:after {
+		top: 20px;
+		left: -70px;
+	}
+	.articles .article-part h3 {
+	    font-size: 24px;
+	}
+	.articles .article-part.first {
+		padding-top: 20px;
+	}
+	.articles .ramka .rrr, .articles .ramka:before {
+	    top: 55px;
+	}
+	.articles .ramka:before {
+		height: 98%;
+	}
+	.articles .ramka:after {
+		bottom: -5px;
+	}
+	.articles.oil-article .ramka:before {
+		height: 97%;
+	}
+	.articles.oil-article .ramka:after {
+		bottom: -15px;
 	}
 }
 @media screen and (max-width: 1024px){
@@ -698,6 +827,33 @@
 	}
 	.marka-auto-popup .marka-content {width: 100%;}
 	.marka-auto-popup .title {width: 100%; padding: 0 10px;}
+	.articles .article-part .pic {
+	    width: 250px;
+	}
+	.articles .article-part .pic .name {
+		font-size: 13px;
+	}
+	.articles .article-part .desc .text {
+		width: 60%;
+	}
+	.articles .article-part h3 {
+	    font-size: 22px;
+	}
+	.articles .article-part .desc .text {
+	    font-size: 12px;
+	    line-height: 18px;
+	}
+	.articles .article-part .desc .text ul li {
+	    font-size: 13px;
+	    line-height: 21px;
+	}
+	.articles .article-part .photo .name {
+		font-size: 13px;
+		line-height: 17px;
+	}
+	.articles .ramka:after {
+	    bottom: -10px;
+	}
 }
 @media screen and (max-width: 1023px){
 	.about .content {
@@ -728,6 +884,9 @@
 @media screen and (max-width: 991px){
 	.wrap-procl .procl-content .right{
 		text-align: left;
+	}
+	.articles .article-part .custom-wrap {
+		width: 100%;
 	}
 	.wrap-procl .procl-content .right .bonus{
 		margin-left: 0;
@@ -896,7 +1055,7 @@
 			width: 90px;
 		}
 	}
-	.about .content .ramka{
+	.about .content .ramka, .articles .ramka{
 		display: none;
 	}
 	.about .content .about-content{
@@ -937,6 +1096,29 @@
 	}
 	.wrap-procl{
 		background-size: 85%;
+	}
+	.articles .article-part h3 {
+	    font-size: 30px;
+	}
+	.articles .article-part .desc .text ul li {
+	    font-size: 16px;
+		line-height: 25px;
+	}
+	.articles .article-part .desc .text {
+	    font-size: 16px;
+	    line-height: 23px;
+	}
+	.articles .article-part .desc .text {
+		width: 100%;
+	}
+	.articles .article-part .desc {
+		justify-content: space-around;
+	}
+	.articles .article-part .pic {
+		width: auto;
+	}
+	.articles .article-part .photo {
+		width: 33%;
 	}
 }
 @media screen and (max-width: 920px){
@@ -1080,6 +1262,21 @@
 		    display: none;
 		}
 	}
+	.articles .article-part h3 {
+	    font-size: 25px;
+	}
+	.articles .article-part .desc .text {
+	    font-size: 14px;
+	    line-height: 21px;
+	}
+	.articles .article-part .desc .text ul li {
+	    font-size: 15px;
+	    line-height: 22px;
+	}
+	.articles .article-part .photo {
+	    width: 50%;
+	    text-align: center;
+	}
 }
 @media screen and (max-width: 530px){
 	.socials .wrap-soc .link{
@@ -1104,6 +1301,9 @@
 	.marka-auto-popup .marka-content form .submit{
 		height: 60px;
     	width: 195px;
+	}
+	.articles .article-part .pic .name {
+		max-width: 250px;
 	}
 }
 @media screen and (max-width: 510px){
@@ -1170,6 +1370,9 @@
 			display: none;
 		}
 	}
+	.articles .article-part .pic .name {
+	    right: -70px;
+	}
 }
 @media screen and (max-width: 370px){
 	.wrap-procl{
@@ -1218,5 +1421,15 @@
 	.about .content .about-content ul li {
 	    line-height: 21px;
 	    font-size: 14px;
+	}
+	.articles .article-part .photo .image {
+		height: auto;
+	}
+	.articles .article-part .photo {
+		width: 100%;
+	}
+	.articles .article-part .pic .name {
+	    right: -60px;
+	    padding-left: 0;
 	}
 }
