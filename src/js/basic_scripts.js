@@ -141,7 +141,7 @@ function animationBlock(item){
 
 /*GO TO href*/
 function goTo(){
-    $('.header-menu a').click(function(e){
+    $('.article-part a').click(function(e){
         e.preventDefault();
         var href = $(this).attr('href');
         var target = $(href).offset().top-65;
@@ -245,7 +245,7 @@ $(document).ready(function() {
 
     scrollUp('.item-map-tubs-top-wrap .scroll-to-garanty', '.item-map-garanty');
     scrollUp("#up-button", ".global-wrapper");
-    //goTo();
+    goTo();
     //animationBlock($('.setion-animate'));
 
 });

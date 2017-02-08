@@ -172,8 +172,15 @@ function fancyboxForm() {
 var currentPosition2=null;
 var curElement2 = null;   
 function fancyboxForm1() {
+    var ttl = '';
     $('.fancybox-form1').fancybox({
-        'beforeLoad': function(){    
+        'beforeLoad': function(){  
+            if (this.element.closest('.oil').length) {
+                ttl = this.element.closest('.oil').find('.ttl').text();
+                console.log('oiloiloiloil');
+            } else {
+                ttl = this.element.closest('.wrap-procl').find('.procl-title').text();
+            } 
 
             if($("html").hasClass("ios") || $("html").hasClass("android")){
                 curElement2 = $(this.element);
@@ -192,7 +199,8 @@ function fancyboxForm1() {
         fitToView:true,
         autoCenter: true,
         padding:'0',
-        'afterLoad': function(){             
+        'afterLoad': function(){  
+             this.content.find('form').prepend('<h3>'+ttl+'</h3>');           
              if($("html").hasClass("ios") || $("html").hasClass("android")){
                 $("html").addClass("fancybox-lock");
                 $("body").addClass("fancybox-lock");
@@ -202,6 +210,7 @@ function fancyboxForm1() {
             }
         },
         afterClose: function(){
+            this.content.find('.pop-clarify-wrap h3').remove();
             if($("html").hasClass("ios") || $("html").hasClass("android")){
                 $("html").removeClass("fancybox-lock");
                 $("body").removeClass("fancybox-lock");

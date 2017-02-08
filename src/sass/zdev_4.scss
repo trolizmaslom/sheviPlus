@@ -257,9 +257,10 @@ $r:#f2535a;
 
 #pop-zakaz{background-color:#fff; border-radius: 10px;
 
-	.pop-clarify-wrap{ padding:60px 40px; background-color: #fff;}
-
-		.clarify-form{ width:450px; height:550px; padding:47px 3% 10px; background-color:#fff; display:flex;
+	.pop-clarify-wrap{ padding:60px 40px 30px; background-color: #fff;
+		h3 { margin: 0; font-size: 24px; text-align: center; margin-bottom: 30px;}
+	}
+		.clarify-form{ width:450px; height:570px; padding: 0px 3% 10px; background-color:#fff; display:flex;
 			form{display: flex;flex-direction: column; width:100%;}
 			.errorText{ display:none !important;}
 			.form_row{ display:flex; flex-direction:column; margin-bottom:30px; width:100%;

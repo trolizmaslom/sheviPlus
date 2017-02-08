@@ -220,6 +220,7 @@
         .top-block{ height: 440px; background-image: url(../images/topbg.jpg); background-size:cover; background-position: 50%; width: 100%;
             .content{ max-width: 575px; width: 100%; padding-top: 40px;}
             .top{border-bottom: 2px solid #f02128; display: flex; justify-content:flex-start; padding-bottom: 15px; margin-bottom: 27px;
+                .logo {width: 170px;}
                 .txt{padding: 6px 0 0 25px;
                     h1{ margin: 0;}
                     p{ margin: 0 0 14px; font-size: 18px; font-weight: 700; color: #fff; text-transform: uppercase;
